@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Artsify - Art</title>
+
+    <link rel=icon href=img/icon.png>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+    <link href="css/heroic-features.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/edit.css" rel="stylesheet">
+
+
+  	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+  	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+  	<link rel="stylesheet" href="css/filter_style.css"> <!-- Resource style -->
+  	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Artsify</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+              <ul class="nav navbar-nav">
+                  <li>
+                      <a href="art.html">Art</a>
+                  </li>
+                  <li>
+                      <a href="artists.html">Artists</a>
+                  </li>
+                  <li>
+                      <a></a>
+                  </li>
+                  <li>
+                      <div id="custom-search-input">
+                          <div class="input-group col-md-12">
+                          <input type="text" class="search-query form-control" placeholder="Search or type keywords" />
+                          <span class="input-group-btn">
+                              <button class="btn btn-danger" type="button">
+                                  <span class=" glyphicon glyphicon-search"></span>
+                              </button>
+                          </span>
+                          </div>
+                      </div>
+                  </li>
+
+              </ul>
+
+              <ul class="nav navbar-nav" style="float:right;">
+                  <li>
+                      <a href="about.html">About</a>
+                  </li>
+                  <li>
+                      <a href="contact.html">Contact</a>
+                  </li>
+                  <li>
+                      <a href="#" data-toggle="modal" data-target="#login-modal" id="login-btn">Log In</a>
+                  </li>
+                  <li>
+                      <a href="#" id="register-btn">Sign Up</a>
+                  </li>
+              </ul>
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div>
+        <header class="cd-header">
+        </header>
+        <main class="cd-main-content">
+      		<div class="cd-tab-filter-wrapper">
+      			<div class="cd-tab-filter">
+      				<ul class="cd-filters">
+      					<li class="placeholder">
+      						<a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+      					</li>
+      					<li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
+                <!--
+                <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Featured Artists</a></li>
+                -->
+                <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Popular Works</a></li>
+              </ul> <!-- cd-filters -->
+      			</div> <!-- cd-tab-filter -->
+      		</div> <!-- cd-tab-filter-wrapper -->
+
+      		<section class="cd-gallery">
+      			<ul>
+      				<li class="mix color-1 check1 radio2 option3">
+                <img src="img/Art/MarilynHenrion/1.jpg" alt="Image 1" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+              </li>
+      				<li class="mix color-2 check2 radio2 option2"><img src="img/Art/MarilynHenrion/2.jpg" alt="Image 2" style="width:100%;cursor:pointer"
+              onclick="onClick(this)" class="w3-hover-opacity"></li>
+              <li class="mix color-1 check3 radio3 option1"><img src="img/Art/MarilynHenrion/3.jpg" alt="Image 3" style="width:100%;cursor:pointer"
+              onclick="onClick(this)" class="w3-hover-opacity"></li>
+      				<li class="mix color-1 check3 radio3 option1"><img src="img/Art/MarilynHenrion/4.jpg" alt="Image 3" style="width:100%;cursor:pointer"
+              onclick="onClick(this)" class="w3-hover-opacity"></li>
+      				<li class="mix color-1 check3 radio2 option4"><img src="img/Art/MarkRichardson/1.jpg" alt="Image 4" style="width:100%;cursor:pointer"
+              onclick="onClick(this)" class="w3-hover-opacity"></li>
+      				<li class="mix color-1 check1 radio3 option2"><img src="img/Art/MarkRichardson/2.jpg" alt="Image 5"style="width:100%;cursor:pointer"
+              onclick="onClick(this)" class="w3-hover-opacity"></li>
+      				<li class="mix color-2 check2 radio3 option3"><img src="img/Art/MarkRichardson/3.jpg" alt="Image 6"style="width:100%;cursor:pointer"
+              onclick="onClick(this)" class="w3-hover-opacity"></li>
+      				<li class="mix color-2 check2 radio2 option1"><img src="img/Art/MarkRichardson/4.jpg" alt="Image 7"style="width:100%;cursor:pointer"
+              onclick="onClick(this)" class="w3-hover-opacity"></li>
+      				<li class="mix color-1 check1 radio3 option4"><img src="img/Art/MarkRichardson/5.jpg" alt="Image 8"style="width:100%;cursor:pointer"
+              onclick="onClick(this)" class="w3-hover-opacity"></li>
+      				<li class="mix color-2 check1 radio2 option3"><img src="img/Art/MarkRichardson/6.jpg" alt="Image 9"style="width:100%;cursor:pointer"
+              onclick="onClick(this)" class="w3-hover-opacity"></li>
+      				<li class="mix color-1 check3 radio2 option4"><img src="img/Art/MarkRichardson/7.jpg" alt="Image 10"style="width:100%;cursor:pointer"
+              onclick="onClick(this)" class="w3-hover-opacity"></li>
+      				<li class="mix color-1 check3 radio3 option2"><img src="img/Art/MarkRichardson/8.jpg" alt="Image 11"style="width:100%;cursor:pointer"
+              onclick="onClick(this)" class="w3-hover-opacity"></li>
+      				<li class="mix color-2 check1 radio3 option1"><img src="img/Art/MarkRichardson/9.jpg" alt="Image 12"style="width:100%;cursor:pointer"
+              onclick="onClick(this)" class="w3-hover-opacity"></li>
+      				<li class="gap"></li>
+      				<li class="gap"></li>
+      				<li class="gap"></li>
+      			</ul>
+      			<div class="cd-fail-message">No results found</div>
+      		</section> <!-- cd-gallery -->
+
+
+   		  <div class="cd-filter">
+      			<form>
+
+              <div class="cd-filter-block">
+      					<h4>Search</h4>
+      					<div class="cd-filter-content">
+      						<input type="search" placeholder="Keywords">
+      					</div> <!-- cd-filter-content -->
+      				</div> <!-- cd-filter-block -->
+
+              <div class="cd-filter-block">
+      					<h4>Price</h4>
+      					<div class="cd-filter-content">
+      						<div class="cd-select cd-filters">
+      							<select class="filter" name="selectThis" id="selectThis">
+      								<option value="">Choose a price range</option>
+      								<option value=".option1">Under $500</option>
+      								<option value=".option2">$501 - $1,000</option>
+      								<option value=".option3">$1,001 - $5,000</option>
+      								<option value=".option4">Above $5,001</option>
+      							</select>
+      						</div> <!-- cd-select -->
+      					</div> <!-- cd-filter-content -->
+      				</div> <!-- cd-filter-block -->
+
+      				<div class="cd-filter-block">
+      					<h4>Style</h4>
+
+      					<ul class="cd-filter-content cd-filters list">
+      						<li>
+      							<input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
+      							<label class="checkbox-label" for="checkbox1">Expressionism</label>
+      						</li>
+
+      						<li>
+      							<input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
+      							<label class="checkbox-label" for="checkbox2">Pop Art</label>
+      						</li>
+
+      						<li>
+      							<input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
+      							<label class="checkbox-label" for="checkbox3">Naturalism</label>
+      						</li>
+                  <li>
+                    <input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
+                    <label class="checkbox-label" for="checkbox4">Other</label>
+                  </li>
+      					</ul> <!-- cd-filter-content -->
+      				</div> <!-- cd-filter-block -->
+
+      				<div class="cd-filter-block">
+      					<h4>Subject</h4>
+
+      					<div class="cd-filter-content">
+      						<div class="cd-select cd-filters">
+      							<select class="filter" name="selectThis" id="selectThis">
+      								<option value="">Choose a subject</option>
+      								<option value=".option1">Animals</option>
+      								<option value=".option2">Cityscape</option>
+      								<option value=".option3">Fashion</option>
+      								<option value=".option4">Landscape</option>
+                      <option value=".option5">Other</option>
+      							</select>
+      						</div> <!-- cd-select -->
+      					</div> <!-- cd-filter-content -->
+      				</div> <!-- cd-filter-block -->
+
+      				<div class="cd-filter-block">
+      					<h4>Medium</h4>
+
+      					<ul class="cd-filter-content cd-filters list">
+      						<li>
+      							<input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
+      							<label class="radio-label" for="radio1">All</label>
+      						</li>
+
+      						<li>
+      							<input class="filter" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
+      							<label class="radio-label" for="radio2">Collage</label>
+      						</li>
+
+      						<li>
+      							<input class="filter" data-filter=".radio3" type="radio" name="radioButton" id="radio3">
+      							<label class="radio-label" for="radio3">Painting</label>
+      						</li>
+                  <li>
+                    <input class="filter" data-filter=".radio4" type="radio" name="radioButton" id="radio4">
+                    <label class="radio-label" for="radio4">Other</label>
+                  </li>
+      					</ul> <!-- cd-filter-content -->
+      				</div> <!-- cd-filter-block -->
+      			</form>
+
+      			<a href="#0" class="cd-close">Close</a>
+      		</div>
+      		<!-- cd-filter -->
+
+      		<a href="#0" class="cd-filter-trigger">Filters</a>
+      	</main> <!-- cd-main-content -->
+        <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+          <img id="img01" style="width:100%">
+        </div>
+</div>
+
+
+    <!-- /.container -->
+
+    <div class="container">
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Artsify 2017</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- BEGIN # MODAL LOGIN -->
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" align="center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="modal-close-btn">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </button>
+                    <p class="logo-text-lg">Artsify</p>
+                </div>
+
+                <!-- Begin # DIV Form -->
+                <div id="div-forms">
+
+                    <!-- Begin # Login Form -->
+                    <form id="login-form">
+                        <div class="modal-body">
+                            <div id="div-login-msg">
+                                <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-login-msg">Type your username and password.</span>
+                            </div>
+                            <input id="login_username" class="form-control" type="text" placeholder="Username" required>
+                            <input id="login_password" class="form-control" type="password" placeholder="Password" required>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Remember me
+                                </label>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                            </div>
+                            <div>
+                                <button id="login_lost_btn" type="button" class="btn btn-link">Forgot Password?</button>
+                                <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- End # Login Form -->
+
+                    <!-- Begin | Lost Password Form -->
+                    <form id="lost-form" style="display:none;">
+                        <div class="modal-body">
+                            <div id="div-lost-msg">
+                                <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-lost-msg">Type your e-mail.</span>
+                            </div>
+                            <input id="lost_email" class="form-control" type="email" placeholder="Email" required>
+                        </div>
+                        <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                            </div>
+                            <div>
+                                <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- End | Lost Password Form -->
+
+                    <!-- Begin | Register Form -->
+                    <form id="register-form" style="display:none;">
+                        <div class="modal-body">
+                            <div id="div-register-msg">
+                                <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-register-msg">Create an account.</span>
+                            </div>
+                            <input id="register_username" class="form-control" type="text" placeholder="Username" required>
+                            <input id="register_email" class="form-control" type="email" placeholder="Email" >
+                            <input id="register_password" class="form-control" type="password" placeholder="Password" >
+                        </div>
+                        <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                            </div>
+                            <div>
+                                <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="register_lost_btn" type="button" class="btn btn-link">Forgot Password?</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- End | Register Form -->
+
+                </div>
+                <!-- End # DIV Form -->
+
+            </div>
+        </div>
+    </div>
+    <!-- END # MODAL LOGIN -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+   <script src="js/main.js"></script>
+
+   <script src="js/jquery-2.1.1.js"></script>
+   <script src="js/jquery.mixitup.min.js"></script>
+   <script src="js/filter_main.js"></script> <!-- Resource jQuery -->
+
+   <script>
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+    }
+  </script>
+
+</body>
+
+</html>

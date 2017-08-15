@@ -37,7 +37,7 @@
 }
 
 .aboutus {
-    font-family: 'Varela Round', sans-serif; 
+    font-family: 'Varela Round', sans-serif;
 }
 
 .navbar {
@@ -45,7 +45,7 @@
 }
 
 #custom-search-input {
-    width: 300px;
+    width: 550px;
     margin:0;
     margin-top: 10px;
     padding: 0;
@@ -166,7 +166,7 @@ section#contact .text-danger {
    #   Last Change   : 08/02/2015
    #
    ##################################################################### */
-   
+
 #login-modal .modal-dialog {
     width: 350px;
     font-family: 'Varela Round';

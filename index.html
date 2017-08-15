@@ -15,12 +15,13 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/shop-homepage.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
+    <link href="css/heroic-features.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/edit.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,6 +29,9 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 </head>
 
@@ -48,34 +52,47 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav" style="float:right;">
-                    <li>
-                        <div id="custom-search-input">
-                            <div class="input-group col-md-12">
-                            <input type="text" class="  search-query form-control" placeholder="Search" />
-                            <span class="input-group-btn">
-                                <button class="btn btn-danger" type="button">
-                                    <span class=" glyphicon glyphicon-search"></span>
-                                </button>
-                            </span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#" data-toggle="modal" data-target="#login-modal" id="login-btn">Log In</a>
-                    </li>
-                    <li>
-                        <a href="#" id="register-btn">Sign Up</a>
-                    </li>
-                </ul>
+
+              <ul class="nav navbar-nav">
+                  <li>
+                      <a href="art.html">Art</a>
+                  </li>
+                  <li>
+                      <a href="artists.html">Artists</a>
+                  </li>
+                  <li>
+                      <a></a>
+                  </li>
+                  <li>
+                      <div id="custom-search-input">
+                          <div class="input-group col-md-12">
+                          <input type="text" class="search-query form-control" placeholder="Search or type keywords" />
+                          <span class="input-group-btn">
+                              <button class="btn btn-danger" type="button">
+                                  <span class=" glyphicon glyphicon-search"></span>
+                              </button>
+                          </span>
+                          </div>
+                      </div>
+                  </li>
+
+              </ul>
+
+              <ul class="nav navbar-nav" style="float:right;">
+                  <li>
+                      <a href="about.html">About</a>
+                  </li>
+                  <li>
+                      <a href="contact.html">Contact</a>
+                  </li>
+                  <li>
+                      <a href="#" data-toggle="modal" data-target="#login-modal" id="login-btn">Log In</a>
+                  </li>
+                  <li>
+                      <a href="#" id="register-btn">Sign Up</a>
+                  </li>
+              </ul>
+
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -83,25 +100,25 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container">	           
-        
+    <div class="container">
+
         <div class="row carousel-holder">
             <div class="col-md-12">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" align="middle">
                     <ol class="carousel-indicators">
                         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2" class="active"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img src="https://static1.squarespace.com/static/5202b50ee4b0a1e62378af8b/542d9856e4b07a3a6778beba/542d9856e4b07a3a6778bebf/1376660797914/green+sea-ss.jpg?format=1000w" alt="" style="max-width:500px;">
+                            <img src="img/slide/slide_1.jpg" height="100%" alt="" style="max-height:450px;">
                         </div>
                         <div class="item">
-                            <img src="https://static1.squarespace.com/static/5202b50ee4b0a1e62378af8b/542d9856e4b07a3a6778beba/542d9856e4b07a3a6778bec1/1376660845279/lake+rock-ss.jpg?format=1000w" alt="" style="max-width:500px;">
+                            <img src="img/slide/slide_2.jpg" height="100%" alt="" style="max-height:450px;">
                         </div>
                         <div class="item">
-                            <img src="https://static1.squarespace.com/static/5202b50ee4b0a1e62378af8b/542d9856e4b07a3a6778beba/542d9856e4b07a3a6778bebd/1376660856941/gray+rock-ss.jpg?format=1000w" alt="" style="max-width:500px;">
+                            <img src="img/slide/slide_3.jpg" height="100%" alt="" style="max-height:450px;">
                         </div>
                     </div>
                     <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
@@ -114,10 +131,10 @@
             </div>
         </div>
 
-      
+
 
         <div class="row">
-            
+
             <div class="col-md-3">
                 <p class="lead">Category</p>
                 <div class="list-group">
@@ -126,92 +143,81 @@
                     <a href="#" class="list-group-item">Medium</a>
                     <a href="#" class="list-group-item">Tag</a>
                 </div>
-                
+
                 <p class="lead">Popular</p>
                 <div class="list-group">
                     <a href="#" class="list-group-item">Featured Artists</a>
                     <a href="#" class="list-group-item">Popular Works</a>
                 </div>
-         	</div> 
-                
-            
-            <div class="col-md-9">
+         	</div>
+
+          <div class="col-md-9">
+
             	<div class="row carousel-holder">
-                
-                	<div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnail">
-                        	<img src="http://render.fineartamerica.com/images/images-profile-flow/350/images/artworkimages/medium/1/war-and-peace-edward-henrion.jpg" alt="" width="320" height="150"></span>
-                          	<div class="caption">
-                            <h4 class="pull-right">$132.00</h4>
-                                <h4><a href="#">War and Peace</a>
-                                </h4>
-                                <p><a target="_blank" href="https://www.edwardhenrion.com/biography/">#EDWARD HENRION</a></p>
-                                <p><a href="#">#Pen and ink on paper</a></p>
-                          </div>
-                        	<div class="ratings">
-                            <p class="pull-right">12 reviews</p>
-                            <p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                            </p>
-                        </div>
-                    	</div>
-                	</div>
+                <p class="lead">Top Picks</p>
+                <div class="w3-row-padding">
+                  <div class="w3-container w3-third">
+                    <img src="img/Art/MarilynHenrion/1.jpg" style="width:100%;cursor:pointer"
+                    onclick="onClick(this)" class="w3-hover-opacity">
+                  </div>
 
-                    <div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnail">
-                            <img src="https://static1.squarespace.com/static/5202b50ee4b0a1e62378af8b/542d9856e4b07a3a6778beba/542d9856e4b07a3a6778bebc/1391621335020/red+rock-ss.jpg?format=300w" alt="" width="320" height="150">
-                            <div class="caption">
-                                <h4 class="pull-right">$6,000.00</h4>
-                                <h4><a href="#">Complexity</a>
-                                </h4>
-                                <p><a target="_blank" href="http://marilynhenrion.com/about/">#MARILYN HENRION</a></p>
-                            	<p><a href="#">#mixedmedia</a></p>
-                            </div>
-                            <div class="ratings">
-                                <p class="pull-right">15 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                  <div class="w3-container w3-third">
+                    <img src="img/Art/MarilynHenrion/2.jpg" style="width:100%;cursor:pointer"
+                    onclick="onClick(this)" class="w3-hover-opacity">
+                  </div>
 
-                    <div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnail">
-                            <img src="https://static1.squarespace.com/static/5202b50ee4b0a1e62378af8b/542d9856e4b07a3a6778beba/542d9856e4b07a3a6778bebb/1387641375955/chiarascuro+1.jpg?format=300w" alt="" width="320" height="150">
-                            <div class="caption">
-                                <h4 class="pull-right">$6,000.00</h4>
-                                <h4><a href="#">Nature</a>
-                                </h4>
-                                <p><a target="_blank" href="http://marilynhenrion.com/about/">#MARILYN HENRION</a></p>
-                            	<p><a href="#">#mixedmedia</a></p>
-                            </div>
-                            <div class="ratings">
-                                <p class="pull-right">31 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
+                  <div class="w3-container w3-third">
+                    <img src="img/Art/MarilynHenrion/3.jpg" style="width:100%;cursor:pointer"
+                    onclick="onClick(this)" class="w3-hover-opacity">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row carousel-holder">
+                <p class="lead">New To Artsify</p>
+                  <div class="w3-row-padding">
+                   <div class="w3-container w3-third">
+                    <img src="img/Art/MarkRichardson/1.jpg" style="width:100%;cursor:pointer"
+                    onclick="onClick(this)" class="w3-hover-opacity">
+                  </div>
+
+                  <div class="w3-container w3-third">
+                    <img src="img/Art/MarkRichardson/2.jpg" style="width:100%;cursor:pointer"
+                    onclick="onClick(this)" class="w3-hover-opacity">
+                  </div>
+
+                  <div class="w3-container w3-third">
+                    <img src="img/Art/MarkRichardson/3.jpg" style="width:100%;cursor:pointer"
+                    onclick="onClick(this)" class="w3-hover-opacity">
+                  </div>
+
+                  <div class="w3-container w3-third">
+                    <img src="img/Art/MarkRichardson/4.jpg" style="width:100%;cursor:pointer"
+                    onclick="onClick(this)" class="w3-hover-opacity">
+                  </div>
+
+                  <div class="w3-container w3-third">
+                    <img src="img/Art/MarkRichardson/5.jpg" style="width:100%;cursor:pointer"
+                    onclick="onClick(this)" class="w3-hover-opacity">
+                  </div>
+
+                  <div class="w3-container w3-third">
+                    <img src="img/Art/MarkRichardson/6.jpg" style="width:100%;cursor:pointer"
+                    onclick="onClick(this)" class="w3-hover-opacity">
+                  </div>
+
+                  <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                  <div class="w3-modal-content w3-animate-zoom">
+                    <img id="img01" style="width:100%">
+                  </div>
+                  </div>
+
               	</div>
           	</div>
-            
+
         </div>
-        
+
     </div>
     <!-- /.container -->
 
@@ -241,10 +247,10 @@
                     </button>
                     <p class="logo-text-lg">Artsify</p>
                 </div>
-                
+
                 <!-- Begin # DIV Form -->
                 <div id="div-forms">
-                
+
                     <!-- Begin # Login Form -->
                     <form id="login-form">
                         <div class="modal-body">
@@ -271,7 +277,7 @@
                         </div>
                     </form>
                     <!-- End # Login Form -->
-                    
+
                     <!-- Begin | Lost Password Form -->
                     <form id="lost-form" style="display:none;">
                         <div class="modal-body">
@@ -292,7 +298,7 @@
                         </div>
                     </form>
                     <!-- End | Lost Password Form -->
-                    
+
                     <!-- Begin | Register Form -->
                     <form id="register-form" style="display:none;">
                         <div class="modal-body">
@@ -315,10 +321,10 @@
                         </div>
                     </form>
                     <!-- End | Register Form -->
-                    
+
                 </div>
                 <!-- End # DIV Form -->
-                
+
             </div>
         </div>
     </div>
@@ -331,9 +337,17 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-   
+
     <!-- Custom JavaScript -->
    <script src="js/main.js"></script>
+
+
+   <script>
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+    }
+  </script>
 
 </body>
 

@@ -1,12 +1,12 @@
 <?php
-	$owner_email='info@angelzxw.com';
+	$owner_email='artsify@angartsifyelzxw.com';
 	//SMTP server settings
   $host = 'smtp.stackmail.com'; //185.151.28.68
   $port = '25';//"587";
   $username = 'info@angelzxw.com';
   $password = '1234qwer';
 
-  $subject='A message from your site visitor ';
+  $subject='A message from your Artsify visitor ';
   $user_email='';
 	$message_body='';
 	$message_type='html';

@@ -1,5 +1,5 @@
 /* CSS Document */
-/* 
+/*
 .image-cropper {
     max-width: 100px;
     height: auto;
@@ -20,6 +20,21 @@
     background-size:cover;
 }*/
 
+
+.cut-image {
+  overflow: hidden;
+  	width: 50%;
+  	height: 330px;
+  	border: 2px solid #000;
+}
+
+.image-to-cut {
+  position: absolute;
+  left: -10px;
+  top: 100;
+}
+
+
 .image-cropper {
     width: 100px;
     height: 100px;
@@ -35,12 +50,11 @@ img {
     width: auto;
 }
 
-
  /* .box div holds the bottom image */
 
 
   .box {
-    
+
     /*background: url("https://angelzxw.files.wordpress.com/2017/01/cropped-20170111_125342.jpg"); */
     background-repeat: no-repeat
     background-attachment: scroll left bottom;
@@ -62,7 +76,7 @@ img {
     line-height: 30px;
     margin: 30;
     padding: 0 15px;
-  
+
  }
 
  /* The paragraph tag contains the side borders mark-up */
@@ -81,7 +95,7 @@ img {
     padding: 15px 14px 0;
     width: 850px;
  }
- 
+
  #all{
     width:100%;
     float:left;
@@ -94,4 +108,19 @@ div.sub, iframe {
     margin: 0 auto;
     background-color: #777;
 
+}
+
+
+.crop{
+	float:left;
+	overflow:hidden; /* this is important */
+	position:relative; /* this is important too */
+	width:350px;
+	height:200px;
+	}
+
+.crop img{
+	position:absolute;
+	top:-20px;
+	left:-55px;
 }

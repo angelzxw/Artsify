@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Artsify - Contact</title>
+    <title>Artsify - Membership Plans</title>
 
     <link rel=icon href=img/icon.png>
 
@@ -22,15 +22,6 @@
     <!-- Custom CSS -->
     <link href="css/edit.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery-migrate-1.1.1.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/jquery.ui.totop.js"></script>
-    <script src="js/touchTouch.jquery.js"></script>
-    <script src="js/isotope.pkgd.js"></script>
-    <script src="js/TMForm.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -112,51 +103,59 @@
 
     <!-- Page Content -->
 
-    <section id="contact" style="">
+    <section id="membership">
         <div class="container">
             <div class="row">
-                <div class="about_our_company" style="margin-bottom: 20px;">
-                    <h1 class="contact-logo-left">Contact the Team at</h1><h1 class="contact-logo-right">Artsify</h1>
-                    <div class="titleline-icon"></div>
-                    <p style="color:#fff;">Send us a message and we'll get back to you!</p>
+
+                <div class="col-sm-4">
+                    <div class="mega-pricing-item gradient-style-1">
+                        <h3><strong>Bronze</strong> Plan</h3><br><br>
+                        <ul>
+                            <li><strong>Featured </strong>artist eligibility</li>
+                            <li><strong>Limited </strong>artwork uploading</li>
+                            <li><strong>Customizable </strong>artist pages</li>
+                        </ul>
+                        <h1><span>$</span>50</h1>
+                        <p class="pricing-duration">Per month</p>
+                        <a id="register-btn-bronze" class="bordered-btn btn-1">Sign Up</a>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-8" style="width:100%;">
-                    <form action="bat/MailHandler.php" method="post">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" name="name" class="form-control" placeholder="Name *" required="" data-validation-required-message="Please enter your name.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" name="email"class="form-control" placeholder="Email *" required="" data-validation-required-message="Please enter your email address.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" name="phone" class="form-control" placeholder="Phone Number">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <textarea name="message" class="form-control" placeholder="Message *" required></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
-                                <div id="success"></div>
-                                <button type="submit" class="btn btn-xl get">Send Message</button>
-                                <a href="bat/MailHandler.php" class="btn" data-type="submit"></a>
-                            </div>
-                        </div>
-                    </form>
+
+                <div class="col-sm-4">
+                    <div class="mega-pricing-item gradient-style-2 active">
+                        <h3><strong>Silver</strong> Plan</h3><br><br>
+                        <ul>
+                            <li><strong>Featured </strong>artist eligibility</li>
+                            <li><strong>Limited </strong>artwork uploading</li>
+                            <li><strong>Customizable </strong>artist pages</li>
+                            <li><strong>Discounted </strong>shipping supplies</li>
+                        </ul>
+                        <h1><span>$</span>90</h1>
+                        <p class="pricing-duration">Per month</p>
+                        <a id="register-btn-silver" class="bordered-btn btn-2">Sign Up</a>
+                    </div>
                 </div>
-            </div>
-        </div>
+
+                <div class="col-sm-4">
+                    <div class="mega-pricing-item gradient-style-3">
+                        <h3><strong>Gold</strong> Plan</h3><br><br> 
+                        <ul>
+                            <li><strong>Featured </strong>artist eligibility</li>
+                            <li><strong>Unlimited </strong>artwork uploading</li>
+                            <li><strong>Customizable </strong>artist pages</li>
+                            <li><strong>Free </strong>shipping supplies</li>
+                            <li><strong>Personalized </strong>tech support</li>
+                        </ul>
+                        <h1><span>$</span>120</h1>
+                        <p class="pricing-duration">Per month</p>
+                        <a id="register-btn-gold" class="bordered-btn btn-3">Sign Up</a>
+                    </div>
+                </div>
+
+            </div><!-- ./row -->
+        </div><!-- ./container -->
     </section>
+
     <!-- /.container -->
 
     <div class="container">

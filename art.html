@@ -21,7 +21,7 @@
     <link href="css/heroic-features.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/edit.css" rel="stylesheet">
-
+    <link href="css/modal_img.css" rel="stylesheet">
 
   	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 
@@ -130,34 +130,48 @@
 
       		<section class="cd-gallery">
       			<ul>
-      				<li class="mix color-1 check1 radio2 option3">
-                <img src="img/Art/MarilynHenrion/1.jpg" alt="Image 1" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+      				<li class="mix color-1 check1 radio2 option3"><img src="img/Art/MarilynHenrion/1.jpg" alt="Image 2" style="width:100%;cursor:zoom-in"
+              onclick="onClick(this)" class="w3-hover-opacity">
+                <div class="desc">Add a description of the image here</div>
               </li>
-      				<li class="mix color-2 check2 radio2 option2"><img src="img/Art/MarilynHenrion/2.jpg" alt="Image 2" style="width:100%;cursor:pointer"
-              onclick="onClick(this)" class="w3-hover-opacity"></li>
-              <li class="mix color-1 check3 radio3 option1"><img src="img/Art/MarilynHenrion/3.jpg" alt="Image 3" style="width:100%;cursor:pointer"
-              onclick="onClick(this)" class="w3-hover-opacity"></li>
-      				<li class="mix color-1 check3 radio3 option1"><img src="img/Art/MarilynHenrion/4.jpg" alt="Image 3" style="width:100%;cursor:pointer"
-              onclick="onClick(this)" class="w3-hover-opacity"></li>
-      				<li class="mix color-1 check3 radio2 option4"><img src="img/Art/MarkRichardson/1.jpg" alt="Image 4" style="width:100%;cursor:pointer"
-              onclick="onClick(this)" class="w3-hover-opacity"></li>
-      				<li class="mix color-1 check1 radio3 option2"><img src="img/Art/MarkRichardson/2.jpg" alt="Image 5"style="width:100%;cursor:pointer"
-              onclick="onClick(this)" class="w3-hover-opacity"></li>
-      				<li class="mix color-2 check2 radio3 option3"><img src="img/Art/MarkRichardson/3.jpg" alt="Image 6"style="width:100%;cursor:pointer"
-              onclick="onClick(this)" class="w3-hover-opacity"></li>
-      				<li class="mix color-2 check2 radio2 option1"><img src="img/Art/MarkRichardson/4.jpg" alt="Image 7"style="width:100%;cursor:pointer"
-              onclick="onClick(this)" class="w3-hover-opacity"></li>
-      				<li class="mix color-1 check1 radio3 option4"><img src="img/Art/MarkRichardson/5.jpg" alt="Image 8"style="width:100%;cursor:pointer"
-              onclick="onClick(this)" class="w3-hover-opacity"></li>
-      				<li class="mix color-2 check1 radio2 option3"><img src="img/Art/MarkRichardson/6.jpg" alt="Image 9"style="width:100%;cursor:pointer"
-              onclick="onClick(this)" class="w3-hover-opacity"></li>
-      				<li class="mix color-1 check3 radio2 option4"><img src="img/Art/MarkRichardson/7.jpg" alt="Image 10"style="width:100%;cursor:pointer"
-              onclick="onClick(this)" class="w3-hover-opacity"></li>
-      				<li class="mix color-1 check3 radio3 option2"><img src="img/Art/MarkRichardson/8.jpg" alt="Image 11"style="width:100%;cursor:pointer"
-              onclick="onClick(this)" class="w3-hover-opacity"></li>
-      				<li class="mix color-2 check1 radio3 option1"><img src="img/Art/MarkRichardson/9.jpg" alt="Image 12"style="width:100%;cursor:pointer"
-              onclick="onClick(this)" class="w3-hover-opacity"></li>
-      				<li class="gap"></li>
+
+      				<li class="mix color-2 check2 radio2 option2"><img src="img/Art/MarilynHenrion/2.jpg" alt="Image 2" style="width:100%;cursor:zoom-in"
+              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
+
+              <li class="mix color-1 check3 radio3 option1"><img src="img/Art/MarilynHenrion/3.jpg" alt="Image 3" style="width:100%;cursor:zoom-in"
+              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
+
+              <li class="mix color-1 check3 radio3 option1"><img src="img/Art/MarilynHenrion/4.jpg" alt="Image 3" style="width:100%;cursor:zoom-in"
+              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
+
+              <li class="mix color-1 check3 radio2 option4"><img src="img/Art/MarkRichardson/1.jpg" alt="Image 4" style="width:100%;cursor:zoom-in"
+              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
+
+              <li class="mix color-1 check1 radio3 option2"><img src="img/Art/MarkRichardson/2.jpg" alt="Image 5"style="width:100%;cursor:zoom-in"
+              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
+
+              <li class="mix color-2 check2 radio3 option3"><img src="img/Art/MarkRichardson/3.jpg" alt="Image 6"style="width:100%;cursor:zoom-in"
+              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
+
+              <li class="mix color-2 check2 radio2 option1"><img src="img/Art/MarkRichardson/4.jpg" alt="Image 7"style="width:100%;cursor:zoom-in"
+              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
+
+              <li class="mix color-1 check1 radio3 option4"><img src="img/Art/MarkRichardson/5.jpg" alt="Image 8"style="width:100%;cursor:zoom-in"
+              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
+
+              <li class="mix color-2 check1 radio2 option3"><img src="img/Art/MarkRichardson/6.jpg" alt="Image 9"style="width:100%;cursor:zoom-in"
+              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
+
+              <li class="mix color-1 check3 radio2 option4"><img src="img/Art/MarkRichardson/7.jpg" alt="Image 10"style="width:100%;cursor:zoom-in"
+              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
+
+              <li class="mix color-1 check3 radio3 option2"><img src="img/Art/MarkRichardson/8.jpg" alt="Image 11"style="width:100%;cursor:zoom-in"
+              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
+
+              <li class="mix color-2 check1 radio3 option1"><img src="img/Art/MarkRichardson/9.jpg" alt="Image 12"style="width:100%;cursor:zoom-in"
+              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
+
+              <li class="gap"></li>
       				<li class="gap"></li>
       				<li class="gap"></li>
       			</ul>
@@ -281,7 +295,7 @@
         <!-- Footer -->
         <footer>
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12" align="center">
                     <p>Copyright &copy; Artsify 2017</p>
                 </div>
             </div>
@@ -397,6 +411,45 @@
    <script src="js/jquery-2.1.1.js"></script>
    <script src="js/jquery.mixitup.min.js"></script>
    <script src="js/filter_main.js"></script> <!-- Resource jQuery -->
+
+   <script>
+   function openModal() {
+     document.getElementById('myModal').style.display = "block";
+   }
+
+   function closeModal() {
+     document.getElementById('myModal').style.display = "none";
+   }
+
+   var slideIndex = 1;
+   showSlides(slideIndex);
+
+   function plusSlides(n) {
+     showSlides(slideIndex += n);
+   }
+
+   function currentSlide(n) {
+     showSlides(slideIndex = n);
+   }
+
+   function showSlides(n) {
+     var i;
+     var slides = document.getElementsByClassName("mySlides");
+     var dots = document.getElementsByClassName("demo");
+     var captionText = document.getElementById("caption");
+     if (n > slides.length) {slideIndex = 1}
+     if (n < 1) {slideIndex = slides.length}
+     for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";
+     }
+     for (i = 0; i < dots.length; i++) {
+         dots[i].className = dots[i].className.replace(" active", "");
+     }
+     slides[slideIndex-1].style.display = "block";
+     dots[slideIndex-1].className += " active";
+     captionText.innerHTML = dots[slideIndex-1].alt;
+   }
+   </script>
 
    <script>
     function onClick(element) {

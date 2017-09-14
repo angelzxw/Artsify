@@ -1,3 +1,4 @@
+
 /* #####################################################################
    #
    #   Project       : Modal Login with jQuery Effects
@@ -69,11 +70,16 @@ $(function() {
     $('#register_lost_btn').click( function () { modalAnimate($formRegister, $formLost); });
 
 
-    $('#register-btn').click( function () {
+    $('#register-btn').click( function () { registerBtnClick() });
+    $('#register-btn-bronze').click( function () { registerBtnClick() });
+    $('#register-btn-silver').click( function () { registerBtnClick() });
+    $('#register-btn-gold').click( function () { registerBtnClick() });
+
+    function registerBtnClick () {
         $('#login-btn').click();
         $formLogin.css("display", "none");
         $formRegister.css("display", "block");
-    });
+    }
 
     function modalAnimate ($oldForm, $newForm) {
         var $oldH = $oldForm.height();

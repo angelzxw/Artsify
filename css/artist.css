@@ -1,0 +1,235 @@
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
+
+header {
+    text-align: center;
+    color: #fff;
+    background: #41307c;
+    position: fixed;
+    width:100%;
+    padding: 20px;    
+    z-index: 1;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.rela-block.content{
+  padding: 30px 0PX;
+}
+
+.content-wrapper{
+    background-color: #e7e7e7;
+    margin-top: 300px;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    left: 0;
+}
+
+header .container {
+    padding-top: 130px;
+    width: 100%;
+}
+
+header img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+section h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+section.primary h2{    
+    color: #2c3e50;
+    }
+    
+section.success{
+    background-color: #18bc9c;
+    color: #fff;
+    }
+
+
+.artist-row {
+  margin: -15px -20px;
+}
+.rela-block {
+  display: block;
+  position: relative;
+  margin: auto;
+}
+.rela-inline {
+  display: inline-block;
+  position: relative;
+  margin: auto;
+}
+.floated {
+  display: inline-block;
+  position: relative;
+  margin: false;
+  float: left;
+}
+.floated.right {
+  float: right;
+}
+
+.profile-card {
+  width: calc(100% - 40px);
+  padding-top: 100px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px -2px rgba(0,0,0,0.26);
+}
+.profile-pic {
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 160px;
+  width: 160px;
+  border: 10px solid #fff;
+  border-radius: 100%;
+  background: url("https://images-na.ssl-images-amazon.com/images/I/61xiA4FailL._SL1000_.jpg") center no-repeat;
+  background-size: cover;
+}
+.profile-name-container {
+  margin: 0 auto 10px;
+  text-align: center;
+}
+.user-name {
+  font-family: 'Varela Round';
+  font-size: 24px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 12px;
+  color: #222;
+}
+.user-desc {
+  letter-spacing: 1px;
+  color: #999;
+}
+.profile-card-stats {
+  height: 75px;
+  padding: 10px 0px;
+  text-align: center;
+  overflow: hidden;
+}
+.profile-stat {
+  height: 100%;
+  width: 33.3333%;
+}
+.profile-stat:after {
+  color: #999;
+}
+.works::after {
+  content: "works";
+}
+.followers::after {
+  content: "followers";
+}
+.following::after {
+  content: "following";
+}
+.image {
+  width: 240px;
+  height: 200px;
+  cursor: pointer;
+  margin: 0 20px 40px;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 10px solid #fff;
+  box-shadow: 0 2px 6px -2px rgba(0,0,0,0.26);
+  background-color: rgba(0,0,0,0.4);
+  background-size: cover !important;
+  -webkit-transition: 0.2s cubic-bezier(0.5, 0, 0.2, 1);
+  transition: 0.2s cubic-bezier(0.5, 0, 0.2, 1);
+}
+.image:hover {
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+  box-shadow: 0 2px 18px -2px rgba(0,0,0,0.3);
+}
+.image.hidden {
+  height: 0;
+  width: 0px;
+  margin: 0px;
+  border: 0px solid #fff;
+}
+
+.social {
+    margin: 0;
+    padding: 0;
+}
+
+.social ul {
+    margin: 0;
+    padding: 5px;
+}
+
+.social ul li {
+    margin: 5px;
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.social i {
+    width: 30px;
+    height: 30px;
+    color: #FFF;
+    background-color: #909AA0;
+    font-size: 16px;
+    text-align:center;
+    padding-top: 9px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+.social i:hover {
+    color: #FFF;
+    text-decoration: none;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+.social .fa-facebook:hover {
+    background: #4060A5;
+}
+
+.social .fa-twitter:hover {
+    background: #00ABE3;
+}
+
+.social .fa-google-plus:hover {
+    background: #e64522;
+}
+
+.social .fa-pinterest:hover {
+    background: #cb2027;
+}
+
+.social .fa-linkedin:hover {
+    background: #0094BC;
+}
+
+.social .fa-envelope:hover {
+    background: #375989;
+}
+
+.container.footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 3;
+    margin-bottom: -50px;
+}

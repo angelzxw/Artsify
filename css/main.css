@@ -1,3 +1,6 @@
+@import 'membership.css';
+@import 'artist.css';
+
 /*Nav Bar and Design*/
 @font-face {
   font-family: 'Berkshire Swash';
@@ -69,6 +72,32 @@
     background: none;
 }
 
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #222222;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #9d9d9d;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 /*Contact Page*/
 
 section#contact {
@@ -136,7 +165,7 @@ section#contact .text-danger {
 .titleline-icon {
     position: relative;
     max-width: 100px;
-    border-top: 4px double #F99700;
+    border-top: 4px double #3e15cc;
     margin: 20px auto 20px;
 }
 .titleline-icon:after {
@@ -149,7 +178,7 @@ section#contact .text-danger {
     content: "\f141";
     font-size: 20px;
     line-height: 1;
-    color: #F99700;
+    color: #3e15cc;
     text-align: center;
     vertical-align: middle;
     width: 40px;
@@ -272,6 +301,15 @@ section#contact .text-danger {
 .btn:active.focus,
 .btn.active.focus {
     outline: none;
+}
+
+.btn-primary {
+    background-color: #41307c;
+    border-color: #41307c;
+}
+.btn-primary:hover {
+    background-color: #32265d;
+    border-color: #32265d;
 }
 
 .btn-lg, .btn-group-lg>.btn {

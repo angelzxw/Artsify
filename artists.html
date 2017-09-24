@@ -25,9 +25,9 @@
 
   	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 
-  	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-  	<link rel="stylesheet" href="css/filter_style.css"> <!-- Resource style -->
-  	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/filter_style.css"> <!-- Resource style -->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -87,7 +87,7 @@
                     <a href="javascript:void(0)" class="dropbtn">About</a>
                     <div class="dropdown-content">
                         <a href="about.html">About Artsify</a>
-                        <a href="about.html">Our Team</a>
+                        <a href="team.html">Our Team</a>
                         <a href="membership.html">Membership Plans</a>
                     </div>
                 </li>
@@ -109,357 +109,387 @@
     </nav>
 
     <!-- Page Content -->
-    <div>
-        <header class="cd-header">
-        </header>
-        <main class="cd-main-content">
-      		<div class="cd-tab-filter-wrapper">
-      			<div class="cd-tab-filter">
-      				<ul class="cd-filters">
-      					<li class="placeholder">
-      						<a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
-      					</li>
-      					<li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
-      					<li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Featured Artists</a></li>
-                <!--
-                <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Popular Works</a></li>
-                -->
-              </ul> <!-- cd-filters -->
-      			</div> <!-- cd-tab-filter -->
-      		</div> <!-- cd-tab-filter-wrapper -->
+  <section id="artist-grid">
+    <div class="container">
 
-      		<section class="cd-gallery">
-      			<ul>
+      <div class="row">
 
-              <li class="mix color-1 check1 radio2 option3" style="width: 300px; height: 300px;position: relative;">
-                <a href="artist-marilyn-henrion.html">
-                  <img src="img/Art/MarilynHenrion/0.jpg" alt="Marilyn Henrion" style="width:100%;cursor:pointer" class="w3-hover-opacity">
-                </a>
-                <div class="desc">
-                  <h4><a target="_blank" href="http://marilynhenrion.com/about/">Marilyn Henrion</a></h4>
-                  <p>The award-winning works of this Cooper Union graduate and lifelong New Yorker are included in museum, corporate and private collections worldwide and have been exhibited throughout the U.S. and abroad.
-                  </p>
-                </div>
-              </li>
-
-
-              <li class="mix color-2 check2 radio2 option2" style="width: 300px; height: 300px; position: relative;">
-                <a href="artist-edward-henrion.html">
-                  <img src="img/Art/EdwardHenrion/0.jpg" alt="Edward Henrion" style="width:100%;cursor:pointer" class="w3-hover-opacity">
-                </a>
-                <div class="desc">
-                  <h4><a target="_blank" href="https://www.edwardhenrion.com/biography/">Edward Henrion</a></h4>
-                  <p>With a background in art and philosophy and a keen eye for the absurdities of the human condition, Edward Henrion was an equal opportunity offender who created satirical artworks that took no prisoners.
-                  </p>
-                </div>
-              </li>
-
-              <li class="mix color-2 check2 radio2 option2" style="width: 300px; height: 300px;position: relative;">
-                <a href="artist-mark-richardson.html">
-                  <img src="img/Art/MarkRichardson/profile_pic.jpg" alt="Mark Richardson" style="width:100%;cursor:pointer" class="w3-hover-opacity">
-                </a>
-                <div class="desc">
-                  <h4><a target="_blank" href="artist-mark-richardson.html"> Mark Richardson</a></h4>
-                  <p>Mark Richardson's unique abstract works on acrylic and plywood set him apart from the rest.
-                  </p>
-                </div>
-              </li>
-              
-              
-
-              <li class="mix color-2 check2 radio2 option2" style="width: 300px; height: 300px;position: relative;">
-                <a href="artist-mark-richardson.html">
-                  <img src="img/Art/artist2.jpeg" alt="Artist2" style="width:100%;cursor:pointer" class="w3-hover-opacity">
-                </a>
-                <div class="desc">
-                  <h4><a target="_blank" href=""> Jake Jacobs</a></h4>
-                  <p>Jake Jacobs's unique abstract works on acrylic and plywood set him apart from the rest.
-                  </p>
-                </div>
-              </li>
-
-              
-              <!--
-      				<li class="mix color-1 check3 radio3 option1"><img src="img/Art/EdwardHenrion/0.jpg" alt="Image 3" style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity"></li>
-      				<li class="mix color-1 check3 radio2 option4"><img src="img/Art/MarkRichardson/1.jpg" alt="Image 4" style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity"></li>
-      				<li class="mix color-1 check1 radio3 option2"><img src="img/Art/MarkRichardson/2.jpg" alt="Image 5"style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity"></li>
-      				<li class="mix color-2 check2 radio3 option3"><img src="img/Art/MarkRichardson/3.jpg" alt="Image 6"style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity"></li>
-      				<li class="mix color-2 check2 radio2 option1"><img src="img/Art/MarkRichardson/4.jpg" alt="Image 7"style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity"></li>
-      				<li class="mix color-1 check1 radio3 option4"><   img src="img/Art/MarkRichardson/5.jpg" alt="Image 8"style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity"></li>
-      				<li class="mix color-2 check1 radio2 option3"><img src="img/Art/MarkRichardson/6.jpg" alt="Image 9"style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity"></li>
-      				<li class="mix color-1 check3 radio2 option4"><img src="img/Art/MarkRichardson/7.jpg" alt="Image 10"style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity"></li>
-      				<li class="mix color-1 check3 radio3 option2"><img src="img/Art/MarkRichardson/8.jpg" alt="Image 11"style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity"></li>
-      				<li class="mix color-2 check1 radio3 option1"><img src="img/Art/MarkRichardson/9.jpg" alt="Image 12"style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity"></li>
-              -->
-      				<li class="gap"></li>
-      				<li class="gap"></li>
-      				<li class="gap"></li>
-      			</ul>
-
-            <!--Second Row -->
-            <ul>
-
-              <li class="mix color-2 check2 radio2 option2" style="width: 300px; height: 300px; position: relative;">
-                <a href="">
-                  <img src="img/Art/artistf2.jpeg" alt="artist1" style="width:100%;cursor:pointer" class="w3-hover-opacity">
-                </a>
-                <div class="desc">
-                  <h4><a target="_blank" href=""> Mary Smith</a></h4>
-                  <p>Mary Smith's unique abstract works on acrylic and plywood set him apart from the rest.
-                  </p>
-                </div>
-              </li> 
-
-              <li class="mix color-2 check2 radio2 option2" style="width: 300px; height: 300px; position: relative;">
-                <a href="">
-                  <img src="img/Art/artistf3.jpeg" alt="artist1" style="width:100%;cursor:pointer" class="w3-hover-opacity">
-                </a>
-                <div class="desc">
-                  <h4><a target="_blank" href=""> Jenny Tsai</a></h4>
-                  <p>Jenny Tsai focuses on abstract views of animals out of their natural environments. 
-                  </p>
-                </div>
-              </li> 
-
-              <li class="mix color-2 check2 radio2 option2" style="width: 300px; height: 300px; position: relative;">
-                <a href="">
-                  <img src="img/Art/artist3.jpeg" alt="artist1" style="width:100%;cursor:pointer" class="w3-hover-opacity">
-                </a>
-                <div class="desc">
-                  <h4><a target="_blank" href=""> Will Johnson</a></h4>
-                  <p>Will Johnson's unique take on works on acrylic and plywood set him apart from the rest.
-                  </p>
-                </div>
-              </li> 
-              
-              <li class="mix color-2 check2 radio2 option2" style="width: 300px; height: 300px; position: relative;">
-                <a href="">
-                  <img src="img/Art/artist1.jpg" alt="artist1" style="width:100%;cursor:pointer" class="w3-hover-opacity">
-                </a>
-                <div class="desc">
-                  <h4><a target="_blank" href=""> Lana Forsyth</a></h4>
-                  <p>Mark Richardson's unique abstract works on acrylic and plywood set him apart from the rest.
-                  </p>
-                </div>
-              </li> 
-
-              <!-- End of second row -->
-            </ul>
-
-            <ul>
-
-              <li class="mix color-2 check2 radio2 option2" style="width: 300px; height: 300px; position: relative;">
-                <a href="">
-                  <img src="img/Art/artist5.jpg" alt="artist1" style="width:100%;cursor:pointer" class="w3-hover-opacity">
-                </a>
-                <div class="desc">
-                  <h4><a target="_blank" href=""> Nushrat Yadav</a></h4>
-                  <p>Mary Smith's unique abstract works on acrylic and plywood set him apart from the rest.
-                  </p>
-                </div>
-              </li> 
-
-              <li class="mix color-2 check2 radio2 option2" style="width: 300px; height: 300px; position: relative;">
-                <a href="">
-                  <img src="img/Art/artist6.jpg" alt="artist1" style="width:100%;cursor:pointer" class="w3-hover-opacity">
-                </a>
-                <div class="desc">
-                  <h4><a target="_blank" href=""> Jane Rosenthal</a></h4>
-                  <p>Jane Rosenthal focuses on abstract views of animals out of their natural environments. 
-                  </p>
-                </div>
-              </li> 
-
-              <li class="mix color-2 check2 radio2 option2" style="width: 300px; height: 300px; position: relative;">
-                <a href="">
-                  <img src="img/Art/artist9.jpg" alt="artist1" style="width:100%;cursor:pointer" class="w3-hover-opacity">
-                </a>
-                <div class="desc">
-                  <h4><a target="_blank" href=""> Brian Mooje</a></h4>
-                  <p>Brian Mooje's unique take on works on acrylic and plywood set him apart from the rest.
-                  </p>
-                </div>
-              </li> 
-              
-              <li class="mix color-2 check2 radio2 option2" style="width: 300px; height: 300px; position: relative;">
-                <a href="">
-                  <img src="img/Art/artist8.jpg" alt="artist1" style="width:100%;cursor:pointer" class="w3-hover-opacity">
-                </a>
-                <div class="desc">
-                  <h4><a target="_blank" href=""> Krystal Lee</a></h4>
-                  <p>Krystal Lee's unique abstract works on acrylic and plywood set him apart from the rest.
-                  </p>
-                </div>
-              </li> 
-
-              <!-- End of third row -->
-            </ul>
-
-            <ul>
-
-              <li class="mix color-2 check2 radio2 option2" style="width: 300px; height: 300px; position: relative;">
-                <a href="">
-                  <img src="img/Art/artist10.jpg" alt="artist1" style="width:100%;cursor:pointer" class="w3-hover-opacity">
-                </a>
-                <div class="desc">
-                  <h4><a target="_blank" href=""> Philip Nguyen</a></h4>
-                  <p>Philip Nguyen's unique abstract works on acrylic and plywood set him apart from the rest.
-                  </p>
-                </div>
-              </li> 
-
-              <li class="mix color-2 check2 radio2 option2" style="width: 300px; height: 300px; position: relative;">
-                <a href="">
-                  <img src="img/Art/artist12.jpg" alt="artist1" style="width:100%;cursor:pointer" class="w3-hover-opacity">
-                </a>
-                <div class="desc">
-                  <h4><a target="_blank" href=""> Brian Greenberg</a></h4>
-                  <p>Brian Greenberg focuses on abstract views of animals out of their natural environments. 
-                  </p>
-                </div>
-              </li> 
-
-              <li class="mix color-2 check2 radio2 option2" style="width: 300px; height: 300px; position: relative;">
-                <a href="">
-                  <img src="img/Art/artist13.jpg" alt="artist1" style="width:100%;cursor:pointer" class="w3-hover-opacity">
-                </a>
-                <div class="desc">
-                  <h4><a target="_blank" href=""> Natasha Wilsons</a></h4>
-                  <p>Natasha Wilsons' unique take on works on acrylic and plywood set him apart from the rest.
-                  </p>
-                </div>
-              </li> 
-              
-              <li class="mix color-2 check2 radio2 option2" style="width: 300px; height: 300px; position: relative;">
-                <a href="">
-                  <img src="img/Art/artist11.jpg" alt="artist1" style="width:100%;cursor:pointer" class="w3-hover-opacity">
-                </a>
-                <div class="desc">
-                  <h4><a target="_blank" href=""> John Wu</a></h4>
-                  <p>John Wu's unique abstract works on acrylic and plywood set him apart from the rest.
-                  </p>
-                </div>
-              </li> 
-
-              <!-- End of fourth row -->
-            </ul>
-      			<div class="cd-fail-message">No results found</div>
-      		</section> <!-- cd-gallery -->
-
-      		<div class="cd-filter">
-      			<form>
-      				<div class="cd-filter-block">
-      					<h4> Search</h4>
-
-      					<div class="cd-filter-content">
-      						<input type="search" placeholder="Keywords">
-      					</div> <!-- cd-filter-content -->
-      				</div> <!-- cd-filter-block -->
-
-              <div class="cd-filter-block">
-                <h4>Time Period</h4>
-                <div class="cd-filter-content">
-                  <div class="cd-select cd-filters">
-                    <select class="filter" name="selectThis" id="selectThis">
-                      <option value="">Choose a time period</option>
-                      <option value=".option1">Before 1940</option>
-                      <option value=".option2">1940s - 1950s</option>
-                      <option value=".option3">1960s - 1970s</option>
-                      <option value=".option4">1980s - 1990s</option>
-                      <option value=".option5">Since 2000</option>
-                    </select>
-                  </div> <!-- cd-select -->
-                </div> <!-- cd-filter-content -->
-              </div> <!-- cd-filter-block -->
-
-      				<div class="cd-filter-block">
-      					<h4>Style</h4>
-
-      					<ul class="cd-filter-content cd-filters list">
-      						<li>
-      							<input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
-      							<label class="checkbox-label" for="checkbox1">Expressionism</label>
-      						</li>
-
-      						<li>
-      							<input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
-      							<label class="checkbox-label" for="checkbox2">Pop Art</label>
-      						</li>
-
-      						<li>
-      							<input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
-      							<label class="checkbox-label" for="checkbox3">Naturalism</label>
-      						</li>
-                  <li>
-      							<input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
-      							<label class="checkbox-label" for="checkbox4">Other</label>
-      						</li>
-      					</ul> <!-- cd-filter-content -->
-      				</div> <!-- cd-filter-block -->
-
-      				<div class="cd-filter-block">
-      					<h4>Subject</h4>
-      					<div class="cd-filter-content">
-      						<div class="cd-select cd-filters">
-      							<select class="filter" name="selectThis" id="selectThis">
-      								<option value="">Choose a subject</option>
-      								<option value=".option1">Animals</option>
-      								<option value=".option2">Cityscape</option>
-      								<option value=".option3">Fashion</option>
-      								<option value=".option4">Landscape</option>
-                      <option value=".option5">Other</option>
-      							</select>
-      						</div> <!-- cd-select -->
-      					</div> <!-- cd-filter-content -->
-      				</div> <!-- cd-filter-block -->
-
-      				<div class="cd-filter-block">
-      					<h4>Medium</h4>
-
-      					<ul class="cd-filter-content cd-filters list">
-      						<li>
-      							<input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
-      							<label class="radio-label" for="radio1">All</label>
-      						</li>
-
-      						<li>
-      							<input class="filter" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
-      							<label class="radio-label" for="radio2">Collage</label>
-      						</li>
-
-      						<li>
-      							<input class="filter" data-filter=".radio3" type="radio" name="radioButton" id="radio3">
-      							<label class="radio-label" for="radio3">Painting</label>
-      						</li>
-                  <li>
-                    <input class="filter" data-filter=".radio4" type="radio" name="radioButton" id="radio4">
-                    <label class="radio-label" for="radio4">Other</label>
-                  </li>
-      					</ul> <!-- cd-filter-content -->
-      				</div> <!-- cd-filter-block -->
-      			</form>
-
-      			<a href="#0" class="cd-close">Close</a>
-      		</div> <!-- cd-filter -->
-
-      		<a href="#0" class="cd-filter-trigger">Filters</a>
-      	</main> <!-- cd-main-content -->
-        <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-        <div class="w3-modal-content w3-animate-zoom">
-          <img id="img01" style="width:100%">
+        <div class="col-sm-6 col-md-3">
+          <div class="panel panel-default artist-card">
+            <div class="artist-heading">
+              <img src="img/Art/MarilynHenrion/1.jpg">
+            </div>
+            <div class="artist-figure">
+              <img class="img-responsive img-circle" src="img/Art/MarilynHenrion/0.jpg">
+            </div>
+            <div class="artist-body text-center">
+              <h4 class="artist-header">
+                <a href="artist-marilyn-henrion.html">Marilyn Henrion</a><br>
+                <i class="fa fa-heart red"></i>
+                <i class="fa fa-user-circle"></i>
+                <i class="fa fa-image"></i>
+              </h4>
+            </div>
+            <div class="artist-thumbnails">
+              The award-winning works of this Cooper Union graduate and lifelong New Yorker are included in museum, corporate and private collections worldwide and have been exhibited throughout the U.S. and abroad.
+            </div>
+          </div> 
         </div>
-</div>
+
+        <div class="col-sm-6 col-md-3">
+          <div class="panel panel-default artist-card">
+          <div class="artist-heading">
+            <img src="img/Art/EdwardHenrion/2.jpg">
+          </div>
+          <div class="artist-figure">
+            <img class="img-responsive img-circle" src="img/Art/EdwardHenrion/0.jpg">
+          </div>
+          <div class="artist-body text-center">
+            <h4 class="artist-header">
+              <a href="artist-edward-henrion.html">Edward Henrion</a><br>
+              <i class="fa fa-heart red"></i>
+              <i class="fa fa-user-circle"></i>
+              <i class="fa fa-image"></i>
+            </h4>
+          </div>
+          <div class="artist-thumbnails">
+            With a background in art and philosophy and a keen eye for the absurdities of the human condition, Edward Henrion was an equal opportunity offender who created satirical artworks that took no prisoners.
+          </div>
+        </div>
+      </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div class="panel panel-default artist-card">
+            <div class="artist-heading">
+              <img src="img/Art/MarkRichardson/1.jpg">
+            </div>
+            <div class="artist-figure">
+              <img class="img-responsive img-circle" src="img/Art/MarkRichardson/profile_pic.jpg">
+            </div>
+            <div class="artist-body text-center">
+              <h4 class="artist-header">
+                <a href="artist-mark-richardson.html">Mark Richardson</a><br>
+                <i class="fa fa-heart red"></i>
+                <i class="fa fa-user-circle"></i>
+                <i class="fa fa-image"></i>
+              </h4>
+            </div>
+            <div class="artist-thumbnails">
+              Mark Richardson's unique abstract works on acrylic and plywood set him apart from the rest.
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-6 col-md-3">
+          <div class="panel panel-default artist-card">
+            <div class="artist-heading">
+              <img src="https://ununsplash.imgix.net/26/camera-keys.jpg?q=75&amp;fm=jpg&amp;s=b919d3158053cde8e9f0e37b4876c14f">
+            </div>
+            <div class="artist-figure">
+              <img class="img-responsive img-circle" src="img/Art/artist2.jpeg">
+            </div>
+            <div class="artist-body text-center">
+              <h4 class="artist-header">
+                <a href="https://twitter.com/maridlcrmn">Jake Jacobs</a><br>
+                <i class="fa fa-heart red"></i>
+                <i class="fa fa-user-circle"></i>
+                <i class="fa fa-image"></i>
+            </h4>
+            </div>
+            <div class="artist-thumbnails">
+              Jake Jacobs's unique abstract works on acrylic and plywood set him apart from the rest.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-6 col-md-3">
+          <div class="panel panel-default artist-card">
+            <div class="artist-heading">
+              <img src="img/Art/MarilynHenrion/2.jpg">
+            </div>
+            <div class="artist-figure">
+              <img class="img-responsive img-circle" src="img/Art/artistf2.jpeg">
+            </div>
+            <div class="artist-body text-center">
+              <h4 class="artist-header">
+                <a href="artist-marilyn-henrion.html">Mary Smith</a><br>
+                <i class="fa fa-heart red"></i>
+                <i class="fa fa-user-circle"></i>
+                <i class="fa fa-image"></i>
+                </h4>
+            </div>
+            <div class="artist-thumbnails">
+              The award-winning works of this Cooper Union graduate and lifelong New Yorker are included in museum, corporate and private collections worldwide and have been exhibited throughout the U.S. and abroad.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div class="panel panel-default artist-card">
+            <div class="artist-heading">
+              <img src="img/Art/EdwardHenrion/3.jpg">
+            </div>
+            <div class="artist-figure">
+              <img class="img-responsive img-circle" src="img/Art/artistf3.jpeg">
+            </div>
+            <div class="artist-body text-center">
+              <h4 class="artist-header">
+                <a href="artist-edward-henrion.html">Jenny Tsai</a><br>
+                <i class="fa fa-heart red"></i>
+                <i class="fa fa-user-circle"></i>
+                <i class="fa fa-image"></i>
+              </h4>
+            </div>
+            <div class="artist-thumbnails">
+              With a background in art and philosophy and a keen eye for the absurdities of the human condition, Edward Henrion was an equal opportunity offender who created satirical artworks that took no prisoners.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div class="panel panel-default artist-card">
+            <div class="artist-heading">
+              <img src="https://unsplash.imgix.net/12/barley.jpg?q=75&fm=jpg&s=f39de5ca1970a13dbe6af6c86b3c47ec">
+            </div>
+            <div class="artist-figure">
+              <img class="img-responsive img-circle" src="img/Art/artist3.jpeg">
+            </div>
+            <div class="artist-body text-center">
+              <h4 class="artist-header">
+                <a href="artist-mark-richardson.html">Will Johnson</a><br>
+                <i class="fa fa-heart red"></i>
+                <i class="fa fa-user-circle"></i>
+                <i class="fa fa-image"></i>
+              </h4>
+            </div>
+            <div class="artist-thumbnails">
+              Mark Richardson's unique abstract works on acrylic and plywood set him apart from the rest.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div class="panel panel-default artist-card">
+            <div class="artist-heading">
+              <img src="https://ununsplash.imgix.net/26/camera-keys.jpg?q=75&amp;fm=jpg&amp;s=b919d3158053cde8e9f0e37b4876c14f">
+            </div>
+            <div class="artist-figure">
+              <img class="img-responsive img-circle" src="img/Art/artist1.jpg">
+            </div>
+            <div class="artist-body text-center">
+              <h4 class="artist-header">
+                <a href="https://twitter.com/maridlcrmn">Lana Forsyth</a><br>
+                <i class="fa fa-heart red"></i>
+                <i class="fa fa-user-circle"></i>
+                <i class="fa fa-image"></i>
+              </h4>
+            </div>
+            <div class="artist-thumbnails">
+              Jake Jacobs's unique abstract works on acrylic and plywood set him apart from the rest.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-6 col-md-3">
+          <div class="panel panel-default artist-card">
+            <div class="artist-heading">
+              <img src="img/Art/MarilynHenrion/1.jpg">
+            </div>
+            <div class="artist-figure">
+              <img class="img-responsive img-circle" src="img/Art/artist5.jpg">
+            </div>
+            <div class="artist-body text-center">
+              <h4 class="artist-header">
+                <a href="artist-marilyn-henrion.html">Nushrat Yadav</a><br>
+                <i class="fa fa-heart red"></i>
+                <i class="fa fa-user-circle"></i>
+                <i class="fa fa-image"></i>
+              </h4>
+            </div>
+            <div class="artist-thumbnails">
+              The award-winning works of this Cooper Union graduate and lifelong New Yorker are included in museum, corporate and private collections worldwide and have been exhibited throughout the U.S. and abroad.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div class = "panel panel-default artist-card">
+            <div class="artist-heading">
+              <img src="https://unsplash.imgix.net/12/barley.jpg?q=75&fm=jpg&s=f39de5ca1970a13dbe6af6c86b3c47ec">
+            </div>
+            <div class="artist-figure">
+              <img class="img-responsive img-circle" src="img/Art/artist6.jpg">
+            </div>
+            <div class="artist-body text-center">
+              <h4 class="artist-header">
+                <a href="artist-edward-henrion.html">Jane Rosenthal</a><br>
+                <i class="fa fa-heart red"></i>
+                <i class="fa fa-user-circle"></i>
+                <i class="fa fa-image"></i>
+              </h4>
+            </div>
+            <div class="artist-thumbnails">
+              With a background in art and philosophy and a keen eye for the absurdities of the human condition, Edward Henrion was an equal opportunity offender who created satirical artworks that took no prisoners.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div class="panel panel-default artist-card">
+            <div class="artist-heading">
+              <img src="img/Art/MarkRichardson/1.jpg">
+            </div>
+            <div class="artist-figure">
+              <img class="img-responsive img-circle" src="img/Art/artist9.jpg">
+            </div>
+            <div class="artist-body text-center">
+              <h4 class="artist-header">
+                <a href="artist-mark-richardson.html">Brian Mooje</a><br>
+                <i class="fa fa-heart red"></i>
+                <i class="fa fa-user-circle"></i>
+                <i class="fa fa-image"></i>
+              </h4>
+            </div>
+            <div class="artist-thumbnails">
+              Mark Richardson's unique abstract works on acrylic and plywood set him apart from the rest.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div class="panel panel-default artist-card">
+            <div class="artist-heading">
+              <img src="https://ununsplash.imgix.net/26/camera-keys.jpg?q=75&amp;fm=jpg&amp;s=b919d3158053cde8e9f0e37b4876c14f">
+            </div>
+            <div class="artist-figure">
+              <img class="img-responsive img-circle" src="img/Art/artist8.jpg">
+            </div>
+            <div class="artist-body text-center">
+              <h4 class="artist-header">
+                <a href="https://twitter.com/maridlcrmn">Krystal Lee</a><br>
+                <i class="fa fa-heart red"></i>
+                <i class="fa fa-user-circle"></i>
+                <i class="fa fa-image"></i>
+              </h4>
+            </div>
+            <div class="artist-thumbnails">
+              Jake Jacobs's unique abstract works on acrylic and plywood set him apart from the rest.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-6 col-md-3">
+          <div class="panel panel-default artist-card">
+            <div class="artist-heading">
+              <img src="img/Art/MarilynHenrion/1.jpg">
+            </div>
+            <div class="artist-figure">
+              <img class="img-responsive img-circle" src="img/Art/artist10.jpg">
+            </div>
+            <div class="artist-body text-center">
+              <h4 class="artist-header">
+                <a href="artist-marilyn-henrion.html">Philip Nguyen</a><br>
+                <i class="fa fa-heart red"></i>
+                <i class="fa fa-user-circle"></i>
+                <i class="fa fa-image"></i>
+              </h4>
+            </div>
+            <div class="artist-thumbnails">
+              The award-winning works of this Cooper Union graduate and lifelong New Yorker are included in museum, corporate and private collections worldwide and have been exhibited throughout the U.S. and abroad.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div class="panel panel-default artist-card">
+            <div class="artist-heading">
+              <img src="https://unsplash.imgix.net/12/barley.jpg?q=75&fm=jpg&s=f39de5ca1970a13dbe6af6c86b3c47ec">
+            </div>
+            <div class="artist-figure">
+              <img class="img-responsive img-circle" src="img/Art/artist12.jpg">
+            </div>
+            <div class="artist-body text-center">
+              <h4 class="artist-header">
+                <a href="artist-edward-henrion.html">Brian Greenberg</a><br>
+                <i class="fa fa-heart red"></i>
+                <i class="fa fa-user-circle"></i>
+                <i class="fa fa-image"></i>
+              </h4>
+            </div>
+            <div class="artist-thumbnails">
+              With a background in art and philosophy and a keen eye for the absurdities of the human condition, Edward Henrion was an equal opportunity offender who created satirical artworks that took no prisoners.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div class="panel panel-default artist-card">
+            <div class="artist-heading">
+              <img src="img/Art/MarkRichardson/1.jpg">
+            </div>
+            <div class="artist-figure">
+              <img class="img-responsive img-circle" src="img/Art/artist13.jpg">
+            </div>
+            <div class="artist-body text-center">
+              <h4 class="artist-header">
+                <a href="artist-mark-richardson.html">Natasha Wilson</a><br>
+                <i class="fa fa-heart red"></i>
+                <i class="fa fa-user-circle"></i>
+                <i class="fa fa-image"></i>
+              </h4>
+            </div>
+            <div class="artist-thumbnails">
+              Mark Richardson's unique abstract works on acrylic and plywood set him apart from the rest.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div class="panel panel-default artist-card">
+            <div class="artist-heading">
+              <img src="https://ununsplash.imgix.net/26/camera-keys.jpg?q=75&amp;fm=jpg&amp;s=b919d3158053cde8e9f0e37b4876c14f">
+            </div>
+            <div class="artist-figure">
+              <img class="img-responsive img-circle" src="img/Art/artist11.jpg">
+            </div>
+            <div class="artist-body text-center">
+              <h4 class="artist-header">
+                <a href="https://twitter.com/maridlcrmn">John Wu</a><br>
+                <i class="fa fa-heart red"></i>
+                <i class="fa fa-user-circle"></i>
+                <i class="fa fa-image"></i>
+              </h4>
+            </div>
+            <div class="artist-thumbnails">
+              Jake Jacobs's unique abstract works on acrylic and plywood set him apart from the rest.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+
 
 
     <!-- /.container -->

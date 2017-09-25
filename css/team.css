@@ -40,7 +40,7 @@ h3.description{
 	border-radius: 50%;
 	content:"";
 	opacity: 0;
-	background-color: rgba(0, 0, 0, 0.75);
+	background-color: rgba(0, 0, 0, 0.5);
 	position: absolute;
 	right: 0;
 	left: 0;
@@ -71,7 +71,6 @@ h3.description{
 	width: 30px;
     height: 30px;
     text-align: center;
-    border: 1px solid #88C425;
     margin: 2px;
     padding: 5px;
 	display: inline-block;
@@ -92,19 +91,29 @@ h3.description{
 }
 .img-box a:hover li{
 	border-color: #fff;
-	color: #88C425;
 }
 a{
     color:#88C425;
 }
 a:hover{
     text-decoration:none;
-    color:#41307c;
 }
-i.red{
-    color:#BC0213;
-}
-
 .img-box + h1, .img-box + h1 + h2 {
 	text-align: center;
+}
+
+.img-box a:hover i.fa.fa-envelope{
+	color: #207cff;;
+}
+
+.img-box a:hover i.fa.fa-envelope{
+	color: #207cff;;
+}
+
+.img-box a:hover i.fa.fa-user:hover {
+	color: #000098;
+}
+
+.img-box a:hover i.fa.fa-linkedin:hover {
+	color: #0094BC;
 }

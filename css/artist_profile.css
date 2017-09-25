@@ -1,6 +1,6 @@
-@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
-
-header {
+#page-top {
+    height: 100%;
+    overflow: scroll;
     text-align: center;
     color: #fff;
     background: #41307c;
@@ -8,7 +8,6 @@ header {
     width:100%;
     padding: 20px;    
     z-index: 1;
-    overflow: hidden;
     top: 0;
     left: 0;
 }
@@ -50,10 +49,6 @@ section.success{
     color: #fff;
     }
 
-
-.artist-row {
-  margin: -15px -20px;
-}
 .rela-block {
   display: block;
   position: relative;
@@ -232,4 +227,37 @@ section.success{
   bottom: 0;
   z-index: 3;
   margin-bottom: -50px;
+}
+
+.artist-tabs .btn {
+  border-radius: 0;
+}
+
+.artist-tabs .btn-primary {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+
+.artist-tabs button {
+  font-size: 20px;
+}
+
+.tab-content {
+  background-color: #e7e7e7;
+  margin: 0 20px;
+}
+
+.tab-pane, .rela-block-content {
+  height: 100%;
+  overflow-y:scroll;
+}
+
+.artist-bio {
+  text-align: center;
+  margin: 0 20px;
+  height: 100px;
+  color: #222;
+  font-family: 'Varela Round';
+  font-size: 20px;
 }

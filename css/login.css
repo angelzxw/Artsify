@@ -115,25 +115,25 @@
     outline: none;
 }
 
-.btn-primary {
+.modal-footer .btn-primary {
     background-color: #41307c;
     border-color: #41307c;
 }
-.btn-primary:hover {
+.modal-footer .btn-primary:hover {
     background-color: #32265d;
     border-color: #32265d;
 }
 
-.btn-lg, .btn-group-lg>.btn {
+.modal-footer .btn-lg, .btn-group-lg>.btn {
     border-radius: 20px;
 }
 
-.btn-link {
+.modal-footer .btn-link {
     padding: 5px 10px 0px 0px;
     color: #95a5a6;
 }
 
-.btn-link:hover, .btn-link:focus {
+.modal-footer .btn-link:hover, .btn-link:focus {
     color: #2c3e50;
     text-decoration: none;
 }

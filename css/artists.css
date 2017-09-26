@@ -126,7 +126,7 @@ Image placeholders: placemi.com
     cursor: pointer;
 }
 
-.artist-header i.fa {
+.artist-header i.fa, .artist-header a {
   color: #909AA0;
 }
 .artist-header .fa.fa-heart:hover, 

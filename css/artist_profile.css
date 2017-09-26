@@ -261,3 +261,8 @@ section.success{
   font-family: 'Varela Round';
   font-size: 20px;
 }
+
+#artwork {
+  padding-top: 500pt; 
+  margin-top: -500pt;
+}

@@ -211,7 +211,7 @@ section.success{
 .artist-bio {
   text-align: center;
   margin: 0 20px;
-  height: 100px;
+  height: 300px;
   color: #222;
   font-family: 'Varela Round';
   font-size: 20px;
@@ -220,6 +220,40 @@ section.success{
 #artwork {
   padding-top: 500pt; 
   margin-top: -500pt;
+}
+
+.card{
+  box-shadow:2px 2px 20px rgba(0,0,0,0.3); 
+  border:none; 
+  margin-bottom:30px;
+}
+.card-01 .card-body{
+  position:relative; 
+  padding-top:40px;
+}
+.card-01 .badge-box{
+  position:absolute; top:-20px; 
+  left:50%; 
+  width:100px; 
+  height:100px;
+  margin-left:-50px; 
+  text-align:center;
+}
+.card-01 .badge-box i{
+  background:#41307c; 
+  color:#fff; 
+  border-radius:50%;  
+  width:50px; 
+  height:50px; 
+  line-height:50px; 
+  text-align:center; 
+  font-size:20px;
+}
+.card-title, .card-text {
+  color: #222;
+}
+.carousel-inner{
+  height: 275px;
 }
 
 .container.artist-footer {

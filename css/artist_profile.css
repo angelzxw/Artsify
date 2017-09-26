@@ -1,53 +1,48 @@
 #page-top {
-    height: 100%;
-    overflow: scroll;
-    text-align: center;
-    color: #fff;
-    background: #41307c;
-    position: fixed;
-    width:100%;
-    padding: 20px;    
-    z-index: 1;
-    top: 0;
-    left: 0;
+  height: 100%;
+  overflow: scroll;
+  text-align: center;
+  color: #fff;
+  background: #41307c;
+  position: fixed;
+  width:100%;
+  padding: 20px;
+  z-index: 1;
+  top: 0;
+  left: 0;
 }
-
 .rela-block.content{
   padding: 30px 0PX;
 }
-
 .content-wrapper{
-    background-color: #e7e7e7;
-    margin-top: 300px;
-    position: absolute;
-    z-index: 2;
-    width: 100%;
-    left: 0;
+  background-color: #e7e7e7;
+  margin-top: 300px;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  left: 0;
 }
 
 header .container {
-    padding-top: 130px;
-    width: 100%;
+  padding-top: 130px;
+  width: 100%;
 }
-
 header img {
-    display: block;
-    margin: 0 auto 20px;
+  display: block;
+  margin: 0 auto 20px;
 }
 
 section h2 {
-    margin: 0;
-    font-size: 3em;
+  margin: 0;
+  font-size: 3em;
 }
-
-section.primary h2{    
-    color: #2c3e50;
-    }
-    
+section.primary h2{
+  color: #2c3e50;
+}
 section.success{
-    background-color: #18bc9c;
-    color: #fff;
-    }
+  background-color: #18bc9c;
+  color: #fff;
+}
 
 .rela-block {
   display: block;
@@ -80,7 +75,7 @@ section.success{
   top: -70px;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   height: 160px;
   width: 160px;
   border: 10px solid #fff;
@@ -88,6 +83,7 @@ section.success{
   background: url("https://images-na.ssl-images-amazon.com/images/I/61xiA4FailL._SL1000_.jpg") center no-repeat;
   background-size: cover;
 }
+
 .profile-name-container {
   margin: 0 auto 10px;
   text-align: center;
@@ -118,15 +114,7 @@ section.success{
 .profile-stat:after {
   color: #999;
 }
-.works::after {
-  content: "works";
-}
-.followers::after {
-  content: "followers";
-}
-.following::after {
-  content: "following";
-}
+
 .image {
   width: 240px;
   height: 200px;
@@ -143,7 +131,7 @@ section.success{
 }
 .image:hover {
   -webkit-transform: scale(1.06);
-          transform: scale(1.06);
+      transform: scale(1.06);
   box-shadow: 0 2px 18px -2px rgba(0,0,0,0.3);
 }
 .image.hidden {
@@ -154,21 +142,18 @@ section.success{
 }
 
 .social {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-
 .social ul {
-    margin: 0;
-    padding: 5px;
+  margin: 0;
+  padding: 5px;
 }
-
 .social ul li {
-    margin: 5px;
-    list-style: none outside none;
-    display: inline-block;
+  margin: 5px;
+  list-style: none outside none;
+  display: inline-block;
 }
-
 .social i {
   width: 30px;
   height: 30px;
@@ -187,7 +172,6 @@ section.success{
   -o-transition: all ease 0.3s;
   -ms-transition: all ease 0.3s;
 }
-
 .social i:hover {
   color: #FFF;
   text-decoration: none;
@@ -197,57 +181,28 @@ section.success{
   -o-transition: all ease 0.3s;
   -ms-transition: all ease 0.3s;
 }
-
-.social .fa-facebook:hover {
-  background: #4060A5;
-}
-
-.social .fa-twitter:hover {
-  background: #00ABE3;
-}
-
-.social .fa-google-plus:hover {
-  background: #e64522;
-}
-
-.social .fa-pinterest:hover {
-  background: #cb2027;
-}
-
-.social .fa-linkedin:hover {
-  background: #0094BC;
-}
-
-.social .fa-envelope:hover {
-  background: #375989;
-}
-
-.container.footer {
-  position: fixed;
-  bottom: 0;
-  z-index: 3;
-  margin-bottom: -50px;
-}
+.social .fa-facebook:hover {background: #4060A5;}
+.social .fa-twitter:hover {background: #00ABE3;}
+.social .fa-google-plus:hover {background: #e64522;}
+.social .fa-pinterest:hover {background: #cb2027;}
+.social .fa-linkedin:hover {background: #0094BC;}
+.social .fa-envelope:hover {background: #375989;}
 
 .artist-tabs .btn {
   border-radius: 0;
 }
-
 .artist-tabs .btn-primary {
   color: #333;
   background-color: #e6e6e6;
   border-color: #adadad;
 }
-
 .artist-tabs button {
   font-size: 20px;
 }
-
 .tab-content {
   background-color: #e7e7e7;
   margin: 0 20px;
 }
-
 .tab-pane, .rela-block-content {
   height: 100%;
   overflow-y:scroll;
@@ -265,4 +220,14 @@ section.success{
 #artwork {
   padding-top: 500pt; 
   margin-top: -500pt;
+}
+
+.container.artist-footer {
+  position: static;
+  padding: 0;
+  width: 90%;
+}
+.artist-footer {
+  margin: 0;
+  padding: 0;
 }

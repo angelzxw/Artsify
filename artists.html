@@ -6,10 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Artsify">
 
-    <title>Artsify - Artists</title>
-
+    <title>Artsify - Marilyn Henrion</title>
     <link rel=icon href=img/icon.png>
 
     <!-- Bootstrap Core CSS -->
@@ -22,21 +21,13 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/edit.css" rel="stylesheet">
 
-
-  	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
-
     <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
     <link rel="stylesheet" href="css/filter_style.css"> <!-- Resource style -->
-    <script src="js/modernizr.js"></script> <!-- Modernizr -->
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
 
 </head>
 
@@ -44,7 +35,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
+
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -54,451 +45,434 @@
                 </button>
                 <a class="navbar-brand" href="index.html">Artsify</a>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
+
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-              <ul class="nav navbar-nav">
-                  <li>
-                      <a href="art.html">Art</a>
-                  </li>
-                  <li>
-                      <a href="artists.html">Artists</a>
-                  </li>
-                  <li>
-                      <a></a>
-                  </li>
-                  <li>
-                      <div id="custom-search-input">
-                          <div class="input-group col-md-12">
-                          <input type="text" class="search-query form-control" placeholder="Search or type keywords" />
-                          <span class="input-group-btn">
-                              <button class="btn btn-danger" type="button">
-                                  <span class=" glyphicon glyphicon-search"></span>
-                              </button>
-                          </span>
-                          </div>
-                      </div>
-                  </li>
-
-              </ul>
-
-              <ul class="nav navbar-nav" style="float:right;">
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">About</a>
-                    <div class="dropdown-content">
-                        <a href="about.html">About Artsify</a>
-                        <a href="team.html">Our Team</a>
-                        <a href="membership.html">Membership Plans</a>
-                    </div>
-                </li>
-                  <li>
-                      <a href="contact.html">Contact</a>
-                  </li>
-                  <li>
-                      <a href="#" data-toggle="modal" data-target="#login-modal" id="login-btn">Log In</a>
-                  </li>
-                  <li>
-                      <a href="#" id="register-btn">Sign Up</a>
-                  </li>
-              </ul>
-
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="art.html">Art</a>
+                    </li>
+                    <li>
+                        <a href="artists.html">Artists</a>
+                    </li>
+                    <li>
+                        <a></a>
+                    </li>
+                    <li>
+                        <div id="custom-search-input">
+                            <div class="input-group col-md-12">
+                                <input type="text" class="search-query form-control" placeholder="Search or type keywords" />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-danger" type="button">
+                                        <span class=" glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav" style="float:right;">
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">About</a>
+                        <div class="dropdown-content">
+                            <a href="about.html">About Artsify</a>
+                            <a href="about.html">Our Team</a>
+                            <a href="membership.html">Membership Plans</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#login-modal" id="login-btn">Log In</a>
+                    </li>
+                    <li>
+                        <a href="#" id="register-btn">Sign Up</a>
+                    </li>
+                </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
     </nav>
+    <!-- /.Navigation -->
 
     <!-- Page Content -->
-  <section id="artist-grid">
+    <section id="artist-grid">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-default artist-card">
+                        <div class="artist-heading">
+                            <img src="img/Art/MarilynHenrion/1.jpg">
+                        </div>
+                        <div class="artist-figure">
+                            <img class="img-responsive img-circle" src="img/Art/MarilynHenrion/0.jpg">
+                        </div>
+                        <div class="artist-body text-center">
+                            <h4 class="artist-header">
+                                <a href="artist-marilyn-henrion.html">Marilyn Henrion</a><br>
+                                <a href=""><i class="fa fa-heart red"></i></a>
+                                <a href="artist-marilyn-henrion.html#about-artist"><i class="fa fa-user-circle"></i></a>
+                                <a href="artist-marilyn-henrion.html#artwork"><i class="fa fa-image"></i></a>
+                            </h4>
+                        </div>
+                        <div class="artist-thumbnails">
+                            The award-winning works of this Cooper Union graduate and lifelong New Yorker are included in museum, corporate and private collections worldwide and have been exhibited throughout the U.S. and abroad.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-default artist-card">
+                        <div class="artist-heading">
+                            <img src="img/Art/EdwardHenrion/2.jpg">
+                        </div>
+                        <div class="artist-figure">
+                            <img class="img-responsive img-circle" src="img/Art/EdwardHenrion/0.jpg">
+                        </div>
+                        <div class="artist-body text-center">
+                            <h4 class="artist-header">
+                                <a href="artist-edward-henrion.html">Edward Henrion</a><br>
+                                <a href=""><i class="fa fa-heart red"></i></a>
+                                <a href="artist-edward-henrion.html#about-artist"><i class="fa fa-user-circle"></i></a>
+                                <a href="artist-edward-henrion.html#artwork"><i class="fa fa-image"></i></a>
+                            </h4>
+                        </div>
+                        <div class="artist-thumbnails">
+                            With a background in art and philosophy and a keen eye for the absurdities of the human condition, Edward Henrion was an equal opportunity offender who created satirical artworks that took no prisoners.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-default artist-card">
+                        <div class="artist-heading">
+                            <img src="img/Art/MarkRichardson/1.jpg">
+                        </div>
+                        <div class="artist-figure">
+                            <img class="img-responsive img-circle" src="img/Art/MarkRichardson/profile_pic.jpg">
+                        </div>
+                        <div class="artist-body text-center">
+                            <h4 class="artist-header">
+                                <a href="artist-mark-richardson.html">Mark Richardson</a><br>
+                                <a href=""><i class="fa fa-heart red"></i></a>
+                                <a href="artist-mark-richardson.html#about-artist"><i class="fa fa-user-circle"></i></a>
+                                <a href="artist-mark-richardson.html#artwork"><i class="fa fa-image"></i></a>
+                            </h4>
+                        </div>
+                        <div class="artist-thumbnails">
+                            Mark Richardson's unique abstract works on acrylic and plywood set him apart from the rest.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-default artist-card">
+                        <div class="artist-heading">
+                            <img src="https://ununsplash.imgix.net/26/camera-keys.jpg?q=75&amp;fm=jpg&amp;s=b919d3158053cde8e9f0e37b4876c14f">
+                        </div>
+                        <div class="artist-figure">
+                            <img class="img-responsive img-circle" src="img/Art/artist2.jpeg">
+                        </div>
+                        <div class="artist-body text-center">
+                            <h4 class="artist-header">
+                                <a href="">Jake Jacobs</a><br>
+                                <i class="fa fa-heart red"></i>
+                                <i class="fa fa-user-circle"></i>
+                                <i class="fa fa-image"></i>
+                            </h4>
+                        </div>
+                        <div class="artist-thumbnails">
+                            Jake Jacobs's unique abstract works on acrylic and plywood set him apart from the rest.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-default artist-card">
+                        <div class="artist-heading">
+                            <img src="img/Art/MarilynHenrion/2.jpg">
+                        </div>
+                        <div class="artist-figure">
+                            <img class="img-responsive img-circle" src="img/Art/artistf2.jpeg">
+                        </div>
+                        <div class="artist-body text-center">
+                            <h4 class="artist-header">
+                                <a href="">Mary Smith</a><br>
+                                <i class="fa fa-heart red"></i>
+                                <i class="fa fa-user-circle"></i>
+                                <i class="fa fa-image"></i>
+                            </h4>
+                        </div>
+                        <div class="artist-thumbnails">
+                            The award-winning works of this artist are included in museum, corporate and private collections worldwide.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-default artist-card">
+                        <div class="artist-heading">
+                            <img src="img/Art/EdwardHenrion/3.jpg">
+                        </div>
+                        <div class="artist-figure">
+                            <img class="img-responsive img-circle" src="img/Art/artistf3.jpeg">
+                        </div>
+                        <div class="artist-body text-center">
+                            <h4 class="artist-header">
+                                <a href="">Jenny Tsai</a><br>
+                                <i class="fa fa-heart red"></i>
+                                <i class="fa fa-user-circle"></i>
+                                <i class="fa fa-image"></i>
+                            </h4>
+                        </div>
+                        <div class="artist-thumbnails">
+                            The award-winning works of this artist are included in museum, corporate and private collections worldwide.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-default artist-card">
+                        <div class="artist-heading">
+                            <img src="https://unsplash.imgix.net/12/barley.jpg?q=75&fm=jpg&s=f39de5ca1970a13dbe6af6c86b3c47ec">
+                        </div>
+                        <div class="artist-figure">
+                            <img class="img-responsive img-circle" src="img/Art/artist3.jpeg">
+                        </div>
+                        <div class="artist-body text-center">
+                            <h4 class="artist-header">
+                                <a href="">Will Johnson</a><br>
+                                <i class="fa fa-heart red"></i>
+                                <i class="fa fa-user-circle"></i>
+                                <i class="fa fa-image"></i>
+                            </h4>
+                        </div>
+                        <div class="artist-thumbnails">
+                            The award-winning works of this artist are included in museum, corporate and private collections worldwide.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-default artist-card">
+                        <div class="artist-heading">
+                            <img src="https://ununsplash.imgix.net/26/camera-keys.jpg?q=75&amp;fm=jpg&amp;s=b919d3158053cde8e9f0e37b4876c14f">
+                        </div>
+                        <div class="artist-figure">
+                            <img class="img-responsive img-circle" src="img/Art/artist1.jpg">
+                        </div>
+                        <div class="artist-body text-center">
+                            <h4 class="artist-header">
+                                <a href="https://twitter.com/maridlcrmn">Lana Forsyth</a><br>
+                                <i class="fa fa-heart red"></i>
+                                <i class="fa fa-user-circle"></i>
+                                <i class="fa fa-image"></i>
+                            </h4>
+                        </div>
+                        <div class="artist-thumbnails">
+                            The award-winning works of this artist are included in museum, corporate and private collections worldwide.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-default artist-card">
+                        <div class="artist-heading">
+                            <img src="img/Art/MarilynHenrion/1.jpg">
+                        </div>
+                        <div class="artist-figure">
+                            <img class="img-responsive img-circle" src="img/Art/artist5.jpg">
+                        </div>
+                        <div class="artist-body text-center">
+                            <h4 class="artist-header">
+                                <a href="">Nushrat Yadav</a><br>
+                                <i class="fa fa-heart red"></i>
+                                <i class="fa fa-user-circle"></i>
+                                <i class="fa fa-image"></i>
+                            </h4>
+                        </div>
+                        <div class="artist-thumbnails">
+                            The award-winning works of this artist are included in museum, corporate and private collections worldwide.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class = "panel panel-default artist-card">
+                        <div class="artist-heading">
+                            <img src="https://unsplash.imgix.net/12/barley.jpg?q=75&fm=jpg&s=f39de5ca1970a13dbe6af6c86b3c47ec">
+                        </div>
+                        <div class="artist-figure">
+                            <img class="img-responsive img-circle" src="img/Art/artist6.jpg">
+                        </div>
+                        <div class="artist-body text-center">
+                            <h4 class="artist-header">
+                                <a href="">Jane Rosenthal</a><br>
+                                <i class="fa fa-heart red"></i>
+                                <i class="fa fa-user-circle"></i>
+                                <i class="fa fa-image"></i>
+                            </h4>
+                        </div>
+                        <div class="artist-thumbnails">
+                            The award-winning works of this artist are included in museum, corporate and private collections worldwide.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-default artist-card">
+                        <div class="artist-heading">
+                            <img src="img/Art/MarkRichardson/1.jpg">
+                        </div>
+                        <div class="artist-figure">
+                            <img class="img-responsive img-circle" src="img/Art/artist9.jpg">
+                        </div>
+                        <div class="artist-body text-center">
+                            <h4 class="artist-header">
+                                <a href="">Brian Mooje</a><br>
+                                <i class="fa fa-heart red"></i>
+                                <i class="fa fa-user-circle"></i>
+                                <i class="fa fa-image"></i>
+                            </h4>
+                        </div>
+                        <div class="artist-thumbnails">
+                            The award-winning works of this artist are included in museum, corporate and private collections worldwide.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-default artist-card">
+                        <div class="artist-heading">
+                            <img src="https://ununsplash.imgix.net/26/camera-keys.jpg?q=75&amp;fm=jpg&amp;s=b919d3158053cde8e9f0e37b4876c14f">
+                        </div>
+                        <div class="artist-figure">
+                            <img class="img-responsive img-circle" src="img/Art/artist8.jpg">
+                        </div>
+                        <div class="artist-body text-center">
+                            <h4 class="artist-header">
+                                <a href="https://twitter.com/maridlcrmn">Krystal Lee</a><br>
+                                <i class="fa fa-heart red"></i>
+                                <i class="fa fa-user-circle"></i>
+                                <i class="fa fa-image"></i>
+                            </h4>
+                        </div>
+                        <div class="artist-thumbnails">
+                            The award-winning works of this artist are included in museum, corporate and private collections worldwide.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-default artist-card">
+                        <div class="artist-heading">
+                            <img src="img/Art/MarilynHenrion/1.jpg">
+                        </div>
+                        <div class="artist-figure">
+                            <img class="img-responsive img-circle" src="img/Art/artist10.jpg">
+                        </div>
+                        <div class="artist-body text-center">
+                            <h4 class="artist-header">
+                                <a href="">Philip Nguyen</a><br>
+                                <i class="fa fa-heart red"></i>
+                                <i class="fa fa-user-circle"></i>
+                                <i class="fa fa-image"></i>
+                            </h4>
+                        </div>
+                        <div class="artist-thumbnails">
+                            The award-winning works of this artist are included in museum, corporate and private collections worldwide.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-default artist-card">
+                        <div class="artist-heading">
+                            <img src="https://unsplash.imgix.net/12/barley.jpg?q=75&fm=jpg&s=f39de5ca1970a13dbe6af6c86b3c47ec">
+                        </div>
+                        <div class="artist-figure">
+                            <img class="img-responsive img-circle" src="img/Art/artist12.jpg">
+                        </div>
+                        <div class="artist-body text-center">
+                            <h4 class="artist-header">
+                                <a href="">Brian Greenberg</a><br>
+                                <i class="fa fa-heart red"></i>
+                                <i class="fa fa-user-circle"></i>
+                                <i class="fa fa-image"></i>
+                            </h4>
+                        </div>
+                        <div class="artist-thumbnails">
+                            The award-winning works of this artist are included in museum, corporate and private collections worldwide.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-default artist-card">
+                        <div class="artist-heading">
+                            <img src="img/Art/MarkRichardson/1.jpg">
+                        </div>
+                        <div class="artist-figure">
+                            <img class="img-responsive img-circle" src="img/Art/artist13.jpg">
+                        </div>
+                        <div class="artist-body text-center">
+                            <h4 class="artist-header">
+                                <a href="">Natasha Wilson</a><br>
+                                <i class="fa fa-heart red"></i>
+                                <i class="fa fa-user-circle"></i>
+                                <i class="fa fa-image"></i>
+                            </h4>
+                        </div>
+                        <div class="artist-thumbnails">
+                            The award-winning works of this artist are included in museum, corporate and private collections worldwide.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-default artist-card">
+                        <div class="artist-heading">
+                            <img src="https://ununsplash.imgix.net/26/camera-keys.jpg?q=75&amp;fm=jpg&amp;s=b919d3158053cde8e9f0e37b4876c14f">
+                        </div>
+                        <div class="artist-figure">
+                            <img class="img-responsive img-circle" src="img/Art/artist11.jpg">
+                        </div>
+                        <div class="artist-body text-center">
+                            <h4 class="artist-header">
+                                <a href="https://twitter.com/maridlcrmn">John Wu</a><br>
+                                <i class="fa fa-heart red"></i>
+                                <i class="fa fa-user-circle"></i>
+                                <i class="fa fa-image"></i>
+                            </h4>
+                        </div>
+                        <div class="artist-thumbnails">
+                            The award-winning works of this artist are included in museum, corporate and private collections worldwide.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- /.Page Content -->
+
+    <!-- Footer -->
     <div class="container">
-
-      <div class="row">
-
-        <div class="col-sm-6 col-md-3">
-          <div class="panel panel-default artist-card">
-            <div class="artist-heading">
-              <img src="img/Art/MarilynHenrion/1.jpg">
-            </div>
-            <div class="artist-figure">
-              <img class="img-responsive img-circle" src="img/Art/MarilynHenrion/0.jpg">
-            </div>
-            <div class="artist-body text-center">
-              <h4 class="artist-header">
-                <a href="artist-marilyn-henrion.html">Marilyn Henrion</a><br>
-                <a href=""><i class="fa fa-heart red"></i></a>
-                <a href="artist-marilyn-henrion.html#about-artist"><i class="fa fa-user-circle"></i></a>
-                <a href="artist-marilyn-henrion.html#artwork"><i class="fa fa-image"></i></a>
-              </h4>
-            </div>
-            <div class="artist-thumbnails">
-              The award-winning works of this Cooper Union graduate and lifelong New Yorker are included in museum, corporate and private collections worldwide and have been exhibited throughout the U.S. and abroad.
-            </div>
-          </div> 
-        </div>
-
-        <div class="col-sm-6 col-md-3">
-          <div class="panel panel-default artist-card">
-          <div class="artist-heading">
-            <img src="img/Art/EdwardHenrion/2.jpg">
-          </div>
-          <div class="artist-figure">
-            <img class="img-responsive img-circle" src="img/Art/EdwardHenrion/0.jpg">
-          </div>
-          <div class="artist-body text-center">
-            <h4 class="artist-header">
-              <a href="artist-edward-henrion.html">Edward Henrion</a><br>
-              <a href=""><i class="fa fa-heart red"></i></a>
-              <a href="artist-edward-henrion.html#about-artist"><i class="fa fa-user-circle"></i></a>
-              <a href="artist-edward-henrion.html#artwork"><i class="fa fa-image"></i></a>
-            </h4>
-          </div>
-          <div class="artist-thumbnails">
-            With a background in art and philosophy and a keen eye for the absurdities of the human condition, Edward Henrion was an equal opportunity offender who created satirical artworks that took no prisoners.
-          </div>
-        </div>
-      </div>
-
-        <div class="col-sm-6 col-md-3">
-          <div class="panel panel-default artist-card">
-            <div class="artist-heading">
-              <img src="img/Art/MarkRichardson/1.jpg">
-            </div>
-            <div class="artist-figure">
-              <img class="img-responsive img-circle" src="img/Art/MarkRichardson/profile_pic.jpg">
-            </div>
-            <div class="artist-body text-center">
-              <h4 class="artist-header">
-                <a href="artist-mark-richardson.html">Mark Richardson</a><br>
-                <a href=""><i class="fa fa-heart red"></i></a>
-                <a href="artist-mark-richardson.html#about-artist"><i class="fa fa-user-circle"></i></a>
-                <a href="artist-mark-richardson.html#artwork"><i class="fa fa-image"></i></a>
-              </h4>
-            </div>
-            <div class="artist-thumbnails">
-              Mark Richardson's unique abstract works on acrylic and plywood set him apart from the rest.
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-sm-6 col-md-3">
-          <div class="panel panel-default artist-card">
-            <div class="artist-heading">
-              <img src="https://ununsplash.imgix.net/26/camera-keys.jpg?q=75&amp;fm=jpg&amp;s=b919d3158053cde8e9f0e37b4876c14f">
-            </div>
-            <div class="artist-figure">
-              <img class="img-responsive img-circle" src="img/Art/artist2.jpeg">
-            </div>
-            <div class="artist-body text-center">
-              <h4 class="artist-header">
-                <a href="https://twitter.com/maridlcrmn">Jake Jacobs</a><br>
-                <i class="fa fa-heart red"></i>
-                <i class="fa fa-user-circle"></i>
-                <i class="fa fa-image"></i>
-            </h4>
-            </div>
-            <div class="artist-thumbnails">
-              Jake Jacobs's unique abstract works on acrylic and plywood set him apart from the rest.
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="row">
-
-        <div class="col-sm-6 col-md-3">
-          <div class="panel panel-default artist-card">
-            <div class="artist-heading">
-              <img src="img/Art/MarilynHenrion/2.jpg">
-            </div>
-            <div class="artist-figure">
-              <img class="img-responsive img-circle" src="img/Art/artistf2.jpeg">
-            </div>
-            <div class="artist-body text-center">
-              <h4 class="artist-header">
-                <a href="artist-marilyn-henrion.html">Mary Smith</a><br>
-                <i class="fa fa-heart red"></i>
-                <i class="fa fa-user-circle"></i>
-                <i class="fa fa-image"></i>
-                </h4>
-            </div>
-            <div class="artist-thumbnails">
-              The award-winning works of this Cooper Union graduate and lifelong New Yorker are included in museum, corporate and private collections worldwide and have been exhibited throughout the U.S. and abroad.
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-3">
-          <div class="panel panel-default artist-card">
-            <div class="artist-heading">
-              <img src="img/Art/EdwardHenrion/3.jpg">
-            </div>
-            <div class="artist-figure">
-              <img class="img-responsive img-circle" src="img/Art/artistf3.jpeg">
-            </div>
-            <div class="artist-body text-center">
-              <h4 class="artist-header">
-                <a href="artist-edward-henrion.html">Jenny Tsai</a><br>
-                <i class="fa fa-heart red"></i>
-                <i class="fa fa-user-circle"></i>
-                <i class="fa fa-image"></i>
-              </h4>
-            </div>
-            <div class="artist-thumbnails">
-              With a background in art and philosophy and a keen eye for the absurdities of the human condition, Edward Henrion was an equal opportunity offender who created satirical artworks that took no prisoners.
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-3">
-          <div class="panel panel-default artist-card">
-            <div class="artist-heading">
-              <img src="https://unsplash.imgix.net/12/barley.jpg?q=75&fm=jpg&s=f39de5ca1970a13dbe6af6c86b3c47ec">
-            </div>
-            <div class="artist-figure">
-              <img class="img-responsive img-circle" src="img/Art/artist3.jpeg">
-            </div>
-            <div class="artist-body text-center">
-              <h4 class="artist-header">
-                <a href="artist-mark-richardson.html">Will Johnson</a><br>
-                <i class="fa fa-heart red"></i>
-                <i class="fa fa-user-circle"></i>
-                <i class="fa fa-image"></i>
-              </h4>
-            </div>
-            <div class="artist-thumbnails">
-              Mark Richardson's unique abstract works on acrylic and plywood set him apart from the rest.
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-3">
-          <div class="panel panel-default artist-card">
-            <div class="artist-heading">
-              <img src="https://ununsplash.imgix.net/26/camera-keys.jpg?q=75&amp;fm=jpg&amp;s=b919d3158053cde8e9f0e37b4876c14f">
-            </div>
-            <div class="artist-figure">
-              <img class="img-responsive img-circle" src="img/Art/artist1.jpg">
-            </div>
-            <div class="artist-body text-center">
-              <h4 class="artist-header">
-                <a href="https://twitter.com/maridlcrmn">Lana Forsyth</a><br>
-                <i class="fa fa-heart red"></i>
-                <i class="fa fa-user-circle"></i>
-                <i class="fa fa-image"></i>
-              </h4>
-            </div>
-            <div class="artist-thumbnails">
-              Jake Jacobs's unique abstract works on acrylic and plywood set him apart from the rest.
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="row">
-
-        <div class="col-sm-6 col-md-3">
-          <div class="panel panel-default artist-card">
-            <div class="artist-heading">
-              <img src="img/Art/MarilynHenrion/1.jpg">
-            </div>
-            <div class="artist-figure">
-              <img class="img-responsive img-circle" src="img/Art/artist5.jpg">
-            </div>
-            <div class="artist-body text-center">
-              <h4 class="artist-header">
-                <a href="artist-marilyn-henrion.html">Nushrat Yadav</a><br>
-                <i class="fa fa-heart red"></i>
-                <i class="fa fa-user-circle"></i>
-                <i class="fa fa-image"></i>
-              </h4>
-            </div>
-            <div class="artist-thumbnails">
-              The award-winning works of this Cooper Union graduate and lifelong New Yorker are included in museum, corporate and private collections worldwide and have been exhibited throughout the U.S. and abroad.
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-3">
-          <div class = "panel panel-default artist-card">
-            <div class="artist-heading">
-              <img src="https://unsplash.imgix.net/12/barley.jpg?q=75&fm=jpg&s=f39de5ca1970a13dbe6af6c86b3c47ec">
-            </div>
-            <div class="artist-figure">
-              <img class="img-responsive img-circle" src="img/Art/artist6.jpg">
-            </div>
-            <div class="artist-body text-center">
-              <h4 class="artist-header">
-                <a href="artist-edward-henrion.html">Jane Rosenthal</a><br>
-                <i class="fa fa-heart red"></i>
-                <i class="fa fa-user-circle"></i>
-                <i class="fa fa-image"></i>
-              </h4>
-            </div>
-            <div class="artist-thumbnails">
-              With a background in art and philosophy and a keen eye for the absurdities of the human condition, Edward Henrion was an equal opportunity offender who created satirical artworks that took no prisoners.
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-3">
-          <div class="panel panel-default artist-card">
-            <div class="artist-heading">
-              <img src="img/Art/MarkRichardson/1.jpg">
-            </div>
-            <div class="artist-figure">
-              <img class="img-responsive img-circle" src="img/Art/artist9.jpg">
-            </div>
-            <div class="artist-body text-center">
-              <h4 class="artist-header">
-                <a href="artist-mark-richardson.html">Brian Mooje</a><br>
-                <i class="fa fa-heart red"></i>
-                <i class="fa fa-user-circle"></i>
-                <i class="fa fa-image"></i>
-              </h4>
-            </div>
-            <div class="artist-thumbnails">
-              Mark Richardson's unique abstract works on acrylic and plywood set him apart from the rest.
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-3">
-          <div class="panel panel-default artist-card">
-            <div class="artist-heading">
-              <img src="https://ununsplash.imgix.net/26/camera-keys.jpg?q=75&amp;fm=jpg&amp;s=b919d3158053cde8e9f0e37b4876c14f">
-            </div>
-            <div class="artist-figure">
-              <img class="img-responsive img-circle" src="img/Art/artist8.jpg">
-            </div>
-            <div class="artist-body text-center">
-              <h4 class="artist-header">
-                <a href="https://twitter.com/maridlcrmn">Krystal Lee</a><br>
-                <i class="fa fa-heart red"></i>
-                <i class="fa fa-user-circle"></i>
-                <i class="fa fa-image"></i>
-              </h4>
-            </div>
-            <div class="artist-thumbnails">
-              Jake Jacobs's unique abstract works on acrylic and plywood set him apart from the rest.
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="row">
-
-        <div class="col-sm-6 col-md-3">
-          <div class="panel panel-default artist-card">
-            <div class="artist-heading">
-              <img src="img/Art/MarilynHenrion/1.jpg">
-            </div>
-            <div class="artist-figure">
-              <img class="img-responsive img-circle" src="img/Art/artist10.jpg">
-            </div>
-            <div class="artist-body text-center">
-              <h4 class="artist-header">
-                <a href="artist-marilyn-henrion.html">Philip Nguyen</a><br>
-                <i class="fa fa-heart red"></i>
-                <i class="fa fa-user-circle"></i>
-                <i class="fa fa-image"></i>
-              </h4>
-            </div>
-            <div class="artist-thumbnails">
-              The award-winning works of this Cooper Union graduate and lifelong New Yorker are included in museum, corporate and private collections worldwide and have been exhibited throughout the U.S. and abroad.
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-3">
-          <div class="panel panel-default artist-card">
-            <div class="artist-heading">
-              <img src="https://unsplash.imgix.net/12/barley.jpg?q=75&fm=jpg&s=f39de5ca1970a13dbe6af6c86b3c47ec">
-            </div>
-            <div class="artist-figure">
-              <img class="img-responsive img-circle" src="img/Art/artist12.jpg">
-            </div>
-            <div class="artist-body text-center">
-              <h4 class="artist-header">
-                <a href="artist-edward-henrion.html">Brian Greenberg</a><br>
-                <i class="fa fa-heart red"></i>
-                <i class="fa fa-user-circle"></i>
-                <i class="fa fa-image"></i>
-              </h4>
-            </div>
-            <div class="artist-thumbnails">
-              With a background in art and philosophy and a keen eye for the absurdities of the human condition, Edward Henrion was an equal opportunity offender who created satirical artworks that took no prisoners.
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-3">
-          <div class="panel panel-default artist-card">
-            <div class="artist-heading">
-              <img src="img/Art/MarkRichardson/1.jpg">
-            </div>
-            <div class="artist-figure">
-              <img class="img-responsive img-circle" src="img/Art/artist13.jpg">
-            </div>
-            <div class="artist-body text-center">
-              <h4 class="artist-header">
-                <a href="artist-mark-richardson.html">Natasha Wilson</a><br>
-                <i class="fa fa-heart red"></i>
-                <i class="fa fa-user-circle"></i>
-                <i class="fa fa-image"></i>
-              </h4>
-            </div>
-            <div class="artist-thumbnails">
-              Mark Richardson's unique abstract works on acrylic and plywood set him apart from the rest.
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-3">
-          <div class="panel panel-default artist-card">
-            <div class="artist-heading">
-              <img src="https://ununsplash.imgix.net/26/camera-keys.jpg?q=75&amp;fm=jpg&amp;s=b919d3158053cde8e9f0e37b4876c14f">
-            </div>
-            <div class="artist-figure">
-              <img class="img-responsive img-circle" src="img/Art/artist11.jpg">
-            </div>
-            <div class="artist-body text-center">
-              <h4 class="artist-header">
-                <a href="https://twitter.com/maridlcrmn">John Wu</a><br>
-                <i class="fa fa-heart red"></i>
-                <i class="fa fa-user-circle"></i>
-                <i class="fa fa-image"></i>
-              </h4>
-            </div>
-            <div class="artist-thumbnails">
-              Jake Jacobs's unique abstract works on acrylic and plywood set him apart from the rest.
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-
-
-
-
-
-
-
-    <!-- /.container -->
-
-    <div class="container">
-
         <hr>
-
-        <!-- Footer -->
         <footer>
             <div class="row">
                 <div class="col-lg-12" align="center">
@@ -506,11 +480,10 @@
                 </div>
             </div>
         </footer>
-
     </div>
-    <!-- /.container -->
+    <!-- /.Footer -->
 
-    <!-- BEGIN # MODAL LOGIN -->
+    <!-- Modal Login -->
     <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -521,10 +494,8 @@
                     <p class="logo-text-lg">Artsify</p>
                 </div>
 
-                <!-- Begin # DIV Form -->
                 <div id="div-forms">
 
-                    <!-- Begin # Login Form -->
                     <form id="login-form">
                         <div class="modal-body">
                             <div id="div-login-msg">
@@ -534,9 +505,7 @@
                             <input id="login_username" class="form-control" type="text" placeholder="Username" required>
                             <input id="login_password" class="form-control" type="password" placeholder="Password" required>
                             <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Remember me
-                                </label>
+                                <label><input type="checkbox"> Remember me</label>
                             </div>
                         </div>
                         <div class="modal-footer">
@@ -549,9 +518,7 @@
                             </div>
                         </div>
                     </form>
-                    <!-- End # Login Form -->
 
-                    <!-- Begin | Lost Password Form -->
                     <form id="lost-form" style="display:none;">
                         <div class="modal-body">
                             <div id="div-lost-msg">
@@ -570,9 +537,7 @@
                             </div>
                         </div>
                     </form>
-                    <!-- End | Lost Password Form -->
 
-                    <!-- Begin | Register Form -->
                     <form id="register-form" style="display:none;">
                         <div class="modal-body">
                             <div id="div-register-msg">
@@ -593,15 +558,13 @@
                             </div>
                         </div>
                     </form>
-                    <!-- End | Register Form -->
 
                 </div>
-                <!-- End # DIV Form -->
 
             </div>
         </div>
     </div>
-    <!-- END # MODAL LOGIN -->
+    <!-- ./Modal Login -->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -619,11 +582,11 @@
    <script src="js/filter_main.js"></script> <!-- Resource jQuery -->
 
    <script>
-    function onClick(element) {
-      document.getElementById("img01").src = element.src;
-      document.getElementById("modal01").style.display = "block";
-    }
-  </script>
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+        }
+    </script>
 
 </body>
 

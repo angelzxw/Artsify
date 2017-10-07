@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Artsify - Blank</title>
+
+    <link rel=icon href=img/icon.png>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jquery.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+    <link href="css/heroic-features.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/edit.css" rel="stylesheet">
+
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/filter_style.css"> <!-- Resource style -->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+
+<body>
+    <!--Navigation-->
+    <nav id='cssmenu'>
+        <div class="logo"><a class="navbar-brand" href="index.html">Artsify</a></div>
+        <div id="head-mobile"></div>  
+        <div class="button"></div>
+        <ul>
+            <li class='active'><a href='art.html'>Art</a></li>
+            <li><a href='artists.html'>Artists</a></li>
+            <li id = "searchbar">
+                <div id="custom-search-input">
+                    <div class="input-group col-md-12">
+                        <input type="text" class="search-query form-control" placeholder="Search or type keywords" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-danger" type="button">
+                                <span class=" glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li><a href='#'>About</a>
+                <ul>
+                    <li><a href='about.html'>About Artsify</a></li>
+                    <li><a href='team.html'>Our Team</a></li>
+                    <li><a href='membership.html'>Membership Plans</a></li>
+                </ul>
+            </li>
+            <li><a href='contact.html'>Contact</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#login-modal" id="login-btn">Log In</a></li>
+            <li><a href="#" id="register-btn">Sign Up</a></li>
+        </ul>
+    </nav>
+    <section style='padding-top:10px;font:bold  44px arial;color:#68D800;'></section>
+    <!--./Navigation-->
+
+
+    <!-- Page Content -->
+    <section>
+
+        <!-- Here is an artist card template --> 
+        <div class="col-md-4 col-sm-6">
+            <div class="panel panel-default artist-card">
+                <div class="artist-heading">
+                    <img src="{PATH TO ARTWORK}" alt="{NAME OF ARTWORK}">
+                </div>
+                <div class="artist-figure">
+                    <img class="img-responsive img-circle" src="{PATH TO PROFILE PICTURE}" alt="{NAME OF ARTIST}">
+                </div>
+                <div class="artist-body text-center">
+                    <h4 class="artist-header">
+                        <a href="artist-edward-henrion.html">{ARTIST NAME}</a><br>
+                        <a href="#about-artist"><i class="fa fa-user-circle"></i></a>
+                        <a href=""><i class="fa fa-heart"></i></a>
+                        <a href="#artwork"><i class="fa fa-image"></i></a>
+                    </h4>
+                </div>
+                <div class="artist-intro">
+                {ARTIST BRIEF INTRO}
+                </div>
+            </div>
+        </div>
+
+        <!-- Here is a collection template -->
+        <div class="col-md-4"><div class="card card-01">
+            <div id="carousel1" class="carousel slide caption-animate" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel1" data-slide-to="1"></li>
+                    <li data-target="#carousel1" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="{PATH TO ARTWORK 1}" alt="">
+                        <div class="carousel-caption fadeInDown"><small></small></div>
+                    </div>
+
+                    <div class="item">
+                        <img src="{PATH TO ARTWORK 2}" alt="">
+                        <div class="carousel-caption fadeInRight"><small></small></div>
+                    </div>
+
+                    <div class="item">
+                        <img src="{PATH TO ARTWORK 3}" alt="">
+                        <div class="carousel-caption fadeInLeft"><small></small></div>
+                    </div>
+                </div>
+
+                <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel1" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <div class="card-body">
+                <span class="badge-box"><i class="fa fa-paint-brush"></i></span>
+                <h4 class="card-title">{COLLECTION NAME}</h4>
+                <p class="card-text">{COLLECTION CATEGORY}</p>
+            </div>
+        </div></div>
+
+
+        <!-- Here is an artwork card template -->        
+        <li class="art-card mix color-1 check1 radio2 option3 r1 c3" style="width: 282.5px; display: inline-block;">
+            <img src="{PATH TO ARTWORK}" alt="{NAME OF ARTWORK}" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+            <div class="desc">
+                <h4 class="pull-right">{PRICE}</h4>
+                <h4>{WORK TITLE}</h4>
+                <p><a target="_blank" href="{LINK TO ARTIST PROFILE}">{ARTIST NAME}</a></p>
+                <p>{WORK DESCRIPTION}</p>
+                <div class="ratings">
+                    <p class="pull-right">{NUMBER OF REVIEWS (OPTIONAL)}</p>
+                    <p></p>
+                </div>
+            </div>
+        </li>
+
+    </section>
+    <!-- ./Page Content -->
+
+    <!-- Footer -->
+    <div class="container">
+        <hr>
+        <footer>
+            <div class="row">
+                <div class="col-lg-12" align="center">
+                    <p>Copyright &copy; Artsify 2017</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- /.Footer -->
+
+    <!-- Modal Login -->
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" align="center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="modal-close-btn">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </button>
+                    <p class="logo-text-lg">Artsify</p>
+                </div>
+
+                <div id="div-forms">
+
+                    <form id="login-form">
+                        <div class="modal-body">
+                            <div id="div-login-msg">
+                                <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-login-msg">Type your username and password.</span>
+                            </div>
+                            <input id="login_username" class="form-control" type="text" placeholder="Username" required>
+                            <input id="login_password" class="form-control" type="password" placeholder="Password" required>
+                            <div class="checkbox">
+                                <label><input type="checkbox"> Remember me</label>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                            </div>
+                            <div>
+                                <button id="login_lost_btn" type="button" class="btn btn-link">Forgot Password?</button>
+                                <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <form id="lost-form" style="display:none;">
+                        <div class="modal-body">
+                            <div id="div-lost-msg">
+                                <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-lost-msg">Type your e-mail.</span>
+                            </div>
+                            <input id="lost_email" class="form-control" type="email" placeholder="Email" required>
+                        </div>
+                        <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                            </div>
+                            <div>
+                                <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <form id="register-form" style="display:none;">
+                        <div class="modal-body">
+                            <div id="div-register-msg">
+                                <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-register-msg">Create an account.</span>
+                            </div>
+                            <input id="register_username" class="form-control" type="text" placeholder="Username" required>
+                            <input id="register_email" class="form-control" type="email" placeholder="Email" >
+                            <input id="register_password" class="form-control" type="password" placeholder="Password" >
+                        </div>
+                        <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                            </div>
+                            <div>
+                                <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="register_lost_btn" type="button" class="btn btn-link">Forgot Password?</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ./Modal Login -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+   <script src="js/main.js"></script>
+
+</body>
+</html>

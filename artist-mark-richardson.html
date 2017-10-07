@@ -26,67 +26,39 @@
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Artsify</a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="art.html">Art</a>
-                    </li>
-                    <li>
-                        <a href="artists.html">Artists</a>
-                    </li>
-                    <li>
-                        <a></a>
-                    </li>
-                    <li>
-                        <div id="custom-search-input">
-                            <div class="input-group col-md-12">
-                                <input type="text" class="search-query form-control" placeholder="Search or type keywords" />
-                                <span class="input-group-btn">
-                                    <button class="btn btn-danger" type="button">
-                                        <span class=" glyphicon glyphicon-search"></span>
-                                    </button>
-                                </span>
-                            </div>
-                        </div>
-                    </li>
+    <!--Navigation-->
+    <nav id='cssmenu' style="top: -15px;">
+        <div class="logo"><a class="navbar-brand" href="index.html">Artsify</a></div>
+        <div id="head-mobile"></div>  
+        <div class="button"></div>
+        <ul>
+            <li class='active'><a href='art.html'>Art</a></li>
+            <li><a href='artists.html'>Artists</a></li>
+            <li id = "searchbar">
+                <div id="custom-search-input">
+                    <div class="input-group col-md-12">
+                        <input type="text" class="search-query form-control" placeholder="Search or type keywords" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-danger" type="button">
+                                <span class=" glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li><a href='#'>About</a>
+                <ul>
+                    <li><a href='about.html'>About Artsify</a></li>
+                    <li><a href='team.html'>Our Team</a></li>
+                    <li><a href='membership.html'>Membership Plans</a></li>
                 </ul>
-                <ul class="nav navbar-nav" style="float:right;">
-                    <li class="dropdown">
-                        <a href="javascript:void(0)" class="dropbtn">About</a>
-                        <div class="dropdown-content">
-                            <a href="about.html">About Artsify</a>
-                            <a href="team.html">Our Team</a>
-                            <a href="membership.html">Membership Plans</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#" data-toggle="modal" data-target="#login-modal" id="login-btn">Log In</a>
-                    </li>
-                    <li>
-                        <a href="#" id="register-btn">Sign Up</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+            </li>
+            <li><a href='contact.html'>Contact</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#login-modal" id="login-btn">Log In</a></li>
+            <li><a href="#" id="register-btn">Sign Up</a></li>
+        </ul>
     </nav>
-    <!-- /.Navigation -->
+    <!--./Navigation-->
 
     <!-- Page Content -->
     <section id="artist-profile" class="container">

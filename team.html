@@ -11,6 +11,8 @@
     <title>Artsify - Artists</title>
 
     <link rel=icon href=img/icon.png>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jquery.js"></script>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -34,79 +36,52 @@
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Artsify</a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="art.html">Art</a>
-                    </li>
-                    <li>
-                        <a href="artists.html">Artists</a>
-                    </li>
-                    <li>
-                        <a></a>
-                    </li>
-                    <li>
-                        <div id="custom-search-input">
-                            <div class="input-group col-md-12">
-                                <input type="text" class="search-query form-control" placeholder="Search or type keywords" />
-                                <span class="input-group-btn">
-                                    <button class="btn btn-danger" type="button">
-                                        <span class=" glyphicon glyphicon-search"></span>
-                                    </button>
-                                </span>
-                            </div>
-                        </div>
-                    </li>
+    <!--Navigation-->
+    <nav id='cssmenu'>
+        <div class="logo"><a class="navbar-brand" href="index.html">Artsify</a></div>
+        <div id="head-mobile"></div>  
+        <div class="button"></div>
+        <ul>
+            <li class='active'><a href='art.html'>Art</a></li>
+            <li><a href='artists.html'>Artists</a></li>
+            <li id = "searchbar">
+                <div id="custom-search-input">
+                    <div class="input-group col-md-12">
+                        <input type="text" class="search-query form-control" placeholder="Search or type keywords" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-danger" type="button">
+                                <span class=" glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li><a href='#'>About</a>
+                <ul>
+                    <li><a href='about.html'>About Artsify</a></li>
+                    <li><a href='team.html'>Our Team</a></li>
+                    <li><a href='membership.html'>Membership Plans</a></li>
                 </ul>
-                <ul class="nav navbar-nav" style="float:right;">
-                    <li class="dropdown">
-                        <a href="javascript:void(0)" class="dropbtn">About</a>
-                        <div class="dropdown-content">
-                            <a href="about.html">About Artsify</a>
-                            <a href="team.html">Our Team</a>
-                            <a href="membership.html">Membership Plans</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#" data-toggle="modal" data-target="#login-modal" id="login-btn">Log In</a>
-                    </li>
-                    <li>
-                        <a href="#" id="register-btn">Sign Up</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+            </li>
+            <li><a href='contact.html'>Contact</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#login-modal" id="login-btn">Log In</a></li>
+            <li><a href="#" id="register-btn">Sign Up</a></li>
+        </ul>
     </nav>
-    <!-- /.Navigation -->
+    <section style='padding-top:10px;font:bold  44px arial;color:#68D800;'></section>
+    <!--./Navigation-->
 
     <!-- Page Content -->
     <section class="team">
         <div class="container"><div class="row">
             <div class="col-md-10 col-md-offset-1"><div class="col-lg-12">
 
-                <h3 class="description">OUR TEAM</h3>
+                <h3 class="description">THE TEAM</h3>
                 <div class="row pt-md">
 
                     <div class=" col-md-4 col-sm-6 col-xs-12 profile">
                         <div class="img-box">
-                            <img src="img/AZ.jpg" class="img-responsive">
+                            <img src="img/Team/AZ.jpg" class="img-responsive">
                             <ul class="text-center">
                                 <a href="#"><li><i class="fa fa-envelope"></i></li></a>
                                 <a href="#"><li><i class="fa fa-user"></i></li></a>
@@ -120,7 +95,7 @@
 
                     <div class=" col-md-4 col-sm-6 col-xs-12 profile">
                         <div class="img-box">
-                            <img src="img/LL.jpg" class="img-responsive">
+                            <img src="img/Team/LL.jpg" class="img-responsive">
                             <ul class="text-center">
                                 <a href="#"><li><i class="fa fa-envelope"></i></li></a>
                                 <a href="#"><li><i class="fa fa-user"></i></li></a>
@@ -134,7 +109,7 @@
 
                     <div class=" col-md-4 col-sm-6 col-xs-12 profile">
                         <div class="img-box">
-                            <img src="img/SA.jpg" class="img-responsive">
+                            <img src="img/Team/SA.jpg" class="img-responsive">
                             <ul class="text-center">
                                 <a href="#"><li><i class="fa fa-envelope"></i></li></a>
                                 <a href="#"><li><i class="fa fa-user"></i></li></a>
@@ -146,14 +121,15 @@
                         <p></p>
                     </div>
 
-                <br/><br/><br/>
+            
+                &ensp;&ensp;&ensp;&ensp;&ensp;
 
-                <h3 class="description">OUR ADVISORS</h3>
+                <h3 class="description">THE ADVISORS</h3>
                 <div class="row pt-md">
 
                     <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
                         <div class="img-box advisor">
-                            <img src="img/JC.png" class="img-responsive" style="background-color: rgba(0, 0, 0, 0.25);">
+                            <img src="img/Team/ProfChung.JPG" class="img-responsive" style="background-color: rgba(0, 0, 0, 0.25);">
                             <ul class="text-center">
                                 <a href="#"><li><i class="fa fa-envelope"></i></li></a>
                                 <a href="#"><li><i class="fa fa-user"></i></li></a>
@@ -166,20 +142,20 @@
 
                     <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
                         <div class="img-box advisor">
-                            <img src="img/HR.jpg" class="img-responsive" style="zoom: 2;">
+                           <img src="img/Team/PC.jpg" class="img-responsive" style="background-color: rgba(0, 0, 0, 0.25); zoom:3">
                             <ul class="text-center">
                                 <a href="#"><li><i class="fa fa-envelope"></i></li></a>
                                 <a href="#"><li><i class="fa fa-user"></i></li></a>
                                 <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
                             </ul>
-                        </div>
-                        <h1>Howie Rosenblatt</h1>
-                        <h2>Professor and Entrepreneurial Product Leader</h2>
+                        </div>  
+                        <h1>Peter Congleton</h1>
+                        <h2>Director of Gift Planning at the Cooper Union</h2>
                     </div>
 
                     <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
                         <div class="img-box advisor">
-                            <img src="img/MH.jpg" class="img-responsive">
+                            <img src="img/Team/MH.jpg" class="img-responsive">
                             <ul class="text-center">
                                 <a href="#"><li><i class="fa fa-envelope"></i></li></a>
                                 <a href="#"><li><i class="fa fa-user"></i></li></a>
@@ -187,22 +163,24 @@
                             </ul>
                         </div>
                         <h1>Marilyn Henrion</h1>
-                        <h2>Artist</h2>
+                        <h2>Artist <br /> Cooper Union Art School Alumni</h2>
                     </div>
 
                     <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
                         <div class="img-box advisor">
-                           <img src="img/PC.jpg" class="img-responsive">
+                            <img src="img/Team/HR.jpg" class="img-responsive" style="zoom: 2;">
                             <ul class="text-center">
                                 <a href="#"><li><i class="fa fa-envelope"></i></li></a>
                                 <a href="#"><li><i class="fa fa-user"></i></li></a>
                                 <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
                             </ul>
                         </div>
-                        <h1>Peter Congleton</h1>
-                        <h2>Director of Gift Planning at the Cooper Union</h2>
+                        <h1>Howie Rosenblatt</h1>
+                        <h2>Professor at The Cooper Union <br /> Entrepreneurial Product Leader</h2>
                     </div>
 
+                
+                    <!--
                     <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
                         <div class="img-box advisor">
                             <img src="img/ME.jpg" class="img-responsive" style="height: 100%;">
@@ -215,10 +193,24 @@
                         <h1>Mike Essl</h1>
                         <h2>Acting Dean and Associate Professor of the Cooper Union Art School</h2>
                     </div>
+                    -->
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                        <div class="img-box advisor">
+                            <img src="img/Team/ProfRisbud.jpg" class="img-responsive" style="background-color: rgba(0, 0, 0, 0.25); zoom:2">
+                            <ul class="text-center">
+                                <a href="#"><li><i class="fa fa-envelope"></i></li></a>
+                                <a href="#"><li><i class="fa fa-user"></i></li></a>
+                                <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                            </ul>
+                        </div>
+                        <h1>Yash Risbud</h1>
+                        <h2>Professor at The Cooper Union <br /> Director of the C.V. Starr Research Foundation</h2>
+                    </div>
+
 
                     <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
                         <div class="img-box advisor">
-                            <img src="img/JC.png" class="img-responsive" style="background-color: rgba(0, 0, 0, 0.25);">
+                            <img src="img/Team/JC.png" class="img-responsive" style="background-color: rgba(0, 0, 0, 0.25);">
                             <ul class="text-center">
                                 <a href="#"><li><i class="fa fa-envelope"></i></li></a>
                                 <a href="#"><li><i class="fa fa-user"></i></li></a>
@@ -229,23 +221,9 @@
                         <h2></h2>
                     </div>
 
-
                     <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
                         <div class="img-box advisor">
-                            <img src="img/JC.png" class="img-responsive" style="background-color: rgba(0, 0, 0, 0.25);">
-                            <ul class="text-center">
-                                <a href="#"><li><i class="fa fa-envelope"></i></li></a>
-                                <a href="#"><li><i class="fa fa-user"></i></li></a>
-                                <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-                            </ul>
-                        </div>
-                        <h1>Advisor</h1>
-                        <h2></h2>
-                    </div>
-
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                        <div class="img-box advisor">
-                            <img src="img/JC.png" class="img-responsive" style="background-color: rgba(0, 0, 0, 0.25);">
+                            <img src="img/Team/JC.png" class="img-responsive" style="background-color: rgba(0, 0, 0, 0.25);">
                             <ul class="text-center">
                                 <a href="#"><li><i class="fa fa-envelope"></i></li></a>
                                 <a href="#"><li><i class="fa fa-user"></i></li></a>
@@ -358,7 +336,7 @@
     </div>
     <!-- ./Modal Login -->
 
-        <!-- jQuery -->
+    <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>

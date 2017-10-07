@@ -15,14 +15,14 @@ Image placeholders: placemi.com
 /********************************/
 .artist-card {
   position: relative;
-  height: 241px;
+  height: 300px;
   border: none;
   overflow: hidden;
 }
 .artist-card .artist-heading {
   position: relative;
   z-index: 2;
-  height: 120px;
+  height: 180px;
   border-bottom-color: #fff;
   overflow: hidden;
 
@@ -73,11 +73,11 @@ Image placeholders: placemi.com
     transition: padding 400ms ease-in-out;
 } 
 
-.artist-card .artist-thumbnails {
+.artist-card .artist-intro {
   padding: 0 15px 20px;
   font-size: 12px;
 }
-.artist-thumbnails .thumbnail {
+.artist-intro .thumbnail {
   width: 60px;
   max-width: 100%;
   margin: 0 auto;
@@ -105,6 +105,14 @@ Image placeholders: placemi.com
 
 .artist-figure .img-circle {
   height: 100%;
+}
+
+.artist-header a {
+  cursor: pointer;
+}
+
+.artist-header a:hover {
+  color: #41307c;
 }
 
 .artist-header i {

@@ -293,6 +293,10 @@ xgallery
     /* reduce width when filter is visible */
     width: 80%;
   }
+  .cd-gallery.filter-is-visible .container {
+    /* reduce width when filter is visible */
+    width: 95%;
+  }
 }
 
 /* --------------------------------

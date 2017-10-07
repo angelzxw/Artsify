@@ -13,6 +13,8 @@
 
     <link rel=icon href=img/icon.png>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jquery.js"></script>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -37,72 +39,40 @@
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Artsify</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-              <ul class="nav navbar-nav">
-                  <li>
-                      <a href="art.html">Art</a>
-                  </li>
-                  <li>
-                      <a href="artists.html">Artists</a>
-                  </li>
-                  <li>
-                      <a></a>
-                  </li>
-                  <li>
-                      <div id="custom-search-input">
-                          <div class="input-group col-md-12">
-                          <input type="text" class="search-query form-control" placeholder="Search or type keywords" />
-                          <span class="input-group-btn">
-                              <button class="btn btn-danger" type="button">
-                                  <span class=" glyphicon glyphicon-search"></span>
-                              </button>
-                          </span>
-                          </div>
-                      </div>
-                  </li>
-
-              </ul>
-
-              <ul class="nav navbar-nav" style="float:right;">
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">About</a>
-                    <div class="dropdown-content">
-                        <a href="about.html">About Artsify</a>
-                        <a href="team.html">Our Team</a>
-                        <a href="membership.html">Membership Plans</a>
+    <!--Navigation-->
+    <nav id='cssmenu'>
+        <div class="logo"><a class="navbar-brand" href="index.html">Artsify</a></div>
+        <div id="head-mobile"></div>
+        <div class="button"></div>
+        <ul>
+            <li class='active'><a href='art.html'>Art</a></li>
+            <li><a href='artists.html'>Artists</a></li>
+            <li id = "searchbar">
+                <div id="custom-search-input">
+                    <div class="input-group col-md-12">
+                        <input type="text" class="search-query form-control" placeholder="Search or type keywords" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-danger" type="button">
+                                <span class=" glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
                     </div>
-                </li>
-                  <li>
-                      <a href="contact.html">Contact</a>
-                  </li>
-                  <li>
-                      <a href="#" data-toggle="modal" data-target="#login-modal" id="login-btn">Log In</a>
-                  </li>
-                  <li>
-                      <a href="#" id="register-btn">Sign Up</a>
-                  </li>
-              </ul>
-
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
+                </div>
+            </li>
+            <li><a href='#'>About</a>
+                <ul>
+                    <li><a href='about.html'>About Artsify</a></li>
+                    <li><a href='team.html'>Our Team</a></li>
+                    <li><a href='membership.html'>Membership Plans</a></li>
+                </ul>
+            </li>
+            <li><a href='contact.html'>Contact</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#login-modal" id="login-btn">Log In</a></li>
+            <li><a href="#" id="register-btn">Sign Up</a></li>
+        </ul>
     </nav>
+    <section style='padding-top:10px;font:bold  44px arial;color:#68D800;'></section>
+    <!--./Navigation-->
 
     <!-- Page Content -->
     <div class="container">
@@ -134,40 +104,103 @@
                     </a>
                 </div>
             </div>
-        </div>
-
-
+        </div> <!-- end of sliding window-->
 
         <div class="row">
 
-            <div class="col-md-3">
-                <p class="lead">Category</p>
-                <div class="list-group">
-                    <a href="#" class="list-group-item">Style</a>
-                    <a href="#" class="list-group-item">Subject</a>
-                    <a href="#" class="list-group-item">Medium</a>
-                    <a href="#" class="list-group-item">Tag</a>
-                </div>
+          <div class="col-md-3">
+              <p class="lead">Category</p>
+              <div class="list-group">
+                  <a href="#" class="list-group-item">Style</a>
+                  <a href="#" class="list-group-item">Subject</a>
+                  <a href="#" class="list-group-item">Medium</a>
+                  <a href="#" class="list-group-item">Tag</a>
+              </div>
 
-                <p class="lead">Popular</p>
-                <div class="list-group">
-                    <a href="#" class="list-group-item">Featured Artists</a>
-                    <a href="#" class="list-group-item">Popular Works</a>
-                </div>
-         	</div>
+              <p class="lead">Popular</p>
+              <div class="list-group">
+                  <a href="#" class="list-group-item">Featured Artists</a>
+                  <a href="#" class="list-group-item">Popular Works</a>
+              </div>
+       	  </div><!-- end of category--->
 
           <div class="col-md-9">
 
             	<div class="row carousel-holder">
-                <p class="lead">Top Picks</p>
+                <p class="lead">Featured Works</p>
+                <div class="w3-row-padding">
+
+                  <div class="w3-container w3-third">
+                    <img src="img/Art/MarilynHenrion/PC68.jpg" style="width:100%;cursor:zoom-in"
+                    onclick="onClick(this)" class="w3-hover-opacity">
+                    <div class="desc">
+                      <h4><a href="product_1.html">Patchwork City 68</a></h4>
+                      <p><a target="_blank" href="artist-marilyn-henrion.html">Marilyn Henrion</a></p>
+                      <div class="ratings">
+                        <p class="pull-right">35 reviews</p>
+                        <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="w3-container w3-third">
+                    <img src="img/Art/MarilynHenrion/PC67.jpg" style="width:100%;cursor:zoom-in"
+                    onclick="onClick(this)" class="w3-hover-opacity">
+                    <div class="desc">
+                      <h4><a href="#">Patchwork City 67</a></h4>
+                      <p><a target="_blank" href="artist-marilyn-henrion.html">Marilyn Henrion</a></p>
+                      <div class="ratings">
+                        <p class="pull-right">35 reviews</p>
+                        <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="w3-container w3-third">
+                    <img src="img/Art/MarilynHenrion/PC66.jpg" style="width:100%;cursor:zoom-in"
+                    onclick="onClick(this)" class="w3-hover-opacity">
+                    <div class="desc">
+                      <h4><a href="#">Patchwork City 66</a></h4>
+                      <p><a target="_blank" href="artist-marilyn-henrion.html">Marilyn Henrion</a></p>
+                      <div class="ratings">
+                        <p class="pull-right">35 reviews</p>
+                        <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div><!--end of first row-->
 
                 <div class="w3-row-padding">
+                <div class="w3-row-padding">
+
                   <div class="w3-container w3-third">
                     <img src="img/Art/MarilynHenrion/1.jpg" style="width:100%;cursor:zoom-in"
                     onclick="onClick(this)" class="w3-hover-opacity">
                     <div class="desc">
-                      <h4>Gray Rock Triptych</h4>
-                      <p><a target="_blank" href="http://marilynhenrion.com/about/">Marilyn Henrion</a></p>
+                      <h4><a href="product_2.html">Gray Rock Triptych</a></h4>
+                      <p><a target="_blank" href="artist-marilyn-henrion.html">Marilyn Henrion</a></p>
                       <div class="ratings">
                         <p class="pull-right">35 reviews</p>
                         <p>
@@ -186,8 +219,8 @@
                     <img src="img/Art/MarilynHenrion/2.jpg" style="width:100%;cursor:zoom-in"
                     onclick="onClick(this)" class="w3-hover-opacity">
                     <div class="desc">
-                      <h4>Lake Rock Triptych</h4>
-                      <p><a target="_blank" href="http://marilynhenrion.com/about/">Marilyn Henrion</a></p>
+                      <h4><a href="#">Lake Rock Triptych</a></h4>
+                      <p><a target="_blank" href="artist-marilyn-henrion.html">Marilyn Henrion</a></p>
                       <div class="ratings">
                           <p class="pull-right">25 reviews</p>
                           <p>
@@ -205,8 +238,8 @@
                     <img src="img/Art/MarilynHenrion/3.jpg" style="width:100%;cursor:zoom-in"
                     onclick="onClick(this)" class="w3-hover-opacity">
                     <div class="desc">
-                      <h4>Green Sea</h4>
-                      <p><a target="_blank" href="http://marilynhenrion.com/about/">Marilyn Henrion</a></p>
+                      <h4><a href="#">Green Sea</a></h4>
+                      <p><a target="_blank" href="artist-marilyn-henrion.html">Marilyn Henrion</a></p>
 
                       <div class="ratings">
                           <p class="pull-right">22 reviews</p>
@@ -220,18 +253,20 @@
                       </div>
                     </div>
                   </div>
+
                 </div>
-              </div>
+              </div><!-- end of second row-->
+              </div><!-- end of featured works--->
 
               <div class="row carousel-holder">
                 <p class="lead">New To Artsify</p>
                   <div class="w3-row-padding">
                    <div class="w3-container w3-third">
-                    <img src="img/Art/MarkRichardson/1.jpg" style="width:100%;cursor:zoom-in"
-                    onclick="onClick(this)" class="w3-hover-opacity">
-                    <div class="desc">
-                      <h4>Painting</h4>
-                      <p><a target="_blank" href="http://marilynhenrion.com/about/">Mark Richardson</a></p>
+                      <img src="img/Art/MarkRichardson/1.jpg" style="width:100%;cursor:zoom-in"
+                      onclick="onClick(this)" class="w3-hover-opacity">
+                      <div class="desc">
+                      <h4><a href="#">Abstract I</a></h4>
+                      <p><a target="_blank" href="artist-mark-richardson.html">Mark Richardson</a></p>
                       <div class="ratings">
                           <p class="pull-right">15 reviews</p>
                           <p>
@@ -247,8 +282,8 @@
                     <img src="img/Art/MarkRichardson/2.jpg" style="width:100%;cursor:zoom-in"
                     onclick="onClick(this)" class="w3-hover-opacity">
                     <div class="desc">
-                      <h4>Painting</h4>
-                      <p><a target="_blank" href="http://marilynhenrion.com/about/">Mark Richardson</a></p>
+                      <h4><a href="#">Abstract II</a></h4>
+                      <p><a target="_blank" href="artist-mark-richardson">Mark Richardson</a></p>
                       <div class="ratings">
                           <p class="pull-right">15 reviews</p>
                           <p>
@@ -264,8 +299,8 @@
                     <img src="img/Art/MarkRichardson/3.jpg" style="width:100%;cursor:zoom-in"
                     onclick="onClick(this)" class="w3-hover-opacity">
                     <div class="desc">
-                      <h4>Painting</h4>
-                      <p><a target="_blank" href="http://marilynhenrion.com/about/">Mark Richardson</a></p>
+                      <h4><a href="#">Abstract III</a></h4>
+                      <p><a target="_blank" href="artist-mark-richardson">Mark Richardson</a></p>
                       <div class="ratings">
                           <p class="pull-right">15 reviews</p>
                           <p>
@@ -276,13 +311,14 @@
                       </div>
                     </div>
                   </div>
-
+                </div>
+                <div class="w3-row-padding">
                   <div class="w3-container w3-third">
                     <img src="img/Art/MarkRichardson/4.jpg" style="width:100%;cursor:zoom-in"
                     onclick="onClick(this)" class="w3-hover-opacity">
                     <div class="desc">
-                      <h4>Painting</h4>
-                      <p><a target="_blank" href="http://marilynhenrion.com/about/">Mark Richardson</a></p>
+                      <h4><a href="#">Abstract IV</a></h4>
+                      <p><a target="_blank" href="artist-mark-richardson/">Mark Richardson</a></p>
                       <div class="ratings">
                           <p class="pull-right">15 reviews</p>
                           <p>
@@ -298,8 +334,8 @@
                     <img src="img/Art/MarkRichardson/5.jpg" style="width:100%;cursor:zoom-in"
                     onclick="onClick(this)" class="w3-hover-opacity">
                     <div class="desc">
-                      <h4>Painting</h4>
-                      <p><a target="_blank" href="http://marilynhenrion.com/about/">Mark Richardson</a></p>
+                      <h4><a href="#">Abstract V</a></h4>
+                      <p><a target="_blank" href="artist-mark-richardson">Mark Richardson</a></p>
                       <div class="ratings">
                           <p class="pull-right">10 reviews</p>
                           <p>
@@ -314,8 +350,8 @@
                     <img src="img/Art/MarkRichardson/6.jpg" style="width:100%;cursor:zoom-in"
                     onclick="onClick(this)" class="w3-hover-opacity">
                     <div class="desc">
-                      <h4>Painting</h4>
-                      <p><a target="_blank" href="http://marilynhenrion.com/about/">Mark Richardson</a></p>
+                      <h4><a href="#">Abstract VI</a></h4>
+                      <p><a target="_blank" href="artist-mark-richardson">Mark Richardson</a></p>
                       <div class="ratings">
                           <p class="pull-right">5 reviews</p>
                           <p>
@@ -326,12 +362,13 @@
                   </div>
 
                   <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-                  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-                  <div class="w3-modal-content w3-animate-zoom">
-                    <img id="img01" style="width:100%">
-                  </div>
+                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                    <div class="w3-modal-content w3-animate-zoom">
+                      <img id="img01" style="width:100%">
+                    </div>
                   </div>
 
+                </div>
               	</div>
           	</div>
 
@@ -341,9 +378,7 @@
     <!-- /.container -->
 
     <div class="container">
-
         <hr>
-
         <!-- Footer -->
         <footer>
             <div class="row">
@@ -352,7 +387,6 @@
                 </div>
             </div>
         </footer>
-
     </div>
     <!-- /.container -->
 

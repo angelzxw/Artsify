@@ -74,6 +74,7 @@ $(function() {
     $('#register-btn-bronze').click( function () { registerBtnClick() });
     $('#register-btn-silver').click( function () { registerBtnClick() });
     $('#register-btn-gold').click( function () { registerBtnClick() });
+	$('#click-to-sign-up').click( function () { registerBtnClick() });
 
     function registerBtnClick () {
         $('#login-btn').click();
@@ -113,6 +114,15 @@ $(function() {
     }
 });
 
+$(function() {
+	$('.about-scroll').on('click', scrollDown);
+
+	function scrollDown() {
+		element = $('.about-banner');
+		offset = element.offset();
+		$('html, body').animate({scrollTop: offset.top}, 500, 'linear');
+	}
+});
 
 jQuery(document).ready(function($){
 	//open/close lateral filter

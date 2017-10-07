@@ -11,385 +11,1449 @@
     <title>Artsify - Art</title>
 
     <link rel=icon href=img/icon.png>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jquery.js"></script>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel=" stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel=" stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/shop-homepage.css" rel="stylesheet">
-    <link href="css/heroic-features.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/edit.css" rel="stylesheet">
-    <link href="css/modal_img.css" rel="stylesheet">
+    <link href="css/shop-homepage.css" rel=" stylesheet">
+    <link href="css/heroic-features.css" rel=" stylesheet">
+    <link href="css/main.css" rel=" stylesheet">
+    <link href="css/edit.css" rel=" stylesheet">
+    <link href="css/modal_img.css" rel=" stylesheet">
 
-  	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 
-  	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-  	<link rel="stylesheet" href="css/filter_style.css"> <!-- Resource style -->
-  	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <link rel=" stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel=" stylesheet" href="css/filter_style.css"> <!-- Resource style -->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel=" stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Artsify</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-              <ul class="nav navbar-nav">
-                  <li>
-                      <a href="art.html">Art</a>
-                  </li>
-                  <li>
-                      <a href="artists.html">Artists</a>
-                  </li>
-                  <li>
-                      <a></a>
-                  </li>
-                  <li>
-                      <div id="custom-search-input">
-                          <div class="input-group col-md-12">
-                          <input type="text" class="search-query form-control" placeholder="Search or type keywords" />
-                          <span class="input-group-btn">
-                              <button class="btn btn-danger" type="button">
-                                  <span class=" glyphicon glyphicon-search"></span>
-                              </button>
-                          </span>
-                          </div>
-                      </div>
-                  </li>
-
-              </ul>
-
-              <ul class="nav navbar-nav" style="float:right;">
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">About</a>
-                    <div class="dropdown-content">
-                        <a href="about.html">About Artsify</a>
-                        <a href="team.html">Our Team</a>
-                        <a href="membership.html">Membership Plans</a>
+    <!--Navigation-->
+    <nav id='cssmenu'>
+        <div class="logo"><a class="navbar-brand" href="index.html">Artsify</a></div>
+        <div id="head-mobile"></div>
+        <div class="button"></div>
+        <ul>
+            <li class='active'><a href='art.html'>Art</a></li>
+            <li><a href='artists.html'>Artists</a></li>
+            <li id = "searchbar">
+                <div id="custom-search-input">
+                    <div class="input-group col-md-12">
+                        <input type="text" class="search-query form-control" placeholder="Search or type keywords" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-danger" type="button">
+                                <span class=" glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
                     </div>
-                </li>
-                  <li>
-                      <a href="contact.html">Contact</a>
-                  </li>
-                  <li>
-                      <a href="#" data-toggle="modal" data-target="#login-modal" id="login-btn">Log In</a>
-                  </li>
-                  <li>
-                      <a href="#" id="register-btn">Sign Up</a>
-                  </li>
-              </ul>
-
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
+                </div>
+            </li>
+            <li><a href='#'>About</a>
+                <ul>
+                    <li><a href='about.html'>About Artsify</a></li>
+                    <li><a href='team.html'>Our Team</a></li>
+                    <li><a href='membership.html'>Membership Plans</a></li>
+                </ul>
+            </li>
+            <li><a href='contact.html'>Contact</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#login-modal" id="login-btn">Log In</a></li>
+            <li><a href="#" id="register-btn">Sign Up</a></li>
+        </ul>
     </nav>
+
+    <!--./Navigation-->
 
     <!-- Page Content -->
     <div>
-        <header class="cd-header">
-        </header>
         <main class="cd-main-content">
-      		<div class="cd-tab-filter-wrapper">
-      			<div class="cd-tab-filter">
-      				<ul class="cd-filters">
-      					<li class="placeholder">
-      						<a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
-      					</li>
-      					<li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
-                <!--
-                <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Featured Artists</a></li>
-                -->
-                <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Popular Works</a></li>
-              </ul> <!-- cd-filters -->
-      			</div> <!-- cd-tab-filter -->
-      		</div> <!-- cd-tab-filter-wrapper -->
+            <div class="cd-tab-filter-wrapper">
+                <div class="cd-tab-filter">
+                    <ul class="cd-filters">
+                        <li class="placeholder"><a data-type="all" href="#0">All</a></li><!-- selected option on mobile -->
+                        <li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
+                        <!--
+                        <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Featured Artists</a></li>
+                        -->
+                        <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Popular Works</a></li>
+                    </ul> <!-- cd-filters -->
+                </div> <!-- cd-tab-filter -->
+            </div> <!-- cd-tab-filter-wrapper -->
 
-      		<section class="cd-gallery">
-      			<ul>
-      				<li class="mix color-1 check1 radio2 option3"><img src="img/Art/MarilynHenrion/1.jpg" alt="Image 2" style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity">
-                <div class="desc">
-                  <h4 class="pull-right">$6,000.00</h4>
-                  <h4>Gray Rock Triptych</h4>
-                  <p><a target="_blank" href="http://marilynhenrion.com/about/">MARILYN HENRION</a></p>
-                  <p>50"x63" digitally manipulated photography, inkjet printing on cotton, hand quilting</p>
-                  <div class="ratings">
-                    <p class="pull-right">35 reviews</p>
-                    <p>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                    </p>
-                  </div>
-                </div>
-              </li>
+            <section class="cd-gallery">
+                <div class="container"><div class="row">
+                    <ul class="art-grid">
 
-      				<li class="mix color-2 check2 radio2 option2"><img src="img/Art/MarilynHenrion/2.jpg" alt="Image 2" style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity">
-                <div class="desc">
-                  <h4 class="pull-right">$6,000.00</h4>
-                  <h4>Lake Rock Triptych</h4>
-                  <p><a target="_blank" href="http://marilynhenrion.com/about/">MARILYN HENRION</a></p>
-                  <p>50"x63" digitally manipulated photography, inkjet printing on cotton, hand quilting </p>
-                  <div class="ratings">
-                      <p class="pull-right">25 reviews</p>
-                      <p>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star"></span>
-                      </p>
-                  </div>
-                </div>
-              </li>
+                        <li class="art-card mix color-1 check1 radio2 option4">
+                            <img src="img/Art/MarilynHenrion/PC68.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="product_1.html">Patchwork City 68</a></h4>
+                                <h5>$5,600.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p>24" x 48" x 1" Mixed media linen collage on stretched canvas, framed</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
 
-              <li class="mix color-1 check3 radio3 option1"><img src="img/Art/MarilynHenrion/3.jpg" alt="Image 3" style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity">
-                <div class="desc">
-                  <h4 class="pull-right">$6,000.00</h4>
-                  <h4>Green Sea</h4>
-                  <p><a target="_blank" href="http://marilynhenrion.com/about/">MARILYN HENRION</a></p>
-                  <p> 50"x63" digitally manipulated photography, inkjet printing on cotton, hand quilting</p>
-                  <div class="ratings">
-                      <p class="pull-right">22 reviews</p>
-                      <p>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star"></span>
-                      </p>
-                  </div>
-                </div>
-              </li>
+                        <li class="art-card mix color-1 check1 radio2 option4">
+                            <img src="img/Art/MarilynHenrion/PC67.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
 
-              <li class="mix color-1 check3 radio3 option1"><img src="img/Art/MarilynHenrion/4.jpg" alt="Image 3" style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity">
-                <div class="desc">
-                  <h4 class="pull-right">$6,000.00</h4>
-                  <h4>Old Stones 3</h4>
-                  <p><a target="_blank" href="http://marilynhenrion.com/about/">MARILYN HENRION</a></p>
-                  <p>triptych 25"x32" (29"x36" framed) digitally manipulated photography, inkjet printing on cotton, hand quilting, mounted and framed</p>
-                  <div class="ratings">
-                      <p class="pull-right">22 reviews</p>
-                      <p>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star"></span>
-                          <span class="glyphicon glyphicon-star"></span>
-                      </p>
-                  </div>
-                </div>
-              </li>
+                                <h4><a href="#.html">Patchwork City 67</a></h4>
+                                <h5>$5,600.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p>24" x 48" x 1" Mixed media linen collage on stretched canvas, framed</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
 
-              <li class="mix color-1 check3 radio2 option4"><img src="img/Art/MarkRichardson/1.jpg" alt="Image 4" style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
+                        <li class="art-card mix color-1 check1 radio2 option4">
+                            <img src="img/Art/MarilynHenrion/PC66.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
 
-              <li class="mix color-1 check1 radio3 option2"><img src="img/Art/MarkRichardson/2.jpg" alt="Image 5"style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
+                                <h4><a href="#.html">Patchwork City 66</a></h4>
+                                <h5>$5,600.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p>24" x 48" x 1" Mixed media linen collage on stretched canvas, framed</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
 
-              <li class="mix color-2 check2 radio3 option3"><img src="img/Art/MarkRichardson/3.jpg" alt="Image 6"style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
+                        <li class="art-card mix color-1 check1 radio2 option4">
+                            <img src="img/Art/MarilynHenrion/PC65.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
 
-              <li class="mix color-2 check2 radio2 option1"><img src="img/Art/MarkRichardson/4.jpg" alt="Image 7"style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
-
-              <li class="mix color-1 check1 radio3 option4"><img src="img/Art/MarkRichardson/5.jpg" alt="Image 8"style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
-
-              <li class="mix color-2 check1 radio2 option3"><img src="img/Art/MarkRichardson/6.jpg" alt="Image 9"style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
-
-              <li class="mix color-1 check3 radio2 option4"><img src="img/Art/MarkRichardson/7.jpg" alt="Image 10"style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
-
-              <li class="mix color-1 check3 radio3 option2"><img src="img/Art/MarkRichardson/8.jpg" alt="Image 11"style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
-
-              <li class="mix color-2 check1 radio3 option1"><img src="img/Art/MarkRichardson/9.jpg" alt="Image 12"style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
-
-              <li class="mix color-2 check1 radio3 option1"><img src="img/Artwork/art5.jpeg" alt="Image 12"style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
-
-              <li class="mix color-2 check1 radio3 option1"><img src="img/Artwork/art4.jpeg" alt="Image 12"style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
-
-              <li class="mix color-2 check1 radio3 option1"><img src="img/Artwork/art3.jpeg" alt="Image 12"style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
-
-              <li class="mix color-2 check1 radio3 option1"><img src="img/Artwork/art2.jpeg" alt="Image 12"style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
-
-              <li class="mix color-2 check1 radio3 option1"><img src="img/Artwork/art1.jpeg" alt="Image 12"style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
-
-              <li class="mix color-2 check1 radio3 option1"><img src="img/Artwork/art6.jpg" alt="Image 12"style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
-
-              <li class="mix color-2 check1 radio3 option1"><img src="img/Artwork/art7.jpeg" alt="Image 12"style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
-
-              <li class="mix color-2 check1 radio3 option1"><img src="img/Artwork/art8.jpeg" alt="Image 12"style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
-
-              <li class="mix color-2 check1 radio3 option1"><img src="img/Artwork/art9.jpeg" alt="Image 12"style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>
-
-              <!--<li class="mix color-2 check1 radio3 option1"><img src="img/Artwork/art10.jpeg" alt="Image 12"style="width:100%;cursor:zoom-in"
-              onclick="onClick(this)" class="w3-hover-opacity"><div class="desc">Add a description of the image here</div></li>-->
-
-              <li class="gap"></li>
-      				<li class="gap"></li>
-      				<li class="gap"></li>
-      			</ul>
-      			<div class="cd-fail-message">No results found</div>
-      		</section> <!-- cd-gallery -->
+                                <h4><a href="#.html">Patchwork City 65</a></h4>
+                                <h5>$5,600.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p>36" x 24" x 1" Mixed media linen collage on stretched canvas</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
 
 
-   		  <div class="cd-filter">
-      			<form>
+                        <li class="art-card mix color-1 check1 radio2 option4">
+                            <img src="img/Art/MarilynHenrion/PC64.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
 
-              <div class="cd-filter-block">
-      					<h4>Search</h4>
-      					<div class="cd-filter-content">
-      						<input type="search" placeholder="Keywords">
-      					</div> <!-- cd-filter-content -->
-      				</div> <!-- cd-filter-block -->
+                                <h4><a href="#.html">Patchwork City 64</a></h4>
+                                <h5>$5,600.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p>24" x 48" x 1" Mixed media linen collage on stretched canvas, framed</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
 
-              <div class="cd-filter-block">
-      					<h4>Price</h4>
-      					<div class="cd-filter-content">
-      						<div class="cd-select cd-filters">
-      							<select class="filter" name="selectThis" id="selectThis">
-      								<option value="">Choose a price range</option>
-      								<option value=".option1">Under $500</option>
-      								<option value=".option2">$501 - $1,000</option>
-      								<option value=".option3">$1,001 - $5,000</option>
-      								<option value=".option4">Above $5,001</option>
-      							</select>
-      						</div> <!-- cd-select -->
-      					</div> <!-- cd-filter-content -->
-      				</div> <!-- cd-filter-block -->
+                        <li class="art-card mix color-1 check1 radio2 option4">
+                            <img src="img/Art/MarilynHenrion/PC63.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
 
-      				<div class="cd-filter-block">
-      					<h4>Style</h4>
+                                <h4><a href="#.html">Patchwork City 63</a></h4>
+                                <h5>$5,600.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p>24" x 48" x 1" Mixed media linen collage on stretched canvas, framed</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
 
-      					<ul class="cd-filter-content cd-filters list">
-      						<li>
-      							<input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
-      							<label class="checkbox-label" for="checkbox1">Expressionism</label>
-      						</li>
+                        <li class="art-card mix color-1 check1 radio2 option4">
+                            <img src="img/Art/MarilynHenrion/PC62.jpg" alt="Image 2" style="width:100%;cursor:zoom-in"onclick="onClick(this)" class="w3-hover-opacity">
+                            <div class="desc">
 
-      						<li>
-      							<input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
-      							<label class="checkbox-label" for="checkbox2">Pop Art</label>
-      						</li>
+                                <h4><a href="#.html">Patchwork City 62</a></h4>
+                                <h5>$5,600.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p>24" x 48" x 1" Mixed media linen collage on stretched canvas, framed</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
 
-      						<li>
-      							<input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
-      							<label class="checkbox-label" for="checkbox3">Naturalism</label>
-      						</li>
-                  <li>
-                    <input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
-                    <label class="checkbox-label" for="checkbox4">Other</label>
-                  </li>
-      					</ul> <!-- cd-filter-content -->
-      				</div> <!-- cd-filter-block -->
+                        <li class="art-card mix color-1 check1 radio2 option4">
+                        <img src="img/Art/MarilynHenrion/PC61.jpg" alt="Image 2" style="width:100%;cursor:zoom-in"onclick="onClick(this)" class="w3-hover-opacity">
+                            <div class="desc">
 
-      				<div class="cd-filter-block">
-      					<h4>Subject</h4>
+                                <h4><a href="#.html">Patchwork City 61</a></h4>
+                                <h5>$5,600.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p>18" x 36" x 1" Mixed media linen collage on stretched canvas</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
 
-      					<div class="cd-filter-content">
-      						<div class="cd-select cd-filters">
-      							<select class="filter" name="selectThis" id="selectThis">
-      								<option value="">Choose a subject</option>
-      								<option value=".option1">Animals</option>
-      								<option value=".option2">Cityscape</option>
-      								<option value=".option3">Fashion</option>
-      								<option value=".option4">Landscape</option>
-                      <option value=".option5">Other</option>
-      							</select>
-      						</div> <!-- cd-select -->
-      					</div> <!-- cd-filter-content -->
-      				</div> <!-- cd-filter-block -->
+                        <li class="art-card mix color-1 check1 radio2 option4">
+                            <img src="img/Art/MarilynHenrion/PC60.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
 
-      				<div class="cd-filter-block">
-      					<h4>Medium</h4>
+                                <h4><a href="#.html">Patchwork City 60</a></h4>
+                                <h5>$5,600.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p>24" x 48" x 1" Mixed media linen collage on stretched canvas, framed</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
 
-      					<ul class="cd-filter-content cd-filters list">
-      						<li>
-      							<input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
-      							<label class="radio-label" for="radio1">All</label>
-      						</li>
+                        <li class="art-card mix color-1 check1 radio2 option4">
+                            <img src="img/Art/MarilynHenrion/PC26.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
 
-      						<li>
-      							<input class="filter" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
-      							<label class="radio-label" for="radio2">Collage</label>
-      						</li>
+                                <h4><a href="#.html">Patchwork City 26</a></h4>
+                                <h5>$5,600.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p>36" x 24" x 2"   Mixed media:  linen collage, hand quilted silk, stretched canvases</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
 
-      						<li>
-      							<input class="filter" data-filter=".radio3" type="radio" name="radioButton" id="radio3">
-      							<label class="radio-label" for="radio3">Painting</label>
-      						</li>
-                  <li>
-                    <input class="filter" data-filter=".radio4" type="radio" name="radioButton" id="radio4">
-                    <label class="radio-label" for="radio4">Other</label>
-                  </li>
-      					</ul> <!-- cd-filter-content -->
-      				</div> <!-- cd-filter-block -->
-      			</form>
 
-      			<a href="#0" class="cd-close">Close</a>
-      		</div>
-      		<!-- cd-filter -->
+                        <li class="art-card mix color-1 check1 radio2 option4">
+                            <img src="img/Art/MarilynHenrion/PC29.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
 
-      		<a href="#0" class="cd-filter-trigger">Filters</a>
-      	</main> <!-- cd-main-content -->
+                                <h4><a href="#.html">Patchwork City 29</a></h4>
+                                <h5>$5,600.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p>36" x 24" x 2"   Mixed media:  linen collage, hand quilted silk, stretched canvases</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check1 radio2 option4">
+                            <img src="img/Art/MarilynHenrion/PC28.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+
+                                <h4><a href="#.html">Patchwork City 28</a></h4>
+                                <h5>$5,600.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p>36" x 24" x 2"   Mixed media:  linen collage, hand quilted silk, stretched canvases</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check1 radio2 option4">
+                            <img src="img/Art/MarilynHenrion/PC27.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+
+                                <h4><a href="#.html">Patchwork City 27</a></h4>
+                                <h5>$5,600.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p>36" x 24" x 2"   Mixed media:  linen collage, hand quilted silk, stretched canvases</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check1 radio2 option4">
+                            <img src="img/Art/MarilynHenrion/PC59.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+
+                                <h4><a href="#.html">Patchwork City 59</a></h4>
+                                <h5>$5,600.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p>24" x 48" x 1" Mixed media linen collage on stretched canvas, framed</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check1 radio2 option4">
+                            <img src="img/Art/MarilynHenrion/PC20.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">Patchwork City 20</a></h4>
+                                <h5>$5,600.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p>24" x 48" x 1" Mixed media linen collage on stretched canvas, framed</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check1 radio2 option4">
+                            <img src="img/Art/MarilynHenrion/PC19.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+
+                                <h4><a href="#.html">Patchwork City 19</a></h4>
+                                <h5>$5,600.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p>24" x 48" x 1" Mixed media linen collage on stretched canvas, framed</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+
+                        <li class="art-card mix color-1 check1 radio2 option4">
+                            <img src="img/Art/MarilynHenrion/1.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+
+                                <h4><a href="#.html">Gray Rock Triptych</a></h4>
+                                <h5>$6,000.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p>50" x 63" digitally manipulated photography, inkjet printing on cotton, hand quilting</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-2 check2 radio2 option4">
+                            <img src="img/Art/MarilynHenrion/2.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+
+                                <h4><a href="#.html">Lake Rock Triptych</a></h4>
+                                <h5>$6,000.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p>50" x 63" digitally manipulated photography, inkjet printing on cotton, hand quilting </p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">25 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check3 radio3 option4">
+                            <img src="img/Art/MarilynHenrion/3.jpg" alt="Image 3" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+
+                                <h4><a href="#.html">Green Sea</a></h4>
+                                <h5>$6,000.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p> 50" x 63" digitally manipulated photography, inkjet printing on cotton, hand quilting</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">22 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check3 radio3 option3">
+                            <img src="img/Art/MarilynHenrion/10.jpg" alt="Image 3" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+
+                                <h4><a href="#.html">Portal 7- Autumn Afternoon</a></h4>
+                                <h5>$1,000.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p>12"x12" digitally manipulated photography, pigment printing on silk, hand quilting, stretched canvas support, mounted on painted wood panel. </p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">22 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check3 radio3 option4">
+                            <img src="img/Art/MarilynHenrion/5.jpg" alt="Image 3" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+
+                                <h4><a href="#.html">Red Rock Triptych</a></h4>
+                                <h5>$6,000.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p> 50" x 63" (each panel 50"x20") Mixed media on cotton, hand quilted. Anodized aluminum hanging bars fit into sleeves on back of work (invisible from front when hung)</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">22 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check3 radio3 option4">
+                            <img src="img/Art/MarilynHenrion/6.jpg" alt="Image 3" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+
+                                <h4><a href="#.html">Orange Sea Triptych</a></h4>
+                                <h5>$6,000.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p>50" x 63" (each panel 50"x20") Mixed media on cotton, hand quilted. Anodized aluminum hanging bars fit into sleeves on back of work (invisible from front when hung)</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">22 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check3 radio3 option3">
+                            <img src="img/Art/MarilynHenrion/7.jpg" alt="Image 3" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+
+                                <h4><a href="#.html">Old Stones 1</a></h4>
+                                <h5>$3,000.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p> 30" x 25"  Mixed media on cotton, hand quilted. Anodized aluminum hanging bars fit into sleeves on back of work (invisible from front when hung)</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">22 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check3 radio3 option3">
+                            <img src="img/Art/MarilynHenrion/8.jpg" alt="Image 3" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+
+                                <h4><a href="#.html">Portal 5 - Winter Sunset</a></h4>
+                                <h5>$1,000.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p> 12" x 12" digitally manipulated photography, pigment printing on silk, hand quilting, stretched canvas support, mounted on painted wood panel.  </p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">22 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check3 radio3 option3">
+                            <img src="img/Art/MarilynHenrion/9.jpg" alt="Image 3" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+
+                                <h4><a href="#.html">Portal 6 - Winter Afternoon</a></h4>
+                                <h5>$1,000.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p> 12" x 12" digitally manipulated photography, pigment printing on silk, hand quilting, stretched canvas support, mounted on painted wood panel. </p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">22 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check3 radio3 option3">
+                            <img src="img/Art/MarilynHenrion/4.jpg" alt="Image 3" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+
+                                <h4><a href="#.html">Old Stones Triptych</a></h4>
+                                <h5>$3,000.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p> 29" x 36" Mixed media on cotton, hand quilted, mounted and framed</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">22 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check3 radio3 option5">
+                            <img src="img/Art/MarilynHenrion/11.jpg" alt="Image 3" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+
+                                <h4><a href="#.html">Byzantium VI</a></h4>
+                                <h5>$11,000.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p> 42" x 42" Pieced cottons and silks, hand quilting</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">22 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check3 radio3 option5">
+                            <img src="img/Art/MarilynHenrion/12.jpg" alt="Image 3" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+
+                                <h4><a href="#.html">Evening in Byzantium</a></h4>
+                                <h5>$10,000.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p> 36" x 36" Pieced silks, hand quilted</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">22 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check3 radio3 option5">
+                            <img src="img/Art/MarilynHenrion/13.jpg" alt="Image 3" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+
+                                <h4><a href="#.html">An Immense Journey</a></h4>
+                                <h5>$20,000.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p>62" x 63" Pieced cottons, hand quilting</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">22 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check3 radio3 option4">
+                            <img src="img/Art/MarilynHenrion/14.jpg" alt="Image 3" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+
+                                <h4><a href="#.html">Innerspace 2</a></h4>
+                                <h5>$9,000.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p>41" x 48" Pieced silks, cottons, metallics, hand tied.</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">22 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check3 radio3 option4">
+                            <img src="img/Art/MarilynHenrion/15.jpg" alt="Image 3" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+
+                                <h4><a href="#.html">Cornerstone</a></h4>
+                                <h5>$5,000.00</h5>
+                                <p><a target="_blank" href="artist-marilyn-henrion.html">MARILYN HENRION</a></p>
+                                <p>12" x 12" each, 9 panels. Hand hooked cotton and linen on mesh canvas, mounted on wood stretchers</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">22 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                    <!--Ann Hosfeld's Works -->
+
+                        <li class="art-card mix color-1 check1 radio2 option3">
+                            <img src="img/Art/Artwork/AnnHosfeld/Agave.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+
+                                <h4><a href="#.html">Agave In Jardin De Majorelle, Marrakesh</a></h4>
+                                <h5>$2,500.00</h5>
+                                <p><a target="_blank" href="">ANN HOSFELD</a></p>
+                                <p>24" x 24" Oil on wood panel</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-2 check1 radio3 option3">
+                            <img src="img/Art/Artwork/AnnHosfeld/JungleSpirits.jpg" alt="Image 12" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">Jungle Spirits</a></h4>
+                                <h5>$3,600.00</h5>
+                                <p><a target="_blank" href="">ANN HOSFELD</a></p>
+                                <p>40" x 30" Acrylic on Canvas</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check1 radio2 option3">
+                            <img src="img/Art/Artwork/AnnHosfeld/EquinoxII.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">Equinox II</a></h4>
+                                <h5>$4,500.00</h5>
+                                <p><a target="_blank" href="">ANN HOSFELD</a></p>
+                                <p>39" x 43" Acrylic on Canva</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check1 radio2 option4">
+                            <img src="img/Art/Artwork/AnnHosfeld/AgaveSunset.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+
+                                <h4><a href="#.html">Agave Sunset</a></h4>
+                                <h5>$5,200.00</h5>
+                                <p><a target="_blank" href="">ANN HOSFELD</a></p>
+                                <p> 54" x 44" Acrylic on Canvas</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check1 radio2 option3">
+                            <img src="img/Art/Artwork/AnnHosfeld/Fantasy.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+
+                                <h4><a href="#.html">Fantasy Gardens</a></h4>
+                                <h5>$4,800.00</h5>
+                                <p><a target="_blank" href="">ANN HOSFELD</a></p>
+                                <p>36" x 48" Oil on Canvas</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                    <!--
+                        <li class="art-card mix color-2 check1 radio3 option1">
+                            <img src="img/Art/Artwork/AnnHosfeld/Agave.jpg" alt="Image 12" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">Add a description of the image here</div>
+                        </li>
+
+                        <li class="art-card mix color-2 check1 radio3 option1">
+                            <img src="img/Art/Artwork/AnnHosfeld/AgaveSunset.jpg" alt="Image 12" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">Add a description of the image here</div>
+                        </li>
+
+                        <li class="art-card mix color-2 check1 radio3 option1">
+                            <img src="img/Art/Artwork/AnnHosfeld/Fantasy.jpg" alt="Image 12" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">Add a description of the image here</div>
+                        </li>
+                    -->
+                        <li class="art-card mix color-1 check1 radio2 option3">
+                            <img src="img/Art/Artwork/AnnHosfeld/Intensity.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+
+                                <h4><a href="#.html">Intensity</a></h4>
+                                <h5>$3,800.00</h5>
+                                <p><a target="_blank" href="">ANN HOSFELD</a></p>
+                                <p>30" x 40" Acrylic on Canvas</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-2 check1 radio3 option4">
+                            <img src="img/Art/Artwork/AnnHosfeld/MaguayIII.jpg" alt="Image 12" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">Maguay III</a></h4>
+                                <h5>$5,400.00</h5>
+                                <p><a target="_blank" href="">ANN HOSFELD</a></p>
+                                <p>36" x 48" Acrylic on Canvas</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-2 check1 radio3 option4">
+                            <img src="img/Art/Artwork/AnnHosfeld/MysticLight.jpg" alt="Image 12" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">Mystic Light</a></h4>
+                                <h5>$5,500.00</h5>
+                                <p><a target="_blank" href="">ANN HOSFELD</a></p>
+                                <p>54" x 46" Acrylic on Canvas</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-2 check1 radio3 option4">
+                            <img src="img/Art/Artwork/AnnHosfeld/ShadowsDusk.jpg" alt="Image 12" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">Shadows Dusk</a></h4>
+                                <h5>$5,400.00</h5>
+                                <p><a target="_blank" href="">ANN HOSFELD</a></p>
+                                <p>52" x 46" Acrylic on Canvas</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-2 check1 radio3 option3">
+                            <img src="img/Art/Artwork/AnnHosfeld/ShadowShapes.jpg" alt="Image 12" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">Shadow Shapes and Blue Sky II</a></h4>
+                                <h5>$4,000.00</h5>
+                                <p><a target="_blank" href="">ANN HOSFELD</a></p>
+                                <p>30" x 46"Acrylic on Canvas</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-2 check1 radio3 option4">
+                            <img src="img/Art/Artwork/AnnHosfeld/SpringLight.jpg" alt="Image 12" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">Spring Light</a></h4>
+                                <h5>$5,000.00</h5>
+                                <p><a target="_blank" href="">ANN HOSFELD</a></p>
+                                <p>52" x 44" Acrylic on Canvas</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-2 check1 radio3 option4">
+                            <img src="img/Art/Artwork/AnnHosfeld/UnaPiantaRossa.jpg" alt="Image 12" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">Una Pianta Rossa</a></h4>
+                                <h5>$6,000.00</h5>
+                                <p><a target="_blank" href="">ANN HOSFELD</a></p>
+                                <p>48" x 42" Acrylic on Canvas</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                    <!--Bill Santelli's Works -->
+
+                        <li class="art-card mix color-1 check1 radio2 option3">
+                            <img src="img/Art/BillSantelli/path1.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">The Path 1</a></h4>
+                                <h5>$3,500.00</h5>
+                                <p><a target="_blank" href="">BILL SANTELLI</a></p>
+                                <p>22" x 30" Prismacolors on paper</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                             </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check1 radio2 option3">
+                            <img src="img/Art/BillSantelli/path2.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">The Path 2</a></h4>
+                                <h5>$3,500.00</h5>
+                                <p><a target="_blank" href="">BILL SANTELLI</a></p>
+                                <p>22" x 30" Prismacolors on paper</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check1 radio2 option3">
+                            <img src="img/Art/BillSantelli/path11.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">The Path 11</a></h4>
+                                <h5>$3,500.00</h5>
+                                <p><a target="_blank" href="">BILL SANTELLI</a></p>
+                                <p>22" x 30" Prismacolors on paper</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check1 radio2 option3">
+                            <img src="img/Art/BillSantelli/path12.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">The Path 12</a></h4>
+                                <h5>$3,500.00</h5>
+                                <p><a target="_blank" href="">BILL SANTELLI</a></p>
+                                <p>22" x 30" Prismacolors on paper</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check1 radio2 option3">
+                            <img src="img/Art/BillSantelli/path29.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">The Path 29</a></h4>
+                                <h5>$3,500.00</h5>
+                                <p><a target="_blank" href="">BILL SANTELLI</a></p>
+                                <p>22" x 30" Prismacolors on paper</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check1 radio2 option3">
+                            <img src="img/Art/BillSantelli/path31.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">The Path 31</a></h4>
+                                <h5>$3,500.00</h5>
+                                <p><a target="_blank" href="">BILL SANTELLI</a></p>
+                                <p>22" x 30" Prismacolors on paper</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check1 radio2 option3">
+                            <img src="img/Art/BillSantelli/stellar1.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">Stellar #1</a></h4>
+                                <h5>$2,500.00</h5>
+                                <p><a target="_blank" href="">BILL SANTELLI</a></p>
+                                <p>24" x 18" Acrylic & polymer mediums on canvas</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check1 radio2 option3">
+                            <img src="img/Art/BillSantelli/stellar4.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">Stellar #4</a></h4>
+                                <h5>$2,500.00</h5>
+                                <p><a target="_blank" href="">BILL SANTELLI</a></p>
+                                <p>24" x 18" Acrylic & polymer mediums on canvas</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check1 radio2 option3">
+                            <img src="img/Art/BillSantelli/stellar5.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">Stellar #5</a></h4>
+                                <h5>$2,500.00</h5>
+                                <p><a target="_blank" href="">BILL SANTELLI</a></p>
+                                <p>24" x 18" Acrylic & polymer mediums on canvas</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check1 radio2 option3">
+                            <img src="img/Art/BillSantelli/stellar6.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">Stellar #6</a></h4>
+                                <h5>$2,500.00</h5>
+                                <p><a target="_blank" href="">BILL SANTELLI</a></p>
+                                <p>24" x 18" Acrylic & polymer mediums on canvas</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check1 radio2 option3">
+                            <img src="img/Art/BillSantelli/stellar7.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">Stellar #7</a></h4>
+                                <h5>$2,500.00</h5>
+                                <p><a target="_blank" href="">BILL SANTELLI</a></p>
+                                <p>24" x 18" Acrylic & polymer mediums on canvas</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check1 radio2 option3">
+                            <img src="img/Art/BillSantelli/stellar8.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">Stellar #8</a></h4>
+                                <h5>$2,500.00</h5>
+                                <p><a target="_blank" href="">BILL SANTELLI</a></p>
+                                <p>24" x 18" Acrylic & polymer mediums on canvass</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check1 radio2 option3">
+                            <img src="img/Art/BillSantelli/stellar11.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">Stellar #11</a></h4>
+                                <h5>$2,500.00</h5>
+                                <p><a target="_blank" href="">BILL SANTELLI</a></p>
+                                <p>24" x 18" Acrylic & polymer mediums on canvas</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check3 radio3 option1">
+                            <img src="img/Art/EdwardHenrion/1.jpg" alt="Image 3" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+
+                                <h4><a href="#.html">Sundays With Joe</a></h4>
+                                <h5>$238.00</h5>
+                                <p><a target="_blank" href="artist-edward-henrion.html">EDWARD HENRION</a></p>
+                                <p> 25.5" x 30" Ink on paper, acrylic print</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right"></p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check3 radio3 option1">
+                            <img src="img/Art/EdwardHenrion/2.jpg" alt="Image 3" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+
+                                <h4><a href="#.html">Prix Nobel</a></h4>
+                                <h5>$198.00</h5>
+                                <p><a target="_blank" href="artist-edward-henrion.html">EDWARD HENRION</a></p>
+                                <p> 18.25" x 20" Ink on paper, acrylic print</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right"></p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check3 radio3 option1">
+                            <img src="img/Art/EdwardHenrion/5.jpg" alt="Image 3" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">Taxi</a></h4>
+                                <h5>$220.00</h5>
+                                <p><a target="_blank" href="artist-edward-henrion.html">EDWARD HENRION</a></p>
+                                <p> 19.75" x 24" Ink on paper, acrylic print</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right"></p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check3 radio3 option1">
+                            <img src="img/Art/EdwardHenrion/4.jpg" alt="Image 3" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">We Shall Not Forget</a></h4>
+                                <h5>$301.18</h5>
+                                <p><a target="_blank" href="artist-edward-henrion.html">EDWARD HENRION</a></p>
+                                <p> 28.25" x 36" Ink on paper, acrylic print</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right"></p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check3 radio3 option1">
+                            <img src="img/Art/EdwardHenrion/3.jpg" alt="Image 3" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">Yale</a></h4>
+                                <h5>$213.00</h5>
+                                <p><a target="_blank" href="artist-edward-henrion.html">EDWARD HENRION</a></p>
+                                <p> 17.75" x 24" Ink on paper, acrylic print</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right"></p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check3 radio3 option1">
+                            <img src="img/Art/EdwardHenrion/6.jpg" alt="Image 3" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+
+                                <h4><a href="#.html">Sartre And Debeauvoir</a></h4>
+                                <h5>$214.00</h5>
+                                <p><a target="_blank" href="artist-edward-henrion.html">EDWARD HENRION</a></p>
+                                <p> 18" x 24" Ink on paper, acrylic print</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right"></p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check3 radio3 option2">
+                            <img src="img/Art/EdwardHenrion/7.jpg" alt="Image 3" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+
+                                <h4><a href="#.html">Nude 023</a></h4>
+                                <h5>$700.00</h5>
+                                <p><a target="_blank" href="artist-edward-henrion.html">EDWARD HENRION</a></p>
+                                <p> 14" x 11" Charcoal drawing of male nude</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right"></p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check3 radio3 option2">
+                            <img src="img/Art/EdwardHenrion/8.jpg" alt="Image 3" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+
+                                <h4><a href="#.html">Nude 015</a></h4>
+                                <h5>$600.00</h5>
+                                <p><a target="_blank" href="artist-edward-henrion.html">EDWARD HENRION</a></p>
+                                <p> 9" x 9" Pen and ink wash drawing of female nude</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right"></p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check1 radio2 option2">
+                            <img src="img/Art/EdwardHenrion/9.jpg" alt="Image 2" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">Nude 010</a></h4>
+                                <h5>$600.00</h5>
+                                <p><a target="_blank" href="artist-edward-henrion.html">EDWARD HENRION</a></p>
+                                <p>9" x 9" Sepia and black charcoal drawing of female nude</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check3 radio3 option2">
+                            <img src="img/Art/EdwardHenrion/10.jpg" alt="Image 3" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">Nude 007</a></h4>
+                                <h5>$800.00</h5>
+                                <p><a target="_blank" href="artist-edward-henrion.html">EDWARD HENRION</a></p>
+                                <p>9" x 9" Sepia and black charcoal life drawing of nude female figure</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right"></p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check3 radio2 option3">
+                            <img src="img/Art/MarkRichardson/1.jpg" alt="Image 4" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">Abstract I</a></h4>
+                                <h5>$1,000.00</h5>
+                                <p><a target="_blank" href="artist-mark-richardson.html">MARK RICHARDSON</a></p>
+                                <p>Rotor motion on plywood</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check1 radio3 option3">
+                            <img src="img/Art/MarkRichardson/2.jpg" alt="Image 5" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">Abstract II</a></h4>
+                                <h5>$1,000.00</h5>
+                                <p><a target="_blank" href="artist-mark-richardson.html">MARK RICHARDSON</a></p>
+                                <p>Rotor motion on plywood</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-2 check2 radio3 option3">
+                            <img src="img/Art/MarkRichardson/3.jpg" alt="Image 6" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">Abstract III</a></h4>
+                                <h5>$1,000.00</h5>
+                                <p><a target="_blank" href="artist-mark-richardson.html">MARK RICHARDSON</a></p>
+                                <p>Rotor motion on plywood</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-2 check2 radio2 option3">
+                            <img src="img/Art/MarkRichardson/4.jpg" alt="Image 7" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">Abstract IV</a></h4>
+                                <h5>$1,000.00</h5>
+                                <p><a target="_blank" href="artist-mark-richardson.html">MARK RICHARDSON</a></p>
+                                <p>Rotor motion on plywood</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check1 radio3 option3">
+                            <img src="img/Art/MarkRichardson/5.jpg" alt="Image 8" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html"></a>Abstract V</h4>
+                                <h5>$1,000.00</h5>
+                                <p><a target="_blank" href="artist-mark-richardson.html">MARK RICHARDSON</a></p>
+                                <p>Rotor motion on plywood</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-2 check1 radio2 option3">
+                            <img src="img/Art/MarkRichardson/6.jpg" alt="Image 9" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">Abstract VI</a></h4>
+                                <h5>$1,000.00</h5>
+                                <p><a target="_blank" href="artist-mark-richardson.html">MARK RICHARDSON</a></p>
+                                <p>Rotor motion on plywood</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check3 radio2 option3">
+                            <img src="img/Art/MarkRichardson/7.jpg" alt="Image 10" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">Abstract VII</a></h4>
+                                <h5>$1,000.00</h5>
+                                <p><a target="_blank" href="artist-mark-richardson.html">MARK RICHARDSON</a></p>
+                                <p>Rotor motion on plywood</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->-->-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-1 check3 radio3 option3">
+                            <img src="img/Art/MarkRichardson/8.jpg" alt="Image 11" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">Abstract VIII</a></h4>
+                                <h5>$1,000.00</h5>
+                                <p><a target="_blank" href="artist-mark-richardson.html">MARK RICHARDSON</a></p>
+                                <p>Rotor motion on plywood</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->-->
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-2 check1 radio3 option3">
+                            <img src="img/Art/MarkRichardson/9.jpg" alt="Image 12" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html">Abstract IX</a></h4>
+                                <h5>$1,000.00</h5>
+                                <p><a target="_blank" href="artist-mark-richardson.html">MARK RICHARDSON</a></p>
+                                <p>Rotor motion on plywood</p>
+                                <!-- <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                        </li>
+
+                        <!--
+                        <li class="art-card mix color-2 check1 radio3 option1">
+                            <img src="img/Art/Artwork/art5.jpeg" alt="Image 12" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html"></a></h4>
+                                <h5></h5>
+                                <p><a target="_blank" href=""></a></p>
+                                <p></p>
+                                <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-2 check1 radio3 option1">
+                            <img src="img/Art/Artwork/art4.jpeg" alt="Image 12" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html"></a></h4>
+                                <h5></h5>
+                                <p><a target="_blank" href=""></a></p>
+                                <p></p>
+                                 <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-2 check1 radio3 option1">
+                            <img src="img/Art/Artwork/art3.jpeg" alt="Image 12" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html"></a></h4>
+                                <h5></h5>
+                                <p><a target="_blank" href=""></a></p>
+                                <p></p>
+                                  <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-2 check1 radio3 option1">
+                            <img src="img/Art/Artwork/art2.jpeg" alt="Image 12" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html"></a></h4>
+                                <h5></h5>
+                                <p><a target="_blank" href=""></a></p>
+                                <p></p>
+                                  <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="art-card mix color-2 check1 radio3 option1">
+                            <img src="img/Art/Artwork/art1.jpeg" alt="Image 12" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html"></a></h4>
+                                <h5></h5>
+                                <p><a target="_blank" href=""></a></p>
+                                <p></p>
+                                  <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-2 check1 radio3 option1">
+                            <img src="img/Art/Artwork/art6.jpg" alt="Image 12" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html"></a></h4>
+                                <h5></h5>
+                                <p><a target="_blank" href=""></a></p>
+                                <p></p>
+                                  <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-2 check1 radio3 option1">
+                            <img src="img/Art/Artwork/art7.jpeg" alt="Image 12" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html"></a></h4>
+                                <h5></h5>
+                                <p><a target="_blank" href=""></a></p>
+                                <p></p>
+                                 <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-2 check1 radio3 option1">
+                            <img src="img/Art/Artwork/art8.jpeg" alt="Image 12" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html"></a></h4>
+                                <h5></h5>
+                                <p><a target="_blank" href=""></a></p>
+                                <p></p>
+                                 <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="art-card mix color-2 check1 radio3 option1">
+                            <img src="img/Art/Artwork/art9.jpeg" alt="Image 12" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html"></a></h4>
+                                <h5></h5>
+                                <p><a target="_blank" href=""></a></p>
+                                <p></p>
+                                  <div class="ratings">
+                                    <p class="pull-right">35 reviews</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>-->
+
+
+                        <!--<li class="art-card mix color-2 check1 radio3 option1">
+                            <img src="img/Artwork/art10.jpeg" alt="Image 12" class="w3-hover-opacity artwork-image" onclick="onClick(this)">
+                            <div class="desc">
+                                <h4><a href="#.html"></a></h4>
+                                <h5></h5>
+                                <p><a target="_blank" href=""></a></p>
+                                <p></p>
+                            </div>
+                        </li>-->
+
+                        <li class="gap"></li>
+                        <li class="gap"></li>
+                        <li class="gap"></li>
+
+                    </ul>
+                    <hr>
+                </div></div>
+                <div class="cd-fail-message">No results found</div>
+            </section> <!-- cd-gallery -->
+
+
+            <div class="cd-filter">
+                <form>
+                    <div class="cd-filter-block">
+                        <h4>Search</h4>
+                        <div class="cd-filter-content">
+                            <input type="search" placeholder="Keywords">
+                        </div> <!-- cd-filter-content -->
+                    </div> <!-- cd-filter-block -->
+
+                    <div class="cd-filter-block">
+                        <h4>Price</h4>
+                        <div class="cd-filter-content">
+                            <div class="cd-select cd-filters">
+                                <select class="filter" name="selectThis" id="selectThis">
+                                    <option value="">Choose a price range</option>
+                                    <option value=".option1">Under $499</option>
+                                    <option value=".option2">$500 - $999</option>
+                                    <option value=".option3">$1,000 - $4,999</option>
+                                    <option value=".option4">$5,000 - $9,999</option>
+                                    <option value=".option5">Above $10,000</option>
+                                </select>
+                            </div> <!-- cd-select -->
+                        </div> <!-- cd-filter-content -->
+                    </div> <!-- cd-filter-block -->
+
+                    <div class="cd-filter-block">
+                        <h4>Style</h4>
+                        <ul class="cd-filter-content cd-filters list">
+                            <li>
+                                <input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
+                                <label class="checkbox-label" for="checkbox1">Expressionism</label>
+                            </li>
+                            <li>
+                                <input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
+                                <label class="checkbox-label" for="checkbox2">Pop Art</label>
+                            </li>
+                            <li>
+                                <input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
+                                <label class="checkbox-label" for="checkbox3">Naturalism</label>
+                            </li>
+                            <li>
+                                <input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
+                                <label class="checkbox-label" for="checkbox4">Other</label>
+                            </li>
+                        </ul> <!-- cd-filter-content -->
+                    </div> <!-- cd-filter-block -->
+
+                    <div class="cd-filter-block">
+                        <h4>Subject</h4>
+                        <div class="cd-filter-content">
+                            <div class="cd-select cd-filters">
+                                <select class="filter" name="selectThis" id="selectThis">
+                                    <option value="">Choose a subject</option>
+                                    <option value=".option1">Animals</option>
+                                    <option value=".option2">Cityscape</option>
+                                    <option value=".option3">Fashion</option>
+                                    <option value=".option4">Landscape</option>
+                                    <option value=".option5">Other</option>
+                                </select>
+                            </div> <!-- cd-select -->
+                        </div> <!-- cd-filter-content -->
+                    </div> <!-- cd-filter-block -->
+
+                    <div class="cd-filter-block">
+                        <h4>Medium</h4>
+                        <ul class="cd-filter-content cd-filters list">
+                            <li>
+                                <input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
+                                <label class="radio-label" for="radio1">All</label>
+                            </li>
+                            <li>
+                                <input class="filter" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
+                                <label class="radio-label" for="radio2">Collage</label>
+                            </li>
+                            <li>
+                                <input class="filter" data-filter=".radio3" type="radio" name="radioButton" id="radio3">
+                                <label class="radio-label" for="radio3">Painting</label>
+                            </li>
+                            <li>
+                                <input class="filter" data-filter=".radio4" type="radio" name="radioButton" id="radio4">
+                                <label class="radio-label" for="radio4">Other</label>
+                            </li>
+                        </ul> <!-- cd-filter-content -->
+                    </div> <!-- cd-filter-block -->
+
+                </form>
+                <a href="#0" class="cd-close">Close</a>
+            </div>
+            <!-- cd-filter -->
+            <a href="#0" class="cd-filter-trigger">Filters</a>
+        </main> <!-- cd-main-content -->
+
         <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-        <div class="w3-modal-content w3-animate-zoom">
-          <img id="img01" style="width:100%">
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <div class="w3-modal-content w3-animate-zoom">
+                <img id="img01" style="width:100%">
+            </div>
         </div>
-</div>
-
-
-    <!-- /.container -->
-
+    </div>
+    <!-- /.Page Content -->
+    <section style='padding-top:100px;font:bold  44px arial;color:#68D800;'></section>
+    <!-- Footer -->
     <div class="container">
-
         <hr>
-
-        <!-- Footer -->
         <footer>
             <div class="row">
                 <div class="col-lg-12" align="center">
@@ -397,11 +1461,10 @@
                 </div>
             </div>
         </footer>
-
     </div>
-    <!-- /.container -->
+    <!-- /.Footer -->
 
-    <!-- BEGIN # MODAL LOGIN -->
+    <!-- Modal Login -->
     <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -412,10 +1475,8 @@
                     <p class="logo-text-lg">Artsify</p>
                 </div>
 
-                <!-- Begin # DIV Form -->
                 <div id="div-forms">
 
-                    <!-- Begin # Login Form -->
                     <form id="login-form">
                         <div class="modal-body">
                             <div id="div-login-msg">
@@ -425,9 +1486,7 @@
                             <input id="login_username" class="form-control" type="text" placeholder="Username" required>
                             <input id="login_password" class="form-control" type="password" placeholder="Password" required>
                             <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Remember me
-                                </label>
+                                <label><input type="checkbox"> Remember me</label>
                             </div>
                         </div>
                         <div class="modal-footer">
@@ -440,9 +1499,7 @@
                             </div>
                         </div>
                     </form>
-                    <!-- End # Login Form -->
 
-                    <!-- Begin | Lost Password Form -->
                     <form id="lost-form" style="display:none;">
                         <div class="modal-body">
                             <div id="div-lost-msg">
@@ -461,9 +1518,7 @@
                             </div>
                         </div>
                     </form>
-                    <!-- End | Lost Password Form -->
 
-                    <!-- Begin | Register Form -->
                     <form id="register-form" style="display:none;">
                         <div class="modal-body">
                             <div id="div-register-msg">
@@ -484,76 +1539,65 @@
                             </div>
                         </div>
                     </form>
-                    <!-- End | Register Form -->
 
                 </div>
-                <!-- End # DIV Form -->
 
             </div>
         </div>
     </div>
-    <!-- END # MODAL LOGIN -->
+    <!-- ./Modal Login -->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Custom JavaScript -->
-   <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/filter_main.js"></script> <!-- Resource jQuery -->
 
-   <script src="js/jquery-2.1.1.js"></script>
-   <script src="js/jquery.mixitup.min.js"></script>
-   <script src="js/filter_main.js"></script> <!-- Resource jQuery -->
 
-   <script>
-   function openModal() {
-     document.getElementById('myModal').style.display = "block";
-   }
+    <script>
+        function openModal() { document.getElementById('myModal').style.display = "block"; }
+        function closeModal() { document.getElementById('myModal').style.display = "none"; }
 
-   function closeModal() {
-     document.getElementById('myModal').style.display = "none";
-   }
+        var slideIndex = 1;
+        showSlides(slideIndex);
 
-   var slideIndex = 1;
-   showSlides(slideIndex);
+        function plusSlides(n) {vshowSlides(slideIndex += n); }
+        function currentSlide(n) { showSlides(slideIndex = n); }
 
-   function plusSlides(n) {
-     showSlides(slideIndex += n);
-   }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+    </script>
 
-   function currentSlide(n) {
-     showSlides(slideIndex = n);
-   }
+    <script>
+        function onClick(element) {
+          document.getElementById("img01").src = element.src;
+          document.getElementById("modal01").style.display = "block";
+        }
+    </script>
 
-   function showSlides(n) {
-     var i;
-     var slides = document.getElementsByClassName("mySlides");
-     var dots = document.getElementsByClassName("demo");
-     var captionText = document.getElementById("caption");
-     if (n > slides.length) {slideIndex = 1}
-     if (n < 1) {slideIndex = slides.length}
-     for (i = 0; i < slides.length; i++) {
-         slides[i].style.display = "none";
-     }
-     for (i = 0; i < dots.length; i++) {
-         dots[i].className = dots[i].className.replace(" active", "");
-     }
-     slides[slideIndex-1].style.display = "block";
-     dots[slideIndex-1].className += " active";
-     captionText.innerHTML = dots[slideIndex-1].alt;
-   }
-   </script>
-
-   <script>
-    function onClick(element) {
-      document.getElementById("img01").src = element.src;
-      document.getElementById("modal01").style.display = "block";
-    }
-  </script>
+    <script src="js/pinterest_grid.js"></script>
 
 </body>
 

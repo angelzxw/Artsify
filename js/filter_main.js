@@ -71,15 +71,23 @@ jQuery(document).ready(function($){
 
 	buttonFilter.init();
 	$('.cd-gallery ul').mixItUp({
+		animation: {
+			animateResizeContainer: false
+	    },
 	    controls: {
 	    	enable: false
 	    },
 	    callbacks: {
-	    	onMixStart: function(){
+            onMixStart: function(){
 	    		$('.cd-fail-message').fadeOut(200);
-	    	},
+            },
 	      	onMixFail: function(){
 	      		$('.cd-fail-message').fadeIn(200);
+	      	},
+	    	onMixEnd: function(state){
+                (state.activeFilter != '.mix') ?
+                    state.$show.addClass('is-visible') :
+                    state.$show.removeClass('is-visible');
 	    	}
 	    }
 	});

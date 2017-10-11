@@ -17,13 +17,25 @@
     <script src="jquery.js"></script>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
 
     <!-- Custom CSS -->
     <link href="css/shop-homepage.css" rel="stylesheet">
     <link href="css/heroic-features.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/edit.css" rel="stylesheet">
+
+
+    <!-- Links for Search -->
+    <link rel="stylesheet" href="tipuesearch/css/tipuesearch.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400">
+    <link rel="stylesheet" href="tipuesearch/css/normalize.css">
+    <link rel="stylesheet" href="tipuesearch/standard.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="tipuesearch/tipuesearch_content.js"></script>
+    <link rel="stylesheet" href="tipuesearch/css/tipuesearch.css">
+    <script src="tipuesearch/tipuesearch_set.js"></script>
+    <script src="tipuesearch/tipuesearch.min.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -38,6 +50,55 @@
 </head>
 
 <body>
+  
+  <!--
+   <form name="jksearch" action="http://www.google.com/search" method="get" onSubmit="jksitesearch(this)">
+
+    <p>Test Search<br />
+    <input id="hiddenquery" type="hidden" name="q" />
+    <input name="qfront" type="text" style="width: 200px" value="" /> <input type="submit" value="Search" /><br />
+    <div style="font: bold 11px Verdana;">Google:<input name="se" type="radio" checked>  Yahoo:<input name="se" type="radio">  MSN:<input name="se" type="radio">
+    </div>
+
+    <script type="text/javascript">
+
+    // All-in-one Internal Site Search script- By JavaScriptKit.com (http://www.javascriptkit.com)
+    // For this and over 400+ free scripts, visit JavaScript Kit- http://www.javascriptkit.com/
+    // This notice must stay intact for use
+
+    //Enter domain of site to search.
+    var domainroot="www.artsify.me"
+
+    var searchaction=[ //form action for the 3 search engines
+    "http://www.google.com/search",
+    "http://search.yahoo.com/search",
+    "http://search.msn.com/results.aspx"
+    ]
+
+    var queryfieldname=["q","p","q"] //name of hidden query form for the 3 search engines
+
+    function switchaction(cur, index){
+    cur.form.action=searchaction[index]
+    document.getElementById("hiddenquery").name=queryfieldname[index]
+    }
+
+    function jksitesearch(curobj){
+    for (i=0; i< document.jksearch.se.length; i++){ //loop through radio to see which is checked
+    if (document.jksearch.se[i].checked==true)
+    switchaction(document.jksearch.se[i], i)
+    }
+    document.getElementById("hiddenquery").value="site:"+domainroot+" "+curobj.qfront.value
+    }
+
+
+    </script>
+
+    </p>
+
+    </form>
+
+    <p style="font: normal 11px Arial">This free script provided by<br />
+    <a href="http://www.javascriptkit.com">JavaScript Kit</a></p> -->
 
     <!--Navigation-->
     <nav id='cssmenu'>
@@ -47,18 +108,26 @@
         <ul>
             <li class='active'><a href='art.html'>Art</a></li>
             <li><a href='artists.html'>Artists</a></li>
+            
             <li id = "searchbar">
                 <div id="custom-search-input">
                     <div class="input-group col-md-12">
-                        <input type="text" class="search-query form-control" placeholder="Search or type keywords" />
+                        <input id = "search-input" type="text" onkeypress="return runScript(event)" class="search-query form-control" placeholder="Search or type keywords" />
                         <span class="input-group-btn">
-                            <button class="btn btn-danger" type="button">
+                            <button onclick = "myFunction()" class="btn btn-danger" type="button">
                                 <span class=" glyphicon glyphicon-search"></span>
                             </button>
                         </span>
                     </div>
                 </div>
-            </li>
+            </li>  
+        
+          <!--
+            <form action="search.html">
+              <div class="tipue_search_left"><img src="tipuesearch/search.png" class="tipue_search_icon"></div>
+              <div class="tipue_search_right"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required></div>
+            </form>
+          -->
             <li><a href='#'>About</a>
                 <ul>
                     <li><a href='about.html'>About Artsify</a></li>
@@ -500,6 +569,29 @@
       document.getElementById("img01").src = element.src;
       document.getElementById("modal01").style.display = "block";
     }
+  </script>
+
+  <script>
+    function myFunction() {
+      var search = document.getElementById("search-input").value;
+      location.href = "http://artsify.me/search.html?q=" + search;
+    }
+
+    function runScript(e) {
+      if (event.which == 13 || event.keyCode == 13) {
+        var search = document.getElementById("search-input").value;
+        location.href = "http://artsify.me/search.html?q=" + search;
+        return false;
+    }
+      return true;
+    }
+  </script>
+
+
+  <script>
+     $(document).ready(function() {
+         $('#tipue_search_input').tipuesearch();
+    });
   </script>
 
 </body>

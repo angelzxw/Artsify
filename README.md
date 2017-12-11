@@ -1,32 +1,42 @@
-#
-[Demo web](http://angelzxw.com/demo/Artsify/index.html)
+## Artsify
+Demo:[Express website](http://ec2-13-58-21-188.us-east-2.compute.amazonaws.com:4000)
+Report:[Express website](https://docs.google.com/document/d/1QcMeE4aPVyfvy9l8YfbrsodZoKV5fCDbR0hRsyhHZV0/edit?usp=sharing)
 
+This project implemented a fully integrated and comprehensive fine art relational-database management system. Utilizing this database system, an online fine art gallery and marketplace, Artsify, was created to allow users browsing all the information or search specific information related to available artworks and artists in the database. In addition, users would be able to make purchases of the artworks they are interested in, and the database would store the order and update the availability of the artworks accordingly. We used HTML, CSS, JavaScript, and Node.js to build the web application, and in the server-end we deployed our database on PostgreSQL.
 
+Below you'll find a description of each file.
 
-# [Start Bootstrap](http://startbootstrap.com/) - [Shop Homepage](http://startbootstrap.com/template-overviews/shop-homepage/)
+* `server.js` - this is your server code. The `express` module is how you tell your application what to do with different requests -- check out the [Express website](http://expressjs.com) for more.
+* `controllers/` - this directory contains our "controllers" or "handlers", functions that take an HTTP
+request and write to the HTTP response. We've separated out the
+controllers for the index page about page, art page, artists page, contact page, and search page.
+* `models/` - this puts data storage into "models"---pieces of
+code that "model" the structure of the data upon which our application depends. In this case, we
+have just one model file, database.js, which "wired up"
+to a database.
+* `views/` - these are the "templates" or "views" for our application. These are HTML,
+but with another "templating language" thrown in so that we can generate different HTML given
+different data. We're using "nunjucks".
+The controller gathers the data
+* `sql/` - initializes the tables in the database
+needed for an HTTP response, and renders the view using these data.
+* `package.json` - this is Node's configuration file for our project. Inside contains information about the project, along with a list of dependencies (like Express) that you can install into `node_modules/` with `npm install`.
+* `node_modules/` - the folder containing all of your dependencies. Usually you don't need to do anything to it, but if your app is misbehaving, sometimes removing and reinstalling `node_modules/` by running `rm -rf node_modules/` and `npm install` or `yarn install` will fix it.
+* `yarn.lock` - this describes the exact state of your `node_modules/` tree without uploading the tree itself. npm modules are always being updated, so this allows you to know exactly what you're running and standardize this across installations.
+* `.gitignore` - this tells Git which files and folders to ignore -- for example, you don't want to push `node_modules/` to GitHub.
+* `README.md` - this file :)
 
-[Shop Homepage](http://startbootstrap.com/template-overviews/shop-homepage/) is a basic HTML online store homepage template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+## Installing dependencies
 
-## Getting Started
+To install dependencies, run `yarn install`.
+You can install yarn with `npm install yarn` optionally adding the `-g` flag if you
+want to install it "globally", which will depend on your preferences.
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](http://startbootstrap.com/template-overviews/shop-homepage/)
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-shop-homepage.git`
-* Fork the repo
+## Running the code
 
-## Bugs and Issues
+To run this application in a development environment, use the command `yarn dev`.
+That will run the "dev" script defined in `package.json`, which itself runs
+[nodemon](https://github.com/remy/nodemon).
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-shop-homepage/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/shop-homepage/).
-
-## Creator
-
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
-
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2016 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/gh-pages/LICENSE) license.
+In production, you should start the app with the command either `yarn start` or
+`npm start`.

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping Cart</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=entypo">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet prefetch' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/5175/utf-latest.min.css'>
+  <link href="css/shoppingcart_style.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link rel=icon href=img/icon.png>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="jquery.js"></script>
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/shop-homepage.css" rel="stylesheet">
+  <link href="css/heroic-features.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/edit.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+
+<body onload="updateTotals()">
+
+    <!--Navigation-->
+    <nav id='cssmenu'>
+        <div class="logo"><a class="navbar-brand" href="/">Artsify</a></div>
+        <div id="head-mobile"></div>
+        <ul>
+            <li class='active'><a href='/art'>Art</a></li>
+            <li><a href='/artists'>Artists</a></li>
+            <li id = "searchbar">
+                <div id="custom-search-input">
+                    <div class="input-group col-md-12">
+                      <form action="/search" method="post" id="search-form">
+                        <input type="text" class="search-query form-control" name="searchText" placeholder="Search or type keywords" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-danger" type="submit">
+                                <span class=" glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                      </form>
+                    </div>
+                </div>
+            </li>
+            <li><a href="/about">About</a>
+              <ul>
+                  <li><a href='/about'>About Artsify</a></li>
+                  <li><a href='/about/team'>Our Team</a></li>
+              </ul>
+            </li>
+            <li><a href='/contact'>Contact</a></li>
+            <li><a href="/shoppingcart">
+                <span class="glyphicon glyphicon-shopping-cart"></span>Cart
+            </a></li>
+            <!-- <li><a href="#" data-toggle="modal" data-target="#login-modal" id="login-btn">Log In</a></li>
+            <li><a href="#" id="register-btn">Sign Up</a></li> -->
+        </ul>
+    </nav>
+    <section style='padding-top:10px;font:bold  44px arial;color:#68D800;'></section>
+    <!--./Navigation-->
+
+
+  <div class="main">
+  <h1>Shopping cart</h1>
+
+  <form id = "shopping-form" class="shopping-cart" action = '/shoppingcart/checkout' method='post'>
+    <ol class="ui-list shopping-cart--list" id="shopping-cart--list">
+      <script id="shopping-cart--list-item-template" type="text/template">
+        <li class="_grid shopping-cart--list-item">
+          <div class="_column product-image">
+            <img class="product-image--img" src="{{=img}}" alt="Item image" />
+          </div>
+          <div class="_column product-info">
+            <h4 class="product-name">{{=name}}</h4>
+            <p class="product-desc">{{=desc}}</p>
+            <input type = 'hidden'name = 'painting_id' value = {{=id}}>
+          </div>
+          <div class="_column product-modifiers" data-product-price="{{=price}}">
+            <div class="_grid row">
+              <button class="_btn _column product-subtract">&minus;</button>
+              <div class="_column product-qty">1</div>
+              <button class="_btn _column product-plus">&plus;</button>
+            </div>
+            <button class="_btn entypo-trash product-remove">Remove</button>
+            <div class="price product-total-price">${{=price}}</div>
+          </div>
+        </li>
+      </script>
+
+    </ol>
+
+    <footer class="_grid cart-totals">
+      <div class="_column subtotal" id="subtotalCtr">
+        <div class="cart-totals-key">Subtotal</div>
+        <div class="cart-totals-value">$0.00</div>
+      </div>
+      <div class="_column shipping" id="shippingCtr">
+        <div class="cart-totals-key">Shipping</div>
+        <div class="cart-totals-value">$0.00</div>
+      </div>
+      <div class="_column taxes" id="taxesCtr">
+        <div class="cart-totals-key">Taxes (6%)</div>
+        <div class="cart-totals-value">$0.00</div>
+      </div>
+      <div class="_column total" id="totalCtr">
+        <div class="cart-totals-key">Total</div>
+        <div class="cart-totals-value">$0.00</div>
+      </div>
+      <div class="_column checkout">
+        <button onclick = 'submitForm()'type='submit' class="_btn checkout-btn entypo-forward">Checkout</button>
+      </div>
+      <script>
+        $(document).ready(function(){
+         app.updateTotals();
+        });
+      </script>
+    </footer>
+
+  </form>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js'></script>
+
+    <script  src="js/shoppingcart_index.js"></script>
+    <div class="container">
+        <hr>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12" align="center">
+                    <p>Copyright &copy; Artsify 2017</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+   <script src="js/main.js"></script>
+  </script>
+</body>
+</html>

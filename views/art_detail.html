@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="content-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="product-image">
+                    <img src="{{art[0].img}}" style="width:100%;cursor:zoom-in" onclick="onClick(this)" class="w3-hover-opacity, painting_img">
+                </div> <!-- /.product-image -->
+
+            </div> <!-- /.col-md-8 -->
+
+            <div class="col-md-4 col-sm-8">
+              <div class="product-information">
+                  <h2 class = 'painting_id' id= '{{art[0].painting_id}}'>{{art[0].title}}</h2>
+                  <a href="/artists/{{art[0].artist_id}}" class="product-infos">{{art[0].name}}</a><br>
+                  <p class = 'description'>{{art[0].height}}"x{{art[0].width}}"</p>
+                  <p>{{art[0].type}}</p>
+                  <p class="product-infos">
+                      <span class = 'price'>${{art[0].price}}</span>
+                  </p>
+                  <ul class="product-buttons">
+                      <li>
+                           <button onclick="addToCart()" class="main-btn">Add to Cart</button>
+                      </li>
+                  </ul>
+              </div> <!-- /.product-information -->
+            </div>
+            <!--
+                <div class="product-item-2">
+                    <div class="product-thumb">
+                      <img src="img/Art/MarilynHenrion/PC67.jpg" alt="">
+                    </div> --><!-- /.product-thumb -->
+                     <!--
+                    <div class="product-content overlay">
+                        <h5><a href="#">Patchwork City 67</a></h5>
+                        <span class="tagline">MARILYN HENRION</span>
+                        <span class="price">$6,000.00</span>
+                        <p>24"x48"x1" mixed media linen collage on stretched canvas, framed</p>
+                    </div>--> <!-- /.product-content -->
+                <!--</div> --><!-- /.product-item-2 -->
+                <!--<div class="product-item-2">
+                    <div class="product-thumb">
+                        <img src="img/Art/MarilynHenrion/PC66.jpg" alt="Product Title">
+                    </div>--> <!-- /.product-thumb -->
+                    <!--<div class="product-content overlay">
+                        <h5><a href="#">Patchwork City 66</a></h5>
+                        <span class="tagline">MARILYN HENRIONe</span>
+                        <span class="price">$6,000.00</span>
+                        <p>24"x48"x1" mixed media linen collage on stretched canvas, framed</p>
+                    </div>--> <!-- /.product-content -->
+                <!--</div>--> <!-- /.product-item-2 -->
+            <!--</div>--> <!-- /.col-md-4 -->
+
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</div> <!-- /.content-section -->
+{%if relatedArts[0].title %}
+<div class="content-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 section-title">
+                <h2>You might be also interested in {{art[0].name}}'s...</h2>
+            </div> <!-- /.section -->
+        </div> <!-- /.row -->
+
+        <div class="rowart">
+        {% for art in relatedArts %}
+        <div class="col-md-3 col-sm-6 col-md-4art">
+            <div class="product-item-vote">
+                <div class="product-thumb">
+                    <img src="{{art.img}}" alt="">
+                </div> <!-- /.product-thum -->
+                <div class="product-content">
+                    <h5><a href="/art/{{art.painting_id}}">{{art.title}}</a></a></h5>
+                    <span class="tagline">{{art.name}}</span>
+                </div> <!-- /.product-content -->
+            </div> <!-- /.product-item-vote -->
+        </div> <!-- /.col-md-3 -->
+        {% endfor %}
+      </div><!-- /.row -->
+  </div> <!-- /.container -->
+</div> <!-- /.content-section -->
+{% endif %}
+{% endblock %}
